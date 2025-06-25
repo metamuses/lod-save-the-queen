@@ -1,14 +1,14 @@
-﻿SUBJECT, PREDICATE, OBJECT
+﻿subject, predicate, object
 Corset, is held by, Victoria and Albert Museum 
 Corset, has museum category, Gender & Sexuality
 Corset, has museum category, The Micheal and Gerlinde Costiff Costume Collection
 Corset, has title, Corset 
 Corset, has place of production, UK 
 Corset, has date of production, 1990
-Corset, has type, Corset 
-Corset, has material, Polyester
-Corset, has material, Polyamide
-Corset, has material, Lycra
+Corset, has type, corset 
+Corset, has material, polyester
+Corset, has material, polyamide
+Corset, has material, lycra
 Corset, has techniques, printing 
 Corset, has bust circumference, 82 cm 
 Corset, has waist circumference, 616 mm
