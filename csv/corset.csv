@@ -1,18 +1,18 @@
-﻿SUBJECT;PREDICATE;OBJECT
-Corset ;is held by;Victoria and Albert Museum 
-;has museum category ;Gender & Sexuality
-;has museum category ;The Micheal and Gerlinde Costiff Costume Collection
-;has title ;Corset 
-;has place of production;UK 
-;has date of production;1990
-;has type;Corset 
-;has material ;Polyester
-;has material ;Polyamide
-;has material ;Lycra
-;has techniques ;printing 
-;has bust circumference;82 cm 
-;has waist circumference;616 mm
-;has lenght;44 cm
-;has weight;0.28 kg
-;is designed by ;Vivienne Westwood
-;has subject ;Daphins and Chloe painting
+﻿SUBJECT, PREDICATE, OBJECT
+Corset, is held by, Victoria and Albert Museum 
+Corset, has museum category, Gender & Sexuality
+Corset, has museum category, The Micheal and Gerlinde Costiff Costume Collection
+Corset, has title, Corset 
+Corset, has place of production, UK 
+Corset, has date of production, 1990
+Corset, has type, Corset 
+Corset, has material, Polyester
+Corset, has material, Polyamide
+Corset, has material, Lycra
+Corset, has techniques, printing 
+Corset, has bust circumference, 82 cm 
+Corset, has waist circumference, 616 mm
+Corset, has lenght, 44 cm
+Corset, has weight, 0.28 kg
+Corset, is designed by, Vivienne Westwood
+Corset, has subject, Daphins and Chloe painting
