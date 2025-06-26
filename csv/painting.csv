@@ -1,11 +1,11 @@
-subject, predicate, object
-Daphnis and Chloe painting, has title, Daphne and Chloe
-Daphnis and Chloe painting, has creator, Francois Boucher
-Daphnis and Chloe painting, has type, painting
-Daphnis and Chloe painting, is held by , Wallace Collection
-Daphnis and Chloe painting, has medium, oil on canvas
-Daphnis and Chloe painting, has height, 109.50 cm
-Daphnis and Chloe painting, has width, 154.8 cm 
-Daphnis and Chloe painting, has place of production, France
-Daphnis and Chloe painting, has date of production, 1743
-Daphnis and Chloe painting, is subject of , Corset
+subject,predicate,object
+Daphnis and Chloe painting,has title,Daphne and Chloe
+Daphnis and Chloe painting,has creator,Francois Boucher
+Daphnis and Chloe painting,has type,painting
+Daphnis and Chloe painting,is held by ,Wallace Collection
+Daphnis and Chloe painting,has medium,oil on canvas
+Daphnis and Chloe painting,has height,109.50 cm
+Daphnis and Chloe painting,has width,154.8 cm
+Daphnis and Chloe painting,has place of production,France
+Daphnis and Chloe painting,has date of production,1743
+Daphnis and Chloe painting,is subject of,Corset

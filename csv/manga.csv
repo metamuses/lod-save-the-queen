@@ -1,10 +1,10 @@
-subject, predicate, object
-Nana (manga), has type, manga
-Nana (manga), has subject, God Save the Queen top 
-Nana (manga), has publisher, Planet Manga
-Nana (manga), has language, italian
-Nana (manga), has translator, Claudia Baglini
-Nana (manga), has creator, Ai Yazawa
-Nana (manga), has date of publication, 2019-2020
-Nana (manga), has place of publication, Modena
-Nana (manga), is held by, Biblioteca Sala Borsa
+subject,predicate,object
+Nana (manga),has type,manga
+Nana (manga),has subject,God Save the Queen top
+Nana (manga),has publisher,Planet Manga
+Nana (manga),has language,italian
+Nana (manga),has translator,Claudia Baglini
+Nana (manga),has creator,Ai Yazawa
+Nana (manga),has date of publication,2019-2020
+Nana (manga),has place of publication,Modena
+Nana (manga),is held by,Biblioteca Sala Borsa

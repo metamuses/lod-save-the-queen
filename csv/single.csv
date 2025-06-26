@@ -1,14 +1,13 @@
-subject, predicate, object
-Sex Pistols single, has type, music single
-Sex Pistols single, has format, vinyl record
-Sex Pistols single, is part of, Never Mind the Bollocks Here's the Sex Pistols
-Sex Pistols single, has language, english
-Sex Pistols single, has date of production, 1977
-Sex Pistols single, has label, Virgin Records
-Sex Pistols single, has title, God save the Queen
-Sex Pistols single, has creator, Sex Pistols
-Sex Pistols single, has place of production, UK
-Sex Pistols single, has duration, 3 min 20 sec
-Sex Pistols single, has genre, punk rock
-Sex Pistols single, is held by, Biblioteca Nazionale Centrale di Roma
-
+subject,predicate,object
+Sex Pistols single,has type,music single
+Sex Pistols single,has format,vinyl record
+Sex Pistols single,is part of,Never Mind the Bollocks Here's the Sex Pistols
+Sex Pistols single,has language,english
+Sex Pistols single,has date of production,1977
+Sex Pistols single,has label,Virgin Records
+Sex Pistols single,has title,God save the Queen
+Sex Pistols single,has creator,Sex Pistols
+Sex Pistols single,has place of production,UK
+Sex Pistols single,has duration,3 min 20 sec
+Sex Pistols single,has genre,punk rock
+Sex Pistols single,is held by,Biblioteca Nazionale Centrale di Roma
