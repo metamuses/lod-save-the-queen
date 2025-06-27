@@ -2,8 +2,10 @@ subject,predicate,object
 Nana (anime),is adaptation of,Nana (manga)
 Nana (anime),has type,anime
 Nana (anime),has publisher,Terminal Video
-Nana (anime),has audio language,"Italian,Japanese"
-Nana (anime),has subtitle language,"Italian,Japanese"
+Nana (anime),has audio language,Italian
+Nana (anime),has audio language,Japanese
+Nana (anime),has subtitle language,Italian
+Nana (anime),has subtitle language,Japanese
 Nana (anime),has director,Morio Asaka
 Nana (anime),has composer,Tomoki Hasegawa
 Nana (anime),is held by,Biblioteca Sala Borsa
