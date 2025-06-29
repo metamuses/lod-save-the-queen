@@ -1,7 +1,7 @@
 subject,predicate,object
 Activism book,has type,book
 Activism book,has title,100 Days of Active Resistance
-Activism book,has date of production,2011
+Activism book,has date of publication,2011
 Activism book,has language,english
 Activism book,has publisher,Damiani
 Activism book,has subject,activism
