@@ -226,15 +226,16 @@
         <pb/>
         <div2 type="body of perfomance text">
           <div3>
-            <p><hi rend="dropcap">AR</hi>
-              Dear Friends, We all love art and some of you claim to be artists. Without judges there is no art. She only exists when we know her. Does she exist?
-              The answer to this question is of vital importance because if art is alive the world will change. No art, no true progress.
-              We must find out; go in search of her. <q>- But wait! Who is this with fire-cracking smouldering pigtails,
-                gold teeth and a brace of flintlocks in his belt?</q> He is a pirate. <q>- And what does his t-shirt say? - </q> I love crap.
-              <hi rend="italic">Pirate hands Active Resistance a Hawaiian garland of plastic flowers.</hi>
-            </p>
-          </div3>
-          <div3>
+            <sp>
+              <speaker><hi rend="dropcap">AR</hi></speaker>
+              <p>
+                Dear Friends, We all love art and some of you claim to be artists. Without judges there is no art. She only exists when we know her. Does she exist?
+                The answer to this question is of vital importance because if art is alive the world will change. No art, no true progress.
+                We must find out; go in search of her. - But wait! Who is this with fire-cracking smouldering pigtails,
+                gold teeth and a brace of flintlocks in his belt? He is a pirate. - And what does his t-shirt say? - I love crap.
+                <scene>Pirate hands Active Resistance a Hawaiian garland of plastic flowers.</scene>
+              </p>
+            </sp>
             <sp>
               <speaker>Pirate.</speaker>
               <p>Leave everything to me. I plunder for you. Stick with me and you might get a share of the bounty. My name is Progress.</p>
