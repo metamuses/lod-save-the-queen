@@ -7,6 +7,8 @@
 <item/manga> a wd:Q8274 ;
     dc:creator wd:Q234425 ;
     dc:language wd:Q652 ;
+    dc:title "Nana" ;
+    dct:format <format/slipcase> ;
     dct:publisher wd:Q703322 ;
     schema:about <item/top> ;
     schema:datePublished "2019-2020" ;

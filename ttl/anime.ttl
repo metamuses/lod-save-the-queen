@@ -7,7 +7,10 @@
 <item/anime> a wd:Q1107 ;
     dc:language wd:Q5287,
         wd:Q652 ;
+    dc:title "Nana" ;
+    dct:format <format/slipcase> ;
     dct:publisher wd:Q132093230 ;
+    schema:datePublished "2007" ;
     schema:director wd:Q516966 ;
     schema:isBasedOn <item/manga> ;
     schema:itemLocation wd:Q3639614 ;
