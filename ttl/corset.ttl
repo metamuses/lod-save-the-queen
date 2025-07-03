@@ -1,0 +1,25 @@
+@base <https://github.com/metamuses/lod-save-the-queen/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lido: <http://terminology.lido-schema.org/> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+<item/corset> a wd:Q180225 ;
+    dc:creator wd:Q158067 ;
+    dc:title "Corset" ;
+    lido:lido01114 wd:Q3514338 ;
+    crm:P45_consists_of wd:Q145863,
+        wd:Q330262,
+        wd:Q7071155 ;
+    schema:about <item/painting> ;
+    schema:category "Gender & Sexuality",
+        "The Micheal and Gerlinde Costiff Costume Collection" ;
+    schema:dateCreated "1990" ;
+    schema:hasMeasurement "44 cm",
+        "616 mm",
+        "82 cm" ;
+    schema:itemLocation wd:Q213322 ;
+    schema:locationCreated wd:Q145 ;
+    schema:weight "0.28 kg" .
+
