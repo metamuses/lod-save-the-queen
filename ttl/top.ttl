@@ -1,15 +1,15 @@
 @base <https://github.com/metamuses/lod-save-the-queen/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix lido: <http://terminology.lido-schema.org/> .
+@prefix lt: <http://terminology.lido-schema.org/> .
 @prefix schema: <https://schema.org/> .
 @prefix wd: <https://www.wikidata.org/wiki/> .
 
-<item/top> a wd:Q1435365 ;
-    dc:creator wd:Q158067,
+<item/top> a <type/top> ;
+    dc:creator <person/vivienne_westwood>,
         wd:Q325377 ;
     dc:title "God Save The Queen top" ;
-    lido:lido01114 wd:Q3514338 ;
+    lt:lido01114 wd:Q3514338 ;
     crm:P128_carries wd:Q1640824 ;
     crm:P45_consists_of wd:Q11426,
         wd:Q725457 ;
@@ -22,4 +22,3 @@
         "80 cm" ;
     schema:itemLocation wd:Q213322 ;
     schema:locationCreated wd:Q145 .
-

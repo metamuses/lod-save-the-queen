@@ -1,0 +1,192 @@
+@base <https://github.com/metamuses/lod-save-the-queen/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix lt: <http://terminology.lido-schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <https://www.wikidata.org/entity/> .
+
+<person/vivienne_westwood> a foaf:Person ;
+    foaf:name "Vivienne Westwood"@en ;
+    schema:hasOccupation wd:Q3501317 ;
+    owl:sameAs wd:Q158067 , <http://viaf.org/viaf/85586601> ;
+    rdfs:comment "British fashion designer."@en .
+
+<person/claudia_baglini> a foaf:Person ;
+    foaf:name "Claudia Baglini"@it ;
+    schema:hasOccupation wd:Q333634 ;
+    rdfs:comment "Manga translator."@en .
+
+<format/slipcase> a dct:MediaType ;
+    rdfs:label "Slipcase"@en ;
+    rdfs:comment "Slipcase format in which books and DVDs are included."@en ;
+    owl:sameAs wd:Q1647282 .
+
+<org/Damiani> a schema:Organization ;
+    rdfs:label "Damiani"@it ;
+    schema:location wd:Q1891 ;
+    rdfs:comment "Publishing house located in Bologna."@en ;
+    schema:url <https://www.damianibooks.com/> .
+
+<org/Levelprint> a schema:Organization ;
+    rdfs:label "Levelprint Ltd"@en ;
+    schema:location wd:Q145 ;
+    rdfs:comment "English publishing company."@en .
+
+<type/corset> a crm:E55_Type ;
+    rdfs:label "Corset"@en ;
+    rdfs:comment "Garment that supports the bust."@en ;
+    owl:sameAs wd:Q180225 .
+
+<type/wallpaper> a crm:E55_Type ;
+    rdfs:label "Wallpaper"@en ;
+    rdfs:comment "Material used to cover and decorate interior walls."@en ;
+    owl:sameAs wd:Q191529 .
+
+<type/top> a crm:E55_Type ;
+    rdfs:label "Top"@en ;
+    rdfs:comment "Clothing worn on the upper body."@en ;
+    owl:sameAs wd:Q1435365 .
+
+<item/anime> a frbroo:F5_Item ;
+    a wd:Q1107 ;
+    dc:language wd:Q5287,
+        wd:Q652 ;
+    dct:publisher wd:Q132093230 ;
+    schema:director wd:Q516966 ;
+    schema:isBasedOn <item/manga> ;
+    schema:itemLocation wd:Q3639614 ;
+    schema:musicBy wd:Q2568944 .
+
+<item/book> a frbroo:F5_Item ;
+    a wd:Q571 ;
+    dc:creator <person/vivienne_westwood> ;
+    dc:language wd:Q1860 ;
+    dc:title "100 Days of Active Resistance" ;
+    dct:publisher <org/Damiani> ;
+    schema:about wd:Q11633,
+        wd:Q203764 ;
+    schema:datePublished "2011" ;
+    schema:height "23 cm" ;
+    schema:itemLocation wd:Q3639614 ;
+    schema:locationCreated wd:Q1891 ;
+    schema:width "23 cm" .
+
+<item/corset> a frbroo:F5_Item ;
+    a crm:E24_Physical_Human-Made_Thing ;
+    a <type/corset> ;
+    dc:creator <person/vivienne_westwood> ;
+    dc:title "Corset" ;
+    lt:lido01114 wd:Q3514338 ;
+    crm:P45_consists_of wd:Q145863,
+        wd:Q330262,
+        wd:Q7071155 ;
+    schema:about <item/painting> ;
+    schema:category "Gender & Sexuality",
+        "The Micheal and Gerlinde Costiff Costume Collection" ;
+    schema:dateCreated "1990" ;
+    schema:hasMeasurement "44 cm",
+        "616 mm",
+        "82 cm" ;
+    schema:itemLocation wd:Q213322 ;
+    schema:locationCreated wd:Q145 ;
+    schema:weight "0.28 kg" .
+
+<item/magazine> a frbroo:F5_Item ;
+    a wd:Q41298 ;
+    dc:title "I-D #318" ;
+    dct:publisher <org/Levelprint> ;
+    schema:about <person/vivienne_westwood> ;
+    schema:datePublished "April 2012" ;
+    schema:height "30 cm" ;
+    schema:isPartOf wd:Q286430 ;
+    schema:itemLocation wd:Q113298998 ;
+    schema:locationCreated wd:Q84 .
+
+<item/manga> a frbroo:F5_Item ;
+    a wd:Q8274 ;
+    dc:creator wd:Q234425 ;
+    dc:language wd:Q652 ;
+    dct:publisher wd:Q703322 ;
+    schema:about <item/top> ;
+    schema:datePublished "2019-2020" ;
+    schema:itemLocation wd:Q3639614 ;
+    schema:locationCreated wd:Q279 ;
+    schema:translator <person/claudia_baglini> .
+
+<item/painting> a frbroo:F5_Item ;
+    a wd:Q3305213 ;
+    dc:creator wd:Q180932 ;
+    dc:title "Daphne and Chloe" ;
+    dct:format wd:Q115654970 ;
+    schema:dateCreated "1743" ;
+    schema:height "109.50 cm" ;
+    schema:itemLocation wd:Q1327919 ;
+    schema:locationCreated wd:Q142 ;
+    schema:subjectOf <item/corset> ;
+    schema:width "154.8 cm" .
+
+<item/photo> a frbroo:F5_Item ;
+    a wd:Q125191 ;
+    dc:creator wd:Q962442 ;
+    dct:format wd:Q117384106 ;
+    crm:P128_carries "climate revolution" ;
+    schema:about <person/vivienne_westwood>,
+        wd:Q203764 ;
+    schema:dateCreated "2012" ;
+    schema:height "1528 mm" ;
+    schema:itemLocation wd:Q238587 ;
+    schema:width "1052 mm" .
+
+<item/single> a frbroo:F5_Item ;
+    a wd:Q134556 ;
+    dc:creator wd:Q82545 ;
+    dc:language wd:Q1860 ;
+    dc:title "God save the Queen" ;
+    dct:extent "3 min 20 sec" ;
+    dct:format wd:Q178588 ;
+    schema:dateCreated "1977" ;
+    schema:genre wd:Q3071 ;
+    schema:isPartOf wd:Q457275 ;
+    schema:itemLocation wd:Q6382871 ;
+    schema:locationCreated wd:Q145 ;
+    schema:publisher wd:Q203059 .
+
+<item/tartan> a frbroo:F5_Item ;
+    a crm:E24_Physical_Human-Made_Thing ;
+    a <type/wallpaper> ;
+    dc:creator <person/vivienne_westwood>,
+        wd:Q110085657 ;
+    dc:title "Tartan" ;
+    crm:P45_consists_of wd:Q11472 ;
+    schema:category "wall coverings" ;
+    schema:dateCreated "2009" ;
+    schema:height "95 mm" ;
+    schema:itemLocation wd:Q213322 ;
+    schema:locationCreated wd:Q145 ;
+    schema:width "103 mm" .
+
+<item/top> a frbroo:F5_Item ;
+    a crm:E24_Physical_Human-Made_Thing ;
+    a <type/top> ;
+    dc:creator <person/vivienne_westwood>,
+        wd:Q325377 ;
+    dc:title "God Save The Queen top" ;
+    lt:lido01114 wd:Q3514338 ;
+    crm:P128_carries wd:Q1640824 ;
+    crm:P45_consists_of wd:Q11426,
+        wd:Q725457 ;
+    schema:about wd:Q82545,
+        wd:Q9682 ;
+    schema:category "Gender and Sexuality",
+        "The Michael and Gertrude Costiff Costume Collection" ;
+    schema:dateCreated "1976" ;
+    schema:hasMeasurement "54 cm",
+        "80 cm" ;
+    schema:itemLocation wd:Q213322 ;
+    schema:locationCreated wd:Q145 .

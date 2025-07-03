@@ -1,17 +1,16 @@
 @base <https://github.com/metamuses/lod-save-the-queen/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix schema: <https://schema.org/> .
 @prefix wd: <https://www.wikidata.org/wiki/> .
 
 <item/painting> a wd:Q3305213 ;
     dc:creator wd:Q180932 ;
     dc:title "Daphne and Chloe" ;
-    dcterms:format wd:Q115654970 ;
+    dct:format wd:Q115654970 ;
     schema:dateCreated "1743" ;
     schema:height "109.50 cm" ;
     schema:itemLocation wd:Q1327919 ;
     schema:locationCreated wd:Q142 ;
     schema:subjectOf <item/corset> ;
     schema:width "154.8 cm" .
-

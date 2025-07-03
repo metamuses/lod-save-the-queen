@@ -4,9 +4,9 @@
 @prefix schema: <https://schema.org/> .
 @prefix wd: <https://www.wikidata.org/wiki/> .
 
-<item/tartan> a wd:Q191529 ;
-    dc:creator wd:Q110085657,
-        wd:Q158067 ;
+<item/tartan> a <type/wallpaper> ;
+    dc:creator <person/vivienne_westwood>,
+        wd:Q110085657 ;
     dc:title "Tartan" ;
     crm:P45_consists_of wd:Q11472 ;
     schema:category "wall coverings" ;
@@ -15,4 +15,3 @@
     schema:itemLocation wd:Q213322 ;
     schema:locationCreated wd:Q145 ;
     schema:width "103 mm" .
-

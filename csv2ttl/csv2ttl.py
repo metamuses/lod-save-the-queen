@@ -69,9 +69,9 @@ for filepath in CSV_DIR.glob("*.csv"):
             elif row["object"] in ENTITIES:
                 # Check if the entity is a prefixed URI or a full URI
                 entity = ENTITIES[row["object"]]
-                if entity.startswith(":"):
+                if ":" not in entity:
                     # If it's a prefixed URI, use the base URI to create the object
-                    obj = URIRef(BASE_URI + entity[1:])
+                    obj = URIRef(BASE_URI + entity)
                 else:
                     # If it's a full URI, split it into namespace and entity
                     namespace_str, entity_str = entity.split(":")
