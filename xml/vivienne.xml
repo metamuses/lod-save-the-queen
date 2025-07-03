@@ -39,11 +39,11 @@
         <listBibl type="inferred-bibliographic-refences">
           <bibl xml:id="Carroll">
             <title xml:lang="en">Alice's Adventures in Wonderland</title>
-            <author><forename>Lewis</forename><surename>Carroll</surename></author>
+            <author><forename>Lewis</forename><surname>Carroll</surname></author>
           </bibl>
           <bibl xml:id="Collodi">
             <title xml:lang="it">Le avventure di Pinocchio. Storia di un burattino</title>
-            <author><forename>Carlo</forename><surename>Collodi</surename></author>
+            <author><forename>Carlo</forename><surname>Collodi</surname></author>
           </bibl>
         </listBibl>
       </sourceDesc>
@@ -70,7 +70,7 @@
             font-style: italic;
           </rendition>
           <namespace name="http://www.tei-c.org/ns/1.0">
-            <tagUsage gi="hi">Used to encode all the variation in the font style throught the text not related to scene, speaker or q tag</tagUsage> <!--TBD: hi tag usage-->
+            <tagUsage gi="hi">Used to encode all the variation in the font style and color throught the text not related to scene, speaker or q tag</tagUsage> <!--TBD: hi tag usage-->
             <tagUsage gi="foreign"></tagUsage>
           </namespace>
         </tagsDecl>
@@ -98,37 +98,37 @@
             <persName xml:lang="en" type="historical" role="king">Alexander the Great</persName>
           </person>
           <person xml:id="APR" ref="https://philpeople.org/profiles/adam-parker-rhodes">
-            <persName xml:lang="en" role="philosopher"><forename>Adam</forename> <surename>Parker-Rhodes</surename></persName>
+            <persName xml:lang="en" role="philosopher"><forename>Adam</forename> <surname>Parker-Rhodes</surname></persName>
           </person>
           <person xml:id="DV" sameAs="https://www.wikidata.org/wiki/Q297">
-            <persName xml:lang="en" role="painter"><forename>Diego</forename> <surename>Velázquez</surename></persName>
+            <persName xml:lang="en" role="painter"><forename>Diego</forename> <surname>Velázquez</surname></persName>
           </person>
           <person xml:id="GC" sameAs="https://www.wikidata.org/wiki/Q5683">
-            <persName xml:lang="en" type="writer"><forename>Geoffrey</forename> <surename>Chaucer</surename></persName>
+            <persName xml:lang="en" type="writer"><forename>Geoffrey</forename> <surname>Chaucer</surname></persName>
           </person>
           <person xml:id="KA" sameAs="https://www.wikidata.org/wiki/Q45792">
             <persName xml:lang="en" type="historical" role="king"> King Arthur</persName>
           </person>
           <person xml:id="JW" sameAs="https://www.wikidata.org/wiki/Q203643">
-            <persName xml:lang="en"  role="painter"><forename>James</forename> <surename>McNeill Whistler</surename></persName>
+            <persName xml:lang="en"  role="painter"><forename>James</forename> <surname>McNeill Whistler</surname></persName>
           </person>
           <person xml:id="wS" sameAs="https://www.wikidata.org/wiki/Q692">
-            <persName xml:lang="en" role="writer"><forename>William</forename> <surename>Shakespeare</surename></persName>
+            <persName xml:lang="en" role="writer"><forename>William</forename> <surname>Shakespeare</surname></persName>
           </person>
           <person xml:id="EM" sameAs="https://www.wikidata.org/wiki/Q40599">
-            <persName xml:lang="en" role="painter"><forename>Édouard</forename> <surename>Manet</surename></persName>
+            <persName xml:lang="en" role="painter"><forename>Édouard</forename> <surname>Manet</surname></persName>
           </person>
           <person xml:id="KH" sameAs="https://www.wikidata.org/wiki/Q5586">
-            <persName xml:lang="en" role="painter"><forename>Katsushika</forename> <surename>Hokusai</surename></persName>
+            <persName xml:lang="en" role="painter"><forename>Katsushika</forename> <surname>Hokusai</surname></persName>
           </person>
           <person xml:id="PP" sameAs="https://www.wikidata.org/wiki/Q5593">
-            <persName xml:lang="en" role="painter"><forename>Pablo</forename> <surename>Picasso</surename></persName>
+            <persName xml:lang="en" role="painter"><forename>Pablo</forename> <surname>Picasso</surname></persName>
           </person>
           <person xml:id="AH" sameAs="https://www.wikidata.org/wiki/Q352">
-            <persName xml:lang="en" role="dictator"><forename>Adolf</forename> <surename>Hitler</surename></persName>
+            <persName xml:lang="en" role="dictator"><forename>Adolf</forename> <surname>Hitler</surname></persName>
           </person>
           <person xml:id="LP" sameAs="https://www.wikidata.org/wiki/Q439054">
-            <persName xml:lang="en" role="activist"><forename>Leonard</forename> <surename>Peltier</surename></persName>
+            <persName xml:lang="en" role="activist"><forename>Leonard</forename> <surname>Peltier</surname></persName>
           </person>
         </listPerson>
         <list type="cited-fictional-character"><!--small letter-->
@@ -171,14 +171,14 @@
   <text xml:lang="en">
     <front>
       <div1 type="title page">
-        <head>100 days of resistance</head>
+        <head rend="gold-right">100 <lb/>DAYS <lb/>OF <lb/>ACTIVE <lb/>RESIST<lb/>ANCE</head>
       </div1>
       <pb/>
       <div1 type="preface">
-        <head>{100 DAYS <hi rend="underlined">OF</hi> ACTIVE RESISTANCE}</head>
+        <head>{<hi>100</hi> DAYS <hi rend="underlined">OF</hi> ACTIVE RESISTANCE}</head>
         <p>
           <hi rend="italic">'The principle idea of Active Resistance is that you get out of life what you put in and that real experience of the world involves thinking'</hi>
-          - <persName ref="#VV"> Vivienne Westwood </persName>.
+          - <persName ref="#VV"> Vivienne Westwood</persName>.
         </p>
         <p>
           Active Resistance is a concept born from <persName ref="#VV">Vivienne Westwood</persName>'s manifesto <hi rend="italic">Active Resistance to Propaganda.</hi>
@@ -188,7 +188,7 @@
           <q rend="italic">"It is not enough to follow world politics, see films and read the prize winning best seller.
             This is superficial, you need to go deep in order to understand who you are, what the world is and how things could be better. This involves culture which can only be acquired by self-education."</q>
         </p>
-        <p> <!--date when="2010-09-28"--><!--/date--><!--<name type="person">--><!--<name type="company">-->
+        <p>
           <date when="2010-09-28">On September 28th, 2010</date> <persName ref="#VV">Vivienne Westwood</persName> Anglomania, in collaboration with <orgName>Lee® Jeans</orgName>, launched
           the 100 Days of Active Resistance online installation. Focusing on the concept of Active Resistance, the online installation was a call to action to today's youth to encourage communication and individuality.
           The public were asked to submit an image representing their interpretations of <persName ref="#VV">Vivienne Westwood</persName>'s manifesto.
@@ -202,12 +202,11 @@
         </p>
       </div1>
     </front>
-    <text>
-      <pb/>
+    <body>
       <div1 type="performance text">
-        <div2 type="prologue"> <!--The following element is used to identify textual subdivisions in the un-numbered style: div (text division) contains a subdivision of the front, body, or back of a text.-->
+        <div2 type="prologue">
           <head>AR
-            <lb/>ACTIVE RESISTANCE TO PROAGANDA
+            <lb/>ACTIVE RESISTANCE TO PROPAGANDA
           </head>
           <p>
             I make the great claim for my manifesto, that it penetrates to the root of the human predicament and offers the underlying solution. We have the choice to become more cultivated and therefore more human
@@ -815,6 +814,7 @@
           </div3>
         </div2>
       </div1>
+      <pb/>
       <div1 type="motto">
         <p>Get a
           <figure>
@@ -832,6 +832,7 @@
           </figure>
         </p>
       </div1>
+      <pb/>
       <div1 type="photographs">
         <div2 type="photo page" n="1">
           <div3 type="photo information">
@@ -847,6 +848,7 @@
               <placeName><settlement>Sidney</settlement>, <country>Australia</country></placeName>
             </p>
           </div3>
+          <pb/>
           <div3 type="photo">
             <figure>
               <graphic url="images/photo1.jpeg"/><!--first photo-->
@@ -855,7 +857,8 @@
           </div3>
         </div2>
       </div1>
-    </text>
+    </body>
+    <pb/>
     <back>
       <div1 type="photographers list">
         <div2 type="photographers name">
