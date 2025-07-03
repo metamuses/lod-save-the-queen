@@ -2,11 +2,11 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader xml:lang="en">
         <fileDesc>
-            <titleStmt> 
+            <titleStmt>
                 <title>100 days of active resistance: digital edition</title>
-                <author ref="#VV">Vivienne Westwood</author> 
+                <author ref="#VV">Vivienne Westwood</author>
                 <respStmt>
-                    <resp>compiled by</resp> 
+                    <resp>compiled by</resp>
                     <persName><forename>Martina</forename> <surname>Uccheddu</surname></persName>
                 </respStmt>
             </titleStmt>
@@ -17,18 +17,18 @@
                     <persName><forename>Martina</forename> <surname>Uccheddu</surname></persName>
                 </respStmt>
             </editionStmt>
-            <publicationStmt> 
+            <publicationStmt>
                 <authority>MetaMuses</authority>
-                <idno type="URL" target="https://github.com/metamuses/lod-save-the-queen">https://github.com/metamuses/lod-save-the-queen</idno> 
+                <idno type="URL" target="https://github.com/metamuses/lod-save-the-queen">https://github.com/metamuses/lod-save-the-queen</idno>
                 <date when="2025">2025</date>
-                <availability status="restricted"> 
+                <availability status="restricted">
                     <p>The original source is copyrighted by Damiani 2011, the authors for the texts, the photographers for the photographs.
                     It is reproduced here for educational and non-commercial purposes only, under fair use for a university project.
                     </p>
                 </availability>
             </publicationStmt>
-            <sourceDesc> 
-                <bibl sameAs="https://github.com/metamuses/lod-save-the-queen/item/book"> 
+            <sourceDesc>
+                <bibl sameAs="https://github.com/metamuses/lod-save-the-queen/item/book">
                     <title>100 days of active resistance</title>
                     <author ref="VV">Vivienne Westwood</author>
                     <publisher ref="#DP">Damiani</publisher>
@@ -55,18 +55,18 @@
                     <p>For the sake of the exam only the manifesto by Vivienne Westwood has been fully encoded and annotated and day 1 entrance with related paragraph and image. The structure of the whole book has been encoded to facilitate further work.</p>
                 </samplingDecl>
                 <editorialDecl>
-                    <interpretation>The cited persons, fictional characters and mythological creatures have been annotated to provide Vivienne Westwood cultural references. Lists of this annotated name and persName have been provided in the profileDesc section. 
-                    Throught the text date and places have been annotated but not disambiguated with a local authority file in the teiHeader because deemed irrelevant for the study of the source due to the scarcity of occurrences. 
+                    <interpretation>The cited persons, fictional characters and mythological creatures have been annotated to provide Vivienne Westwood cultural references. Lists of this annotated name and persName have been provided in the profileDesc section.
+                    Throught the text date and places have been annotated but not disambiguated with a local authority file in the teiHeader because deemed irrelevant for the study of the source due to the scarcity of occurrences.
                     </interpretation>
                     <quotation>
                     The tag q has been prefered throught the text rather then distinct beetween said, quote or cit. Quote has been use exclusively in the photograph section where the quote where the agency is certain.
                     </quotation>
                 </editorialDecl>
                 <tagsDecl>
-                    <rendition scheme="css" selector="speaker"> 
+                    <rendition scheme="css" selector="speaker">
                     font-style: italic;
                     </rendition>
-                    <rendition scheme="css" selector="scene"> 
+                    <rendition scheme="css" selector="scene">
                     font-style: italic;
                     </rendition>
                     <namespace name="http://www.tei-c.org/ns/1.0">
@@ -177,7 +177,7 @@
             <div1 type="preface">
             <head>{100 DAYS <hi rend="underlined">OF</hi> ACTIVE RESISTANCE}</head>
             <p>
-            <hi rend="italic">'The principle idea of Active Resistance is that you get out of life what you put in and that real experience of the world involves thinking'</hi> 
+            <hi rend="italic">'The principle idea of Active Resistance is that you get out of life what you put in and that real experience of the world involves thinking'</hi>
             - <persName ref="#VV"> Vivienne Westwood </persName>.
             </p>
             <p>
@@ -185,7 +185,7 @@
             The manifesto encourages the pursuit of culture and of art to provide an antidote to propaganda.
             </p>
             <p>
-            <q rend="italic">"It is not enough to follow world politics, see films and read the prize winning best seller. 
+            <q rend="italic">"It is not enough to follow world politics, see films and read the prize winning best seller.
             This is superficial, you need to go deep in order to understand who you are, what the world is and how things could be better. This involves culture which can only be acquired by self-education."</q>
             </p>
             <p> <!--date when="2010-09-28"--><!--/date--><!--<name type="person">--><!--<name type="company">-->
@@ -199,7 +199,7 @@
             These 100 ideas, more than just images, inspire thought and give hope to the possibility of collective change.
             </p>
             <p><q rend="italic">"No art, no true progress."</q> - <persName ref="#VV">Vivienne Westwood</persName>
-            </p>    
+            </p>
             </div1>
         </front>
         <text>
@@ -228,7 +228,7 @@
                 <div2 type="body of perfomance text">
                     <div3>
                     <p><hi rend="dropcap">AR</hi>
-                    Dear Friends, We all love art and some of you claim to be artists. Without judges there is no art. She only exists when we know her. Does she exist? 
+                    Dear Friends, We all love art and some of you claim to be artists. Without judges there is no art. She only exists when we know her. Does she exist?
                     The answer to this question is of vital importance because if art is alive the world will change. No art, no true progress.
                     We must find out; go in search of her. <q>- But wait! Who is this with fire-cracking smouldering pigtails,
                     gold teeth and a brace of flintlocks in his belt?</q> He is a pirate. <q>- And what does his t-shirt say? - </q> I love crap.
@@ -494,7 +494,7 @@
                     <sp  who="#a">
                         <speaker><name ref="#a">Alice</name>. </speaker>
                         <p>These feelings about things connect us to spiritual unity, when everything is one. They show us likeness in unlikeness and difference in likeness.
-                        </p> 
+                        </p>
                     </sp>
                     <sp>
                         <speaker>Art Agent.</speaker>
@@ -530,38 +530,38 @@
                     </sp>
                     <sp>
                         <speaker>Art Agent.</speaker>
-                        <p>Fantasy.</p>      
-                    </sp>                  
+                        <p>Fantasy.</p>
+                    </sp>
                     <sp>
                         <speaker>AR.</speaker>
-                        <p>Non-stop distraction makes people gullible.</p>                    
+                        <p>Non-stop distraction makes people gullible.</p>
                     </sp>
                     <spGrp>
                         <sp  who="#a">
                             <speaker><name ref="#a">Alice</name>.</speaker>
-                            <p>What about fakes?</p>                    
+                            <p>What about fakes?</p>
                         </sp>
                         <sp>
                             <speaker>Art Agent.</speaker>
-                            <p>No problem. All genuine artists have an agent.</p>                    
+                            <p>No problem. All genuine artists have an agent.</p>
                         </sp>
                         <sp  who="#a">
                             <speaker><name ref="#a">Alice</name>.</speaker>
-                            <p>You'll have to give them some sort of certificate.</p>                    
+                            <p>You'll have to give them some sort of certificate.</p>
                         </sp>
                     </spGrp>
                     <sp>
                         <speaker>Art Agent.</speaker>
-                        <p>Yes, authentication from the agent. Holes will be very popular. All those journeys into private fantasy. Like Lourdes without the crowds. Wait a minute, the art-hole concept is endlessly capable of manipulation; we could hire a stadium, the punter could pay for a massive event. The art-hole is the last word.<lb/><scene rend="italic">(a moment of doubt)</scene> But not the end of 'something different'. Anybody can be an artist, my door is always open.</p>                    
+                        <p>Yes, authentication from the agent. Holes will be very popular. All those journeys into private fantasy. Like Lourdes without the crowds. Wait a minute, the art-hole concept is endlessly capable of manipulation; we could hire a stadium, the punter could pay for a massive event. The art-hole is the last word.<lb/><scene rend="italic">(a moment of doubt)</scene> But not the end of 'something different'. Anybody can be an artist, my door is always open.</p>
                     </sp>
                     <sp who="#p">
                         <speaker><name ref="#p">Pinocchio</name>.</speaker>
                         <p> You people really believe in yourselves. Get a life!<lb/>
-                        I just met <name ref="td">Tweedledum</name> and <name ref="td2">Tweedledee</name>. They are now performance artists. When I told them I want to be a painter, <name ref="td">Dum</name> called me <q>"Bourgois!"</q> for believing I needed skill. I said, <q>"I don't think anyone uses that word anymore"</q>. <name ref="td2">Dee</name> said, <q>"Contrariwise you are an elitist."</q> I'm ok being an elitist - when I get the skill sorted. Hard work, though.</p>                    
+                        I just met <name ref="td">Tweedledum</name> and <name ref="td2">Tweedledee</name>. They are now performance artists. When I told them I want to be a painter, <name ref="td">Dum</name> called me <q>"Bourgois!"</q> for believing I needed skill. I said, <q>"I don't think anyone uses that word anymore"</q>. <name ref="td2">Dee</name> said, <q>"Contrariwise you are an elitist."</q> I'm ok being an elitist - when I get the skill sorted. Hard work, though.</p>
                     </sp>
                     <sp>
                         <speaker><name ref="#tc">Talking Cricket</name>.</speaker>
-                        <p> <name ref="#p">Pinocchio</name>, you know that there are two sides to people, the donkey and the boy- the self who wants to live in Toyland versus the self who wants to grow up. It is the inner struggle between doing what you want and being true to your real self that humanizes a puppet.</p>                    
+                        <p> <name ref="#p">Pinocchio</name>, you know that there are two sides to people, the donkey and the boy- the self who wants to live in Toyland versus the self who wants to grow up. It is the inner struggle between doing what you want and being true to your real self that humanizes a puppet.</p>
                     </sp>
                     <sp who="#p">
                         <speaker><name ref="#p">Pinocchio</name>.</speaker>
@@ -578,24 +578,24 @@
                     <spGrp>
                         <sp  who="#a #p">
                             <speaker><name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name>.</speaker>
-                            <p><scene>(pointing fingers, rapping)</scene>What about fakes?</p>                    
+                            <p><scene>(pointing fingers, rapping)</scene>What about fakes?</p>
                         </sp>
                         <sp who="#p">
                             <speaker><name ref="#p">Pinocchio</name>.</speaker>
-                            <p>Feelings: prime contact with reality.</p>                    
+                            <p>Feelings: prime contact with reality.</p>
                         </sp>
                         <sp  who="#a #p">
                             <speaker><name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name>.</speaker>
-                            <p>Trust it! Imitation!</p>                    
+                            <p>Trust it! Imitation!</p>
                         </sp>
                     </spGrp>
                     <sp who="#tp">
                         <speaker>True Poet.</speaker>
-                        <p><scene>(to <name ref="#p">Pinocchio</name>)</scene>Truth comes from doing the work. Art is always original. If you didn't exist, that way of seeing wouldn't exist.</p>                    
+                        <p><scene>(to <name ref="#p">Pinocchio</name>)</scene>Truth comes from doing the work. Art is always original. If you didn't exist, that way of seeing wouldn't exist.</p>
                     </sp>
                     <sp who="#p">
                         <speaker><name ref="#p">Pinocchio</name>.</speaker>
-                        <p>I feel like <persName ref="#KA">King Arthur</persName>. Only he could pull the sword from the stone. Here comes the hero! Gotcha, <name ref="#a">Alice</name>! Good Imitation true, Bad Imitation false.</p>                    
+                        <p>I feel like <persName ref="#KA">King Arthur</persName>. Only he could pull the sword from the stone. Here comes the hero! Gotcha, <name ref="#a">Alice</name>! Good Imitation true, Bad Imitation false.</p>
                     </sp>
                     <sp>
                         <speaker>AR.</speaker>
@@ -603,41 +603,41 @@
                     </sp>
                     <sp>
                         <speaker>General Assent.</speaker>
-                        <p>I believe in him, he's true to life - well, he is alive. Is he self deceiving?</p>                    
+                        <p>I believe in him, he's true to life - well, he is alive. Is he self deceiving?</p>
                     </sp>
                     <sp who="#al">
                         <speaker>Art Lover.</speaker>
-                        <p>Well, next day it might not be so important, he might have other worries which also destroy him. It's very difficult to empathize. The word 'destroy' is too extreme. I can't bridge the gap.</p>                    
+                        <p>Well, next day it might not be so important, he might have other worries which also destroy him. It's very difficult to empathize. The word 'destroy' is too extreme. I can't bridge the gap.</p>
                     </sp>
                     <sp who="#p">
                         <speaker><name ref="#p">Pinocchio</name>.</speaker>
-                        <p>We all suffer when we can't make decisions. But we have to make them according to our character and our character can grow strong from its seeds. We're more wise when we're older.</p>                    
+                        <p>We all suffer when we can't make decisions. But we have to make them according to our character and our character can grow strong from its seeds. We're more wise when we're older.</p>
                     </sp>
                     <sp>
                         <speaker>Dryad of the Rainforest.</speaker>
-                        <p>The acorn is happy when he becomes a tree.</p>                    
+                        <p>The acorn is happy when he becomes a tree.</p>
                     </sp>
                     <sp  who="#a">
                         <speaker><name ref="#a">Alice</name>.</speaker>
-                        <p> Whoever is close to him should really try to help him. It seems serious.</p>                    
+                        <p> Whoever is close to him should really try to help him. It seems serious.</p>
                     </sp>
                     <sp who="#tp">
                         <speaker>True Poet.</speaker>
-                        <p>I think there's something here which could be worked up into a play. If it were me, I would place the couturier in the context which he, himself, has introduced - world problems, the suffering of others. This begins the alchemical process of collecting and selecting the significant factors; being alive to metaphor and sym-bol. I would begin the action by having him make both dresses. For as <persName ref="#A">Aristotle</persName> says, <q>"It is in action that happiness or unhappiness lies."</q> The same woman would wear each different dress. I would discover the behaviour of the couturier by making it fit the unfurling action; set him free to find his own purpose. There are no rules as to what is true to human nature, only the discipline of our feelings, judging through trial and error. Through art we can reach what is universal, penetrate to the essential sickness or strength of the human soul.</p>                    
+                        <p>I think there's something here which could be worked up into a play. If it were me, I would place the couturier in the context which he, himself, has introduced - world problems, the suffering of others. This begins the alchemical process of collecting and selecting the significant factors; being alive to metaphor and sym-bol. I would begin the action by having him make both dresses. For as <persName ref="#A">Aristotle</persName> says, <q>"It is in action that happiness or unhappiness lies."</q> The same woman would wear each different dress. I would discover the behaviour of the couturier by making it fit the unfurling action; set him free to find his own purpose. There are no rules as to what is true to human nature, only the discipline of our feelings, judging through trial and error. Through art we can reach what is universal, penetrate to the essential sickness or strength of the human soul.</p>
                     </sp>
                     <sp>
                         <speaker>AR.</speaker>
-                        <p>Without judges there is no art, which is the same as saying: we get the art we deserve.</p>                    
+                        <p>Without judges there is no art, which is the same as saying: we get the art we deserve.</p>
                     </sp>
                     <sp who="#al">
                         <speaker>Art Lover.</speaker>
-                        <p>Very good - as an art lover, my passion keeps art alive. Therefore art exists! Through our<lb/>engagement in art we gain culture. Culture makes us more human; elevates.</p>                    
+                        <p>Very good - as an art lover, my passion keeps art alive. Therefore art exists! Through our<lb/>engagement in art we gain culture. Culture makes us more human; elevates.</p>
                     </sp>
                     <sp>
                         <speaker>AR.</speaker>
                         <p> <hi rend="underlined">But</hi>, the artist has no responsibility to us. He must tell the truth. This is the meaning of the <foreign xml:lang="fr">L'art pour
                         l'art </foreign> movement, misleadingly translated as 'Art for art's sake'. But then, the English have never understood it. The painter, <persName ref="#JW">Whistler</persName>, is a protagonist of the creed and we must seek his opinion before we can safely say that we have
-                        found art.</p>                    
+                        found art.</p>
                     </sp>
                     <sp>
                         <speaker><persName ref="#JW">Whistler</persName>.</speaker>
@@ -648,31 +648,31 @@
                         Art seeks the Artist alone. Where he is, there she appears, and remains with him - loving and fruitful...
                         And when he dies she sadly takes her flight.<lb/>
                         With the man, then, and not with the multitude are her intimacies; and in the book of her life the names
-                        inscribed are few - scant, indeed, the list of those who have helped to write her story of love and beauty.</p>                    
+                        inscribed are few - scant, indeed, the list of those who have helped to write her story of love and beauty.</p>
                     </sp>
                     <sp>
                         <speaker>AR.</speaker>
-                        <p><hi rend="italic">We</hi> also have our part in all true art! Remember, Imitation makes the whole world kin.</p>                    
+                        <p><hi rend="italic">We</hi> also have our part in all true art! Remember, Imitation makes the whole world kin.</p>
                     </sp>
                     <sp>
                         <speaker><persName ref="#JW">Whistler</persName>.</speaker>
-                        <p>True indeed. But let not the unwary jauntily suppose that <persName ref="#WF">Shakespeare</persName> herewith hands him his passport to Paradise, and thus permits him speech among the chosen. Rather learn that in this very word, Imitation, he is condemned to remain without - to continue with the common.</p>                    
+                        <p>True indeed. But let not the unwary jauntily suppose that <persName ref="#WF">Shakespeare</persName> herewith hands him his passport to Paradise, and thus permits him speech among the chosen. Rather learn that in this very word, Imitation, he is condemned to remain without - to continue with the common.</p>
                     </sp>
                     <sp>
                         <speaker>AR.</speaker>
-                        <p>You mean that what is popular is also vulgar. We know the artist is a freak of nature yet he sees through human eyes. We small band of art lovers expect no favours from art. But from you, the artist, we hope to see the world through your eyes — in this way we serve art. It's down to the art lover to engage in art.</p>                    
+                        <p>You mean that what is popular is also vulgar. We know the artist is a freak of nature yet he sees through human eyes. We small band of art lovers expect no favours from art. But from you, the artist, we hope to see the world through your eyes — in this way we serve art. It's down to the art lover to engage in art.</p>
                     </sp>
                     <sp who="#p">
                         <speaker><name ref="#p">Pinocchio</name>.</speaker>
-                        <p><hi rend="italic">You get out what you put in </hi>- that's my motto from now on. As a painter, perhaps Art will visit me some day, just like the fairy with blue hair.</p>                    
+                        <p><hi rend="italic">You get out what you put in </hi>- that's my motto from now on. As a painter, perhaps Art will visit me some day, just like the fairy with blue hair.</p>
                     </sp>
                     <sp who="#al">
                         <speaker>Art Lover.</speaker>
-                        <p>Mr. <persName ref="#JW">Whistler</persName>, I fear for these young people! In your field, painting - which has had such an impact on our lives - there is nothing happening nowadays. What are they to do? All their friends run around trying to catch the latest thing. When you're young you like to think something is happening.</p>                    
+                        <p>Mr. <persName ref="#JW">Whistler</persName>, I fear for these young people! In your field, painting - which has had such an impact on our lives - there is nothing happening nowadays. What are they to do? All their friends run around trying to catch the latest thing. When you're young you like to think something is happening.</p>
                     </sp>
                     <sp  who="#a">
                         <speaker><name ref="#a">Alice</name>.</speaker>
-                        <p>Running around? I don't waste time, I make time - to see the "latest thing' - the <bibl><title>Rokeby Venus</title></bibl>! <bibl><author><persName ref="#EM">Manet</persName></author>'s <title>Olympia</title></bibl>!There is so much happening outside Time.</p>                    
+                        <p>Running around? I don't waste time, I make time - to see the "latest thing' - the <bibl><title>Rokeby Venus</title></bibl>! <bibl><author><persName ref="#EM">Manet</persName></author>'s <title>Olympia</title></bibl>!There is so much happening outside Time.</p>
                     </sp>
                     <sp>
                         <speaker><persName ref="#JW">Whistler</persName>.</speaker>
@@ -681,71 +681,71 @@
                         We have then but to wait, until, with the mark of the Gods upon him, there come among us again the chosen
                         - who shall continue what has gone before. Satisfied that, even were he never to appear, the story of the beautiful is already complete - hewn in the marbles of the <placeName>Parthenon</placeName> - and broidered, with the birds, upon the fan of <persName ref="#KH">Hokusai</persName>
                         - at the foot of <placeName type="mount">Fujiyama</placeName>.
-                        </p>                    
+                        </p>
                     </sp>
                     <sp who="#p">
                         <speaker><name ref="#p">Pinocchio</name>.</speaker>
-                        <p>Mr. <persName ref="#JW">Whistler</persName>, are you the only American genius?</p>                    
+                        <p>Mr. <persName ref="#JW">Whistler</persName>, are you the only American genius?</p>
                     </sp>
                     <sp who="#al">
                         <speaker>Art Lover.</speaker>
-                        <p>Progress in art — <persName ref="#PP">Picasso</persName>! What would he not have given to capture the 'mana' of those bulls from the cave paintings of <date from="-2000" to="-1901">twenty thousand BC</date>? If art progressed then today's painter would be greater than <persName ref="#PP">Picasso</persName>.</p>                    
+                        <p>Progress in art — <persName ref="#PP">Picasso</persName>! What would he not have given to capture the 'mana' of those bulls from the cave paintings of <date from="-2000" to="-1901">twenty thousand BC</date>? If art progressed then today's painter would be greater than <persName ref="#PP">Picasso</persName>.</p>
                     </sp>
                     <sp who="#tp">
                         <speaker>True Poet.</speaker>
-                        <p>One truth is not more true than another.</p>                    
+                        <p>One truth is not more true than another.</p>
                     </sp>
                     <sp who="#al">
                         <speaker>Art Lover.</speaker>
-                        <p>But time is running out for the art lovers. I'm talking about the planet. It's all very well to say that we can become more human through art - human enough to save the planet!? Meanwhile, all we can do is believe in <name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name>. At least they will have the advantage of a sane outlook on life.</p>                    
+                        <p>But time is running out for the art lovers. I'm talking about the planet. It's all very well to say that we can become more human through art - human enough to save the planet!? Meanwhile, all we can do is believe in <name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name>. At least they will have the advantage of a sane outlook on life.</p>
                     </sp>
                     <scene>
                     Giant projection of <persName ref="#AH">Hitler</persName>'s face - in relation to which <persName ref="AH">Hitler</persName>, standing on the podium in front, seems to be about the size of a garden gnome.
                     </scene>
                     <sp>
                         <speaker><persName>Hitler</persName>.</speaker>
-                        <p>All effective propaganda has to limit itself only to a very few points and to use them like slogans.</p>                    
+                        <p>All effective propaganda has to limit itself only to a very few points and to use them like slogans.</p>
                     </sp>
                     <sp>
                         <speaker>AR.</speaker>
-                        <p><name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name>, we have come to the end of our journey and you have passed the test. In the pursuit of art you became automatically impervious to Propaganda. Indeed, each of you quite forgot to take your daily NINSDOL pill. You are no longer addicted to Nationalistic Idolatry, Non-Stop Distraction and Organized Lying - the three constituents of Propaganda. The art lovers now invite you to become members of our movement, AR. Let us progress to the inauguration ceremony.<lb/> On the way we could look in at a Conference on Culture which is attended by those very same art lovers who from the beginning had no interest in our journey. Here it is in <placeName type="city">Paris</placeName>. <name ref="#p">Pinocchio</name>, I know you're dying to go to the <placeName type="museum">Louvre</placeName> but <name ref="#a">Alice</name>, you could just pop back in your book and I'll put it in my pocket and take you in.</p>                    
+                        <p><name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name>, we have come to the end of our journey and you have passed the test. In the pursuit of art you became automatically impervious to Propaganda. Indeed, each of you quite forgot to take your daily NINSDOL pill. You are no longer addicted to Nationalistic Idolatry, Non-Stop Distraction and Organized Lying - the three constituents of Propaganda. The art lovers now invite you to become members of our movement, AR. Let us progress to the inauguration ceremony.<lb/> On the way we could look in at a Conference on Culture which is attended by those very same art lovers who from the beginning had no interest in our journey. Here it is in <placeName type="city">Paris</placeName>. <name ref="#p">Pinocchio</name>, I know you're dying to go to the <placeName type="museum">Louvre</placeName> but <name ref="#a">Alice</name>, you could just pop back in your book and I'll put it in my pocket and take you in.</p>
                     </sp>
                     <sp>
                         <speaker>Opening Speaker.</speaker>
-                        <p><scene>(French professor of anthropology)</scene> And Man came out of <placeName type="continent">Africa</placeName> <date when="-177989">180 thousand years ago</date> ...</p>                    
+                        <p><scene>(French professor of anthropology)</scene> And Man came out of <placeName type="continent">Africa</placeName> <date when="-177989">180 thousand years ago</date> ...</p>
                     </sp>
                     <sp>
                         <speaker>AR.</speaker>
-                        <p>The talk lasts ¾ hour. He's scared of seeming Eurocentric ...and the good thing is he ended up in <placeName type="city">Paris</placeName>. <scene>(laughs)</scene> Quite right, too. <placeName type="state">France</placeName> was the greatest flowering of western culture for the <date notBefore="1614" notAfter="1914">three centuries</date> up until the <date when="1914-07-28" notAfter="1918-11-11">First World War</date> - interrupted by the <date when="1789" notAfter="1799">Revolution</date>, of course.</p>                    
+                        <p>The talk lasts ¾ hour. He's scared of seeming Eurocentric ...and the good thing is he ended up in <placeName type="city">Paris</placeName>. <scene>(laughs)</scene> Quite right, too. <placeName type="state">France</placeName> was the greatest flowering of western culture for the <date notBefore="1614" notAfter="1914">three centuries</date> up until the <date when="1914-07-28" notAfter="1918-11-11">First World War</date> - interrupted by the <date when="1789" notAfter="1799">Revolution</date>, of course.</p>
                     </sp>
                     <sp>
                         <speaker>Philosopher.</speaker>
-                        <p>We need more festivals to promote cultural exchange between the world's traditional and popular arts and crafts.</p>                    
+                        <p>We need more festivals to promote cultural exchange between the world's traditional and popular arts and crafts.</p>
                     </sp>
                     <pb/>
                     <sp>
                         <speaker>Top Cultural Advisor.</speaker>
-                        <p>We need a common vision of the importance of television and cinema for the cohesion of society.</p>                    
+                        <p>We need a common vision of the importance of television and cinema for the cohesion of society.</p>
                     </sp>
                     <sp>
                         <speaker>Choreographer.</speaker>
-                        <p> Dance is the only international language. It should be at the top of every agenda.</p>                    
+                        <p> Dance is the only international language. It should be at the top of every agenda.</p>
                     </sp>
                     <sp>
                         <speaker>Rapper.</speaker>
-                        <p> I need the state to sponsor my music. The internet only helps established artists.</p>                    
+                        <p> I need the state to sponsor my music. The internet only helps established artists.</p>
                     </sp>
                     <sp>
                         <speaker>Composer.</speaker>
-                        <p>Young people should know that culture is not entertainment.</p>                    
+                        <p>Young people should know that culture is not entertainment.</p>
                     </sp>
                     <sp>
                         <speaker>Director of state art gallery.</speaker>
-                        <p>We have not once mentioned American culture!</p>                    
+                        <p>We have not once mentioned American culture!</p>
                     </sp>
                     <sp>
                         <speaker>AR.</speaker>
-                        <p>As we began by saying, artists and intellectuals have abdicated their responsibility. They wish to be popular instead of truthful to their vision of the world. We have no avant garde. Art has never been popular; it is original and it takes time for people to see it. But where there is an avant garde, others will follow: <hi rend="bold">this gives culture</hi>. There has to be a hierarchy of values. They've swapped culture for the cult of the individual.<lb/> When you boil it down, people think that culture is being nice to each other. Being nice is not enough. Life has to have meaning: discrimination in pursuit of truth - my way is through art. In the conference they realized they had a problem, when you like everything you end up with some sort of global soup -</p>                    
+                        <p>As we began by saying, artists and intellectuals have abdicated their responsibility. They wish to be popular instead of truthful to their vision of the world. We have no avant garde. Art has never been popular; it is original and it takes time for people to see it. But where there is an avant garde, others will follow: <hi rend="bold">this gives culture</hi>. There has to be a hierarchy of values. They've swapped culture for the cult of the individual.<lb/> When you boil it down, people think that culture is being nice to each other. Being nice is not enough. Life has to have meaning: discrimination in pursuit of truth - my way is through art. In the conference they realized they had a problem, when you like everything you end up with some sort of global soup -</p>
                     </sp>
                     <sp  who="#a">
                         <speaker><name ref="#a">Alice</name>.</speaker>
@@ -809,7 +809,7 @@
                     <div3 type="epilogue">
                     <p>The most important thing about the manifesto is that it is a practice. If you follow it your life will change. In the pursuit of culture you will start to think If you change your life, you change the world.</p>
                     <figure>
-                        <graphic url="Fig1.pdf"/><!--signature-->
+                        <graphic url="images/signature.jpeg"/><!--signature-->
                         <figDesc>Vivienne Westwood Signature</figDesc>
                     </figure>
                     </div3>
@@ -818,7 +818,7 @@
             <div1 type="motto">
             <p>Get a
             <figure>
-                <graphic url="Fig1.pdf"/><!--ladybugs-->
+                <graphic url="images/ladybug.jpeg"/><!--ladybugs-->
                 <figDesc>Drawing of three ladybug</figDesc>
             </figure>
             </p>
@@ -827,7 +827,7 @@
             <lb/>
             <p>Art Lovers Unite!
             <figure>
-                <graphic url="Fig1.pdf"/><!--heart-->
+                <graphic url="images/heart.jpeg"/><!--heart-->
                 <figDesc>Drawing of a stylized heart</figDesc>
             </figure>
             </p>
@@ -849,7 +849,7 @@
                     </div3>
                     <div3 type="photo">
                         <figure>
-                            <graphic url="Fig1.pdf"/><!--first photo-->
+                            <graphic url="images/photo1.jpeg"/><!--first photo-->
                             <figDesc>Photograph of a March in <placeName><settlement>Sidney</settlement>, <country>Australia</country></placeName></figDesc>
                         </figure>
                     </div3>
@@ -859,7 +859,7 @@
         <back>
             <div1 type="photographers list">
                 <div2 type="photographers name">
-                    <p> 1 <persName><forename>Lucia </forename><surname>Fisher </surname></persName> 2 Susie... 51 James <pb/> 
+                    <p> 1 <persName><forename>Lucia </forename><surname>Fisher </surname></persName> 2 Susie... 51 James <pb/>
                     </p>
                 </div2>
                 <div2 type="link">
