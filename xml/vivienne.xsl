@@ -67,7 +67,9 @@
         </div>
 
         <div class="back">
-          <xsl:apply-templates select="tei:text/tei:back"/>
+          <xsl:call-template name="process-sections">
+            <xsl:with-param name="nodes" select="tei:text/tei:back/node()"/>
+          </xsl:call-template>
         </div>
       </body>
     </html>
