@@ -28,7 +28,7 @@
                 </availability>
             </publicationStmt>
             <sourceDesc> 
-                <bibl> 
+                <bibl sameAs="https://github.com/metamuses/lod-save-the-queen/item/book"> 
                     <title>100 days of active resistance</title>
                     <author ref="VV">Vivienne Westwood</author>
                     <publisher ref="#DP">Damiani</publisher>
@@ -80,10 +80,10 @@
             </encodingDesc>
             <profileDesc>
                 <list type="source-responsible">
-                    <item xml:id="VV" sameAs="https://www.wikidata.org/wiki/Q158067 ">
+                    <item xml:id="VV" sameAs="https://www.wikidata.org/wiki/Q158067 https://github.com/metamuses/lod-save-the-queen/person/vivienne_westwood">
                         <persName role="designer"><forename>Vivienne</forename><surname>Westwood</surname></persName>
                     </item>
-                    <item xml:id="DP" ref="https://www.damianibooks.com/?srsltid=AfmBOoqaQGG6_7xk6zVoQoy_FUN51RVy7n58_A1SXzEP8p8goo4mP-eS" sameAs="">
+                    <item xml:id="DP" ref="https://www.damianibooks.com/?srsltid=AfmBOoqaQGG6_7xk6zVoQoy_FUN51RVy7n58_A1SXzEP8p8goo4mP-eS" sameAs="https://github.com/metamuses/lod-save-the-queen/org/Damiani">
                         <orgName role="publisher">Damiani</orgName>
                     </item>
                 </list>
