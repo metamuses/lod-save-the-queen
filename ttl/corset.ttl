@@ -22,3 +22,4 @@
     schema:itemLocation wd:Q213322 ;
     schema:locationCreated wd:Q145 ;
     schema:weight "0.28 kg" .
+

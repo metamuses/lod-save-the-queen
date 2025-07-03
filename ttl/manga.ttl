@@ -15,3 +15,4 @@
     schema:itemLocation wd:Q3639614 ;
     schema:locationCreated wd:Q279 ;
     schema:translator <person/claudia_baglini> .
+

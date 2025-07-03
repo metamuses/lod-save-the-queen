@@ -15,3 +15,4 @@
     schema:isBasedOn <item/manga> ;
     schema:itemLocation wd:Q3639614 ;
     schema:musicBy wd:Q2568944 .
+

@@ -15,3 +15,4 @@
     schema:height "1528 mm" ;
     schema:itemLocation wd:Q238587 ;
     schema:width "1052 mm" .
+

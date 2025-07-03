@@ -14,3 +14,4 @@
     schema:locationCreated wd:Q142 ;
     schema:subjectOf <item/corset> ;
     schema:width "154.8 cm" .
+
