@@ -17,7 +17,7 @@
       <circle r="10" clip-path="url(#clipPath2)" cx="497.6064" cy="496.0119" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,1110,519)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="513.6064" xml:space="preserve" y="502.0587" clip-path="url(#clipPath2)" stroke="none">base-person:vivienne</text>
+      <text x="513.6064" xml:space="preserve" y="502.0587" clip-path="url(#clipPath2)" stroke="none">base_person:vivienne</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="497.6064" cy="496.0119"/>
     </g>
     <g fill="yellow" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,1110,519)" stroke="yellow">
@@ -87,7 +87,7 @@
       <circle r="10" clip-path="url(#clipPath2)" cx="1151.3783" cy="200.9356" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,1110,519)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="976.9017" xml:space="preserve" y="206.9825" clip-path="url(#clipPath2)" stroke="none">base-type:wallpaper</text>
+      <text x="978.1595" xml:space="preserve" y="206.9825" clip-path="url(#clipPath2)" stroke="none">base_type:wallpaper</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="1151.3783" cy="200.9356"/>
     </g>
     <g fill="yellow" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,1110,519)" stroke="yellow">
@@ -185,7 +185,7 @@
       <circle r="10" clip-path="url(#clipPath2)" cx="597.8869" cy="-326.6706" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,1110,519)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="472.3791" xml:space="preserve" y="-320.6237" clip-path="url(#clipPath2)" stroke="none">base-type:top</text>
+      <text x="473.6369" xml:space="preserve" y="-320.6237" clip-path="url(#clipPath2)" stroke="none">base_type:top</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="597.8869" cy="-326.6706"/>
     </g>
     <g fill="yellow" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,1110,519)" stroke="yellow">
@@ -423,7 +423,7 @@
       <circle r="10" clip-path="url(#clipPath2)" cx="-917.937" cy="549.1703" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,1110,519)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-901.937" xml:space="preserve" y="555.2172" clip-path="url(#clipPath2)" stroke="none">base-format:slipcase</text>
+      <text x="-901.937" xml:space="preserve" y="555.2172" clip-path="url(#clipPath2)" stroke="none">base_format:slipcase</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-917.937" cy="549.1703"/>
     </g>
     <g fill="yellow" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,1110,519)" stroke="yellow">
@@ -661,7 +661,7 @@
       <circle r="10" clip-path="url(#clipPath2)" cx="1515.0803" cy="613.7771" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,1110,519)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="1449.4553" xml:space="preserve" y="594.4021" clip-path="url(#clipPath2)" stroke="none">base-type:corset</text>
+      <text x="1450.0842" xml:space="preserve" y="594.4021" clip-path="url(#clipPath2)" stroke="none">base_type:corset</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="1515.0803" cy="613.7771"/>
     </g>
     <g fill="yellow" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,1110,519)" stroke="yellow">
