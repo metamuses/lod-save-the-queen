@@ -1,0 +1,15 @@
+@base <https://github.com/metamuses/lod-save-the-queen/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+<item/anime> a wd:Q1107 ;
+    dc:language wd:Q5287,
+        wd:Q652 ;
+    dcterms:publisher wd:Q132093230 ;
+    schema:director wd:Q516966 ;
+    schema:isBasedOn <item/manga> ;
+    schema:itemLocation wd:Q3639614 ;
+    schema:musicBy wd:Q2568944 .
+

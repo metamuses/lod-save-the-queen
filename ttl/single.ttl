@@ -1,0 +1,19 @@
+@base <https://github.com/metamuses/lod-save-the-queen/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+<item/single> a wd:Q134556 ;
+    dc:creator wd:Q82545 ;
+    dc:language wd:Q1860 ;
+    dc:title "God save the Queen" ;
+    dcterms:extent "3 min 20 sec" ;
+    dcterms:format wd:Q178588 ;
+    schema:dateCreated "1977" ;
+    schema:genre wd:Q3071 ;
+    schema:isPartOf wd:Q457275 ;
+    schema:itemLocation wd:Q6382871 ;
+    schema:locationCreated wd:Q145 ;
+    schema:publisher wd:Q203059 .
+

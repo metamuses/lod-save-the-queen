@@ -1,0 +1,18 @@
+@base <https://github.com/metamuses/lod-save-the-queen/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+<item/tartan> a wd:Q191529 ;
+    dc:creator wd:Q110085657,
+        wd:Q158067 ;
+    dc:title "Tartan" ;
+    crm:P45_consists_of wd:Q11472 ;
+    schema:category "wall coverings" ;
+    schema:dateCreated "2009" ;
+    schema:height "95 mm" ;
+    schema:itemLocation wd:Q213322 ;
+    schema:locationCreated wd:Q145 ;
+    schema:width "103 mm" .
+

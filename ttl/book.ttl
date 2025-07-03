@@ -1,0 +1,19 @@
+@base <https://github.com/metamuses/lod-save-the-queen/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+<item/book> a wd:Q571 ;
+    dc:creator wd:Q158067 ;
+    dc:language wd:Q1860 ;
+    dc:title "100 Days of Active Resistance" ;
+    dcterms:publisher <damiani> ;
+    schema:about wd:Q11633,
+        wd:Q203764 ;
+    schema:datePublished "2011" ;
+    schema:height "23 cm" ;
+    schema:itemLocation wd:Q3639614 ;
+    schema:locationCreated wd:Q1891 ;
+    schema:width "23 cm" .
+
