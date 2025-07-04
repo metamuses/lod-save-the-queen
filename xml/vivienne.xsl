@@ -17,31 +17,97 @@
 
         <style>
         .section-square {
-        height: 95vh;
-        width: 95vh;
-        max-height: 90vw;
-        max-width: 90vw;
-        border: 2px solid black;
-        background-color: white;
-        margin: 2rem auto; /* Adds vertical spacing (top + bottom) */
-        box-sizing: border-box;
-        overflow: auto;
-        padding: 1rem;
+          height: 95vh;
+          width: 95vh;
+          justify-content: center;
+          align-items: center;
+          max-height: 90vw;
+          max-width: 90vw;
+          border: 2px solid black;
+          background-color: #FFFFFF;
+          margin: 2rem auto; /* Adds vertical spacing (top + bottom) */
+          box-sizing: border-box;
+          overflow: auto;
+          padding: 1rem;
         }
+
+        br {
+          margin: 0;
+          padding: 0;
+          line-height: 0;
+        }
+        <!--style motto page  img and text-->
+        div[type="motto"] hi {
+          display: block;
+          margin: 0;
+          padding: 0;
+          line-height: 1;
+        }
+        .motto-life,
+        .motto-artloversunite {
+          margin-bottom: 0;
+          margin-top: 0;
+          padding: 0;
+          line-height: 0.9; /* fine-tune if needed */
+        }
+
+        .motto-lead {
+          font-family: 'Brush Script MT', cursive, sans-serif;
+          font-size: 15vh;
+          line-height: 1;
+          margin: 0 0 2rem 2rem;
+          padding-bottom: 2rem;
+          text-align: left;
+          display: inline;
+        }
+
+        .motto-img {
+          max-width: 15%;
+          height: auto;
+          margin: 0 1rem;
+          display: inline;
+          vertical-align: middle;
+        }
+
+        .motto-life {
+          font-size: 50vh;
+          color: red;
+          line-height: 1;
+          text-align: center;
+          font-family: 'Anton', sans-serif;
+          margin: 0 0 0 0;
+        }
+
+        .motto-artloversunite {
+          font-family: 'Brush Script MT', cursive, sans-serif;
+          font-size: 7.5vh;
+          color: red;
+          line-height: 1;
+          text-align: center;
+
+        }
+        <!--for the motto page-->
+        .section-motto {
+          padding: 4rem;
+        }
+
+        <!--for the preface page-->
         .front .section-square:nth-of-type(2) {
-        padding: 3rem;
-        text-align: justify;
-        font-family: 'Didot', serif;
+          padding: 3rem;
+          text-align: justify;
+          font-family: 'Didot', serif;
         }
+
         .right-gold-title {
           color: #856A00;
           text-align: right;
           margin: 0;
-          font-size: 2.5vw; /* Adjusted size: ~21px on a 600px box */
+          font-size: 2.5vw;
           font-family: 'Anton', sans-serif;
           line-height: 1.2;
           font-weight: bold;
         }
+
         .preface-head {
         text-align: center;
         /* Optional styling */
@@ -49,6 +115,41 @@
         font-size: 2.5rem;
         margin: 1rem;
         margin-bottom: 3rem;
+        }
+        <!--for the photograph page-->
+
+        .photo-head {
+          text-align: left;
+          font-family: 'Anton', sans-serif;
+        }
+
+        .photo-head .day {
+          color: #856A00;
+          font-size: 4vw;
+          font-family: 'Anton', sans-serif;
+          font-weight: bold;
+        }
+
+        .photo-head .date {
+          color: black;
+          font-family: 'Anton', sans-serif;
+          font-size: 1.5rem;
+        }
+
+        .photo-quote {
+          font-family: "Courier New", Courier, monospace;
+          text-align: center;
+          margin: 2rem 0;
+          font-size: 1rem;
+        }
+
+        .photo-photographer {
+          text-align: right;
+          color: black;
+          font-size: 0.8rem;
+          margin-top: 1rem;
+          font-family: 'Anton', sans-serif;
+          font-weight: bold;
         }
 
         </style>
@@ -147,7 +248,7 @@
     </xsl:choose>
   </xsl:template>
 
-
+<!--basic matching strategy-->
   <xsl:template match="tei:p">
     <p><xsl:apply-templates/></p>
   </xsl:template>
@@ -230,6 +331,98 @@
 
   <xsl:template match="text()">
     <xsl:value-of select="."/>
+  </xsl:template>
+
+<!--matching xml/html pagina motto-->
+  <xsl:template match="tei:figure">
+    <xsl:variable name="url" select="tei:graphic/@url"/>
+    <xsl:variable name="alt" select="normalize-space(tei:figDesc)"/>
+    <xsl:variable name="inMotto" select="ancestor::tei:div1[@type='motto']"/>
+    <xsl:choose>
+      <xsl:when test="$inMotto">
+        <img>
+          <xsl:attribute name="src">
+            <xsl:value-of select="$url"/>
+          </xsl:attribute>
+          <xsl:attribute name="alt">
+            <xsl:value-of select="$alt"/>
+          </xsl:attribute>
+          <xsl:attribute name="class">motto-img</xsl:attribute>
+        </img>
+      </xsl:when>
+      <xsl:otherwise>
+        <figure>
+          <img>
+            <xsl:attribute name="src">
+              <xsl:value-of select="$url"/>
+            </xsl:attribute>
+            <xsl:attribute name="alt">
+              <xsl:value-of select="$alt"/>
+            </xsl:attribute>
+          </img>
+        </figure>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+
+  <xsl:template match="tei:div1[@type='motto']/tei:hi[2]">
+    <p class="motto-life">
+      <xsl:apply-templates/>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="tei:div1[@type='motto']/tei:hi[1]">
+    <p class="motto-lead">
+      <xsl:apply-templates/>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="tei:div1[@type='motto']/tei:hi[3]">
+    <p class="motto-artloversunite">
+      <xsl:apply-templates/>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="tei:div1[@type='motto']">
+    <div class="section-motto">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+
+<!--matching xml/html pagina photo1-->
+  <!-- Match the head inside div3 in div1[@type='photographs'] -->
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:head">
+    <div class="photo-head">
+      <!-- The Day 1 text is inside the text node before <lb/> -->
+      <span class="day">
+        <xsl:value-of select="normalize-space(text()[1])"/>
+      </span>
+      <br/>
+      <!-- Then apply the date styling -->
+      <span class="date">
+        <xsl:apply-templates select="tei:date"/>
+      </span>
+    </div>
+  </xsl:template>
+
+  <!-- Match the date element inside that head -->
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:head/tei:date">
+    <xsl:value-of select="."/>
+  </xsl:template>
+
+  <!-- Match the quote inside the p -->
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:p/tei:quote">
+    <p class="photo-quote">
+      <xsl:apply-templates/>
+    </p>
+  </xsl:template>
+
+  <!-- Match the last p (photographer info) inside that div3 -->
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:p[@type='photographer']">
+    <p class="photo-photographer">
+      <xsl:apply-templates/>
+    </p>
   </xsl:template>
 
 </xsl:stylesheet>

@@ -6,31 +6,97 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&amp;display=swap" rel="stylesheet">
 <style>
         .section-square {
-        height: 95vh;
-        width: 95vh;
-        max-height: 90vw;
-        max-width: 90vw;
-        border: 2px solid black;
-        background-color: white;
-        margin: 2rem auto; /* Adds vertical spacing (top + bottom) */
-        box-sizing: border-box;
-        overflow: auto;
-        padding: 1rem;
+          height: 95vh;
+          width: 95vh;
+          justify-content: center;
+          align-items: center;
+          max-height: 90vw;
+          max-width: 90vw;
+          border: 2px solid black;
+          background-color: #FFFFFF;
+          margin: 2rem auto; /* Adds vertical spacing (top + bottom) */
+          box-sizing: border-box;
+          overflow: auto;
+          padding: 1rem;
         }
+
+        br {
+          margin: 0;
+          padding: 0;
+          line-height: 0;
+        }
+        
+        div[type="motto"] hi {
+          display: block;
+          margin: 0;
+          padding: 0;
+          line-height: 1;
+        }
+        .motto-life,
+        .motto-artloversunite {
+          margin-bottom: 0;
+          margin-top: 0;
+          padding: 0;
+          line-height: 0.9; /* fine-tune if needed */
+        }
+
+        .motto-lead {
+          font-family: 'Brush Script MT', cursive, sans-serif;
+          font-size: 15vh;
+          line-height: 1;
+          margin: 0 0 2rem 2rem;
+          padding-bottom: 2rem;
+          text-align: left;
+          display: inline;
+        }
+
+        .motto-img {
+          max-width: 15%;
+          height: auto;
+          margin: 0 1rem;
+          display: inline;
+          vertical-align: middle;
+        }
+
+        .motto-life {
+          font-size: 50vh;
+          color: red;
+          line-height: 1;
+          text-align: center;
+          font-family: 'Anton', sans-serif;
+          margin: 0 0 0 0;
+        }
+
+        .motto-artloversunite {
+          font-family: 'Brush Script MT', cursive, sans-serif;
+          font-size: 7.5vh;
+          color: red;
+          line-height: 1;
+          text-align: center;
+
+        }
+        
+        .section-motto {
+          padding: 4rem;
+        }
+
+        
         .front .section-square:nth-of-type(2) {
-        padding: 3rem;
-        text-align: justify;
-        font-family: 'Didot', serif;
+          padding: 3rem;
+          text-align: justify;
+          font-family: 'Didot', serif;
         }
+
         .right-gold-title {
           color: #856A00;
           text-align: right;
           margin: 0;
-          font-size: 2.5vw; /* Adjusted size: ~21px on a 600px box */
+          font-size: 2.5vw;
           font-family: 'Anton', sans-serif;
           line-height: 1.2;
           font-weight: bold;
         }
+
         .preface-head {
         text-align: center;
         /* Optional styling */
@@ -38,6 +104,41 @@
         font-size: 2.5rem;
         margin: 1rem;
         margin-bottom: 3rem;
+        }
+        
+
+        .photo-head {
+          text-align: left;
+          font-family: 'Anton', sans-serif;
+        }
+
+        .photo-head .day {
+          color: #856A00;
+          font-size: 4vw;
+          font-family: 'Anton', sans-serif;
+          font-weight: bold;
+        }
+
+        .photo-head .date {
+          color: black;
+          font-family: 'Anton', sans-serif;
+          font-size: 1.5rem;
+        }
+
+        .photo-quote {
+          font-family: "Courier New", Courier, monospace;
+          text-align: center;
+          margin: 2rem 0;
+          font-size: 1rem;
+        }
+
+        .photo-photographer {
+          text-align: right;
+          color: black;
+          font-size: 0.8rem;
+          margin-top: 1rem;
+          font-family: 'Anton', sans-serif;
+          font-weight: bold;
         }
 
         </style>
@@ -295,39 +396,29 @@
           
           
             <p>The most important thing about the manifesto is that it is a practice. If you follow it your life will change. In the pursuit of culture you will start to think If you change your life, you change the world.</p>
-            
-              
-              Vivienne Westwood Signature
-            
+            <figure><img src="images/signature.png" alt="Vivienne Westwood Signature"></figure>
           
         
       </div>
-<div class="section-square">
-        <p>Get a
-          
-            
-            Drawing of three ladybug
-          
+<div class="section-square"><div class="section-motto">
+        <p class="motto-lead">Get a
+          <img src="images/ladybugs.png" alt="Drawing of three ladybug" class="motto-img">
         </p>
         <br>
-        <p>life</p>
+        <p class="motto-life">life</p>
         <br>
-        <p>Art Lovers Unite!
-          
-            
-            Drawing of a stylized heart
-          
+        <p class="motto-artloversunite">Art Lovers Unite!
+          <img src="images/heart.png" alt="Drawing of a stylized heart" class="motto-img">
         </p>
-      </div>
+      </div></div>
 <div class="section-square">
         
           
-            <h3>Day 1
-              <br>
-              September 28
-            </h3>
-            <p>Stand up and be counted. March and be active. It's your right, don't lose it!</p>
-            <p>March
+            <div class="photo-head">
+<span class="day">Day 1</span><br><span class="date">September 28</span>
+</div>
+            <p><p class="photo-quote">Stand up and be counted. March and be active. It's your right, don't lose it!</p></p>
+            <p class="photo-photographer">March
               <br>
               Lucia Fisher
               <br>
@@ -336,11 +427,9 @@
           
           
           
-            
-              
-              Photograph of a March in Sidney, Australia
-            
+            <figure><img src="images/photo1.jpeg" alt="Photograph of a March in Sidney, Australia"></figure>
           
+        
         
       </div>
 </div>

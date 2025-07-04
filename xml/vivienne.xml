@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<!--TBD: change ref="VV" in sourceDesc to ref="#VV" and all the ref="Collodi" and ref="Carroll" in list cited fictional character to "#"-->
   <teiHeader xml:lang="en">
     <fileDesc>
       <titleStmt>
@@ -809,7 +810,7 @@
           <div3 type="epilogue">
             <p>The most important thing about the manifesto is that it is a practice. If you follow it your life will change. In the pursuit of culture you will start to think If you change your life, you change the world.</p>
             <figure>
-              <graphic url="images/signature.jpeg"/><!--signature-->
+              <graphic url="images/signature.png"/><!--signature-->
               <figDesc>Vivienne Westwood Signature</figDesc>
             </figure>
           </div3>
@@ -817,21 +818,21 @@
       </div1>
       <pb/>
       <div1 type="motto">
-        <p>Get a
+        <hi>Get a
           <figure>
-            <graphic url="images/ladybug.jpeg"/><!--ladybugs-->
+            <graphic url="images/ladybugs.png"/><!--ladybugs-->
             <figDesc>Drawing of three ladybug</figDesc>
           </figure>
-        </p>
+        </hi>
         <lb/>
-        <p>life</p>
+        <hi>life</hi>
         <lb/>
-        <p>Art Lovers Unite!
+        <hi>Art Lovers Unite!
           <figure>
-            <graphic url="images/heart.jpeg"/><!--heart-->
+            <graphic url="images/heart.png"/><!--heart-->
             <figDesc>Drawing of a stylized heart</figDesc>
           </figure>
-        </p>
+        </hi>
       </div1>
       <pb/>
       <div1 type="photographs">
@@ -857,6 +858,7 @@
             </figure>
           </div3>
         </div2>
+        <!--tbpossiblyd: div2 for all the pictures!-->
       </div1>
     </body>
     <pb/>
