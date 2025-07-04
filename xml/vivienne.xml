@@ -80,10 +80,10 @@
       </encodingDesc>
       <profileDesc>
         <list type="source-responsible">
-          <item xml:id="VV" sameAs="https://www.wikidata.org/wiki/Q158067 https://github.com/metamuses/lod-save-the-queen/person/vivienne_westwood">
+          <item xml:id="VV" sameAs="https://github.com/metamuses/lod-save-the-queen/person/vivienne_westwood">
             <persName role="designer"><forename>Vivienne</forename><surname>Westwood</surname></persName>
           </item>
-          <item xml:id="DP" ref="https://www.damianibooks.com/?srsltid=AfmBOoqaQGG6_7xk6zVoQoy_FUN51RVy7n58_A1SXzEP8p8goo4mP-eS" sameAs="https://github.com/metamuses/lod-save-the-queen/org/Damiani">
+          <item xml:id="DP" ref="https://www.damianibooks.com" sameAs="https://github.com/metamuses/lod-save-the-queen/org/Damiani">
             <orgName role="publisher">Damiani</orgName>
           </item>
         </list>
@@ -147,10 +147,10 @@
           <item xml:id="mh" ref="Carroll" sameAs="https://www.wikidata.org/wiki/Q864751">
             <name xml:lang="en" type="fictional">The Hatter</name>
           </item>
-          <item xml:id="td" ref="Carroll" sameAs="https://www.wikidata.org/wiki/Q27477399 https://www.wikidata.org/wiki/Q2454190">
+          <item xml:id="td" ref="Carroll" sameAs="https://www.wikidata.org/wiki/Q27477399">
             <name xml:lang="en" type="fictional">Tweedledum</name>
           </item>
-          <item xml:id="td2" ref="Carroll" sameAs="https://www.wikidata.org/wiki/Q27477415 https://www.wikidata.org/wiki/Q2454190">
+          <item xml:id="td2" ref="Carroll" sameAs="https://www.wikidata.org/wiki/Q27477415">
             <name xml:lang="en" type="fictional">Tweedledee</name>
           </item>
           <item xml:id="tc" ref="Collodi" sameAs="https://www.wikidata.org/wiki/Q7679809">
