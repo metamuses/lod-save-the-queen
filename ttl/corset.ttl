@@ -1,14 +1,14 @@
 @base <https://github.com/metamuses/lod-save-the-queen/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix lido: <http://terminology.lido-schema.org/> .
+@prefix lt: <http://terminology.lido-schema.org/> .
 @prefix schema: <https://schema.org/> .
 @prefix wd: <https://www.wikidata.org/wiki/> .
 
-<item/corset> a wd:Q180225 ;
-    dc:creator wd:Q158067 ;
+<item/corset> a <type/corset> ;
+    dc:creator <person/vivienne_westwood> ;
     dc:title "Corset" ;
-    lido:lido01114 wd:Q3514338 ;
+    lt:lido01114 wd:Q3514338 ;
     crm:P45_consists_of wd:Q145863,
         wd:Q330262,
         wd:Q7071155 ;

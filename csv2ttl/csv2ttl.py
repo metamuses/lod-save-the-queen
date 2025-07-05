@@ -1,7 +1,6 @@
 # CSV2TTL
 # Convert CSV files to Turtle (TTL) format for RDF representation
 
-import os
 from pathlib import Path
 import json
 import csv
@@ -29,10 +28,12 @@ with open(BASE_DIR.joinpath("entities.json"), "r", encoding="utf-8") as ent_file
 
 # Collect all local entities from CSV files first
 CSV_ENTITIES = {}
-for filename in CSV_DIR.glob("*.csv"):
-    with open(filename, "r", encoding="utf-8") as csvfile:
+for filepath in CSV_DIR.glob("*.csv"):
+    with open(filepath, "r", encoding="utf-8") as csvfile:
         subject = next(csv.DictReader(csvfile)).get("subject")
-        CSV_ENTITIES[subject] = filename.stem
+        CSV_ENTITIES[subject] = filepath.stem
+
+CSV_ENTITIES_PREFIX = "item/"
 
 # Iterate over all CSV files in the CSV directory
 for filepath in CSV_DIR.glob("*.csv"):
@@ -46,7 +47,7 @@ for filepath in CSV_DIR.glob("*.csv"):
 
         # Use the file name as the subject URI
         name = filepath.stem
-        subj = URIRef(BASE_URI + "item/" + name)
+        subj = URIRef(BASE_URI + CSV_ENTITIES_PREFIX + name)
 
         # Process each row in the CSV
         for row in reader:
@@ -61,17 +62,17 @@ for filepath in CSV_DIR.glob("*.csv"):
 
             # Determine the object based on whether it's csv entity, prefixed URI, or literal
             if full_predicate in ALWAYS_LITERAL_PREDICATES:
-                # If the predicate is a for a literal, always create a Literal object
+                # If the predicate is for a literal, always create a Literal object
                 obj = Literal(row["object"])
             elif row["object"] in CSV_ENTITIES:
                 # If it's a csv entity, create a URIRef from base for it
-                obj = URIRef(BASE_URI + "item/" + CSV_ENTITIES[row["object"]])
+                obj = URIRef(BASE_URI + CSV_ENTITIES_PREFIX + CSV_ENTITIES[row["object"]])
             elif row["object"] in ENTITIES:
                 # Check if the entity is a prefixed URI or a full URI
                 entity = ENTITIES[row["object"]]
-                if entity.startswith(":"):
+                if ":" not in entity:
                     # If it's a prefixed URI, use the base URI to create the object
-                    obj = URIRef(BASE_URI + entity[1:])
+                    obj = URIRef(BASE_URI + entity)
                 else:
                     # If it's a full URI, split it into namespace and entity
                     namespace_str, entity_str = entity.split(":")
@@ -88,5 +89,5 @@ for filepath in CSV_DIR.glob("*.csv"):
             g.add((subj, pred, obj))
 
     # Serialize the graph to Turtle format
-    ttl_path = os.path.join(TTL_DIR, name + ".ttl")
+    ttl_path = TTL_DIR / f"{name}.ttl"
     g.serialize(destination=ttl_path, format="turtle", base=BASE_URI)
