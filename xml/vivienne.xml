@@ -203,6 +203,7 @@
         </p>
       </div1>
     </front>
+    <pb/>
     <body>
       <div1 type="performance text">
         <div2 type="prologue">
@@ -234,7 +235,7 @@
                 The answer to this question is of vital importance because if art is alive the world will change. No art, no true progress.
                 We must find out; go in search of her. - But wait! Who is this with fire-cracking smouldering pigtails,
                 gold teeth and a brace of flintlocks in his belt? He is a pirate. - And what does his t-shirt say? - I love crap.
-                <scene>Pirate hands Active Resistance a Hawaiian garland of plastic flowers.</scene>
+                <lb/><stage>Pirate hands Active Resistance a Hawaiian garland of plastic flowers.</stage>
               </p>
             </sp>
             <sp>
@@ -248,14 +249,14 @@
             <sp>
               <speaker>Pirate Progress.</speaker>
               <p>I like you artistic lot. But, trust me or not, I'll take you with me if I go down. We'll all burn together.</p>
+              <lb/><stage>Film clip, close up. The pigtails burst into flames and with a "Ha-haagh!" the Pirate disappears in a pall of smoke followed by black night.</stage>
             </sp>
-            <stage>Film clip, close up. The pigtails burst into flames and with a "Ha-haagh!" the Pirate disappears in a pall of smoke followed by black night.</stage>
             <sp>
               <speaker>AR.</speaker>
               <p>He is not Progress. Sir Morgan Mammon stole the name and the Pirate works for him.</p>
+              <lb/><stage>The defiant face of Pirate Progress appears and disappears like the <name ref="#cc">Cheshire Cat</name>. Light returns.
+              </stage>
             </sp>
-            <stage>The defiant face of Pirate Progress appears and disappears like the <name ref="#cc">Cheshire Cat</name>. Light returns.
-            </stage>
             <p><date from="1901" to="2000">20th century</date> progress was a bad idea. Smash the past and the future will take care of itself. Follow the trend, keep up with the times. Artists and intellectuals jumped on the bandwagon. Progress and future were automatically linked. March on! Don't stop to think. You have nothing to lose but your chains.</p>
             <sp who="#p">
               <speaker><name ref="#p">Pinocchio</name>.</speaker>
@@ -296,8 +297,8 @@
             <sp>
               <speaker>Dryad of the Rainforest.</speaker>
               <p>How can humans be happy? For every tree they cut down a future child dies and there are more trees than children. Some people know these things but they plan to end the forest in one generation.</p>
+              <stage>(Nobody hears her...)</stage>
             </sp>
-            <stage>(Nobody hears her...)</stage>
             <sp who="#p">
               <speaker><name ref="#p">Pinocchio</name>.</speaker>
               <p>Hey,<persName ref="#A">Aristotle</persName>! He's the chief who said that most slaves were happy for being told what to do. But you've got to give people the chance.</p>
@@ -320,7 +321,7 @@
             </sp>
             <sp who="#al">
               <speaker>Art Lover.</speaker>
-              <scene>(telling <name ref="#p">Pinocchio</name>)</scene>
+              <stage>(telling <name ref="#p">Pinocchio</name>)</stage>
               <p> Art cannot imitate life directly: it does it by representation as in a microcosm. The microcosm, which means small world, comes from primitive ritual. They made a man king for a year, <pb/> then killed him to symbolize the destruction of the old world, then they made a new world from his butchered body - all inside a fenced-off area, a kind of magic circle; for example they took his eyes and said, this is the sun, this is the moon. The idea was that the small world was a pattern for the big one and that by controlling the small world you would have magical power over the exterior world, the macrocosm.</p>
             </sp>
             <sp who="#p">
@@ -333,7 +334,7 @@
             </sp>
             <sp who="#a">
               <speaker><name ref="#a">Alice</name>.</speaker>
-              <scene>(to <name ref="#p">Pinocchio</name>)</scene>
+              <stage>(to <name ref="#p">Pinocchio</name>)</stage>
               <p> I love the idea of concentrating myself into a small complete world, then extending myself - Art gives me the power to face the real world.</p>
             </sp>
             <sp who="#p">
@@ -355,7 +356,7 @@
             </sp>
             <sp  who="#a">
               <speaker><name ref="#a">Alice</name>.</speaker>
-              <scene>(Puzzled that he could be content with so little)</scene>
+              <stage>(Puzzled that he could be content with so little)</stage>
               <p> He doesn't want much.</p>
             </sp>
             <sp who="#p">
@@ -372,8 +373,7 @@
             </sp>
             <sp  who="#a">
               <speaker><name ref="#a">Alice</name>.</speaker>
-              <scene>(sarcastic)</scene>
-              <p>Oh how lewd!</p>
+              <p><stage>(sarcastic)</stage>Oh how lewd!</p>
             </sp>
             <stage>At the Lyceum <persName ref="#A">Aristotle</persName>, a Greek gentleman, impeccably dressed, - in contrast to <persName ref="#D">Diogenes</persName> --is in conversation with a philosopher of today (<persName ref="#APR">Adam Parker-Rhodes</persName>)</stage>
             <sp>
@@ -417,7 +417,7 @@
             </sp>
             <sp>
               <speaker>AR.</speaker>
-              <p>A hedgehog must understand the world from a hedgehog point of view, and we must understand it from a human point of view. <lb/>We do have a fixed fact to stand on: <hi rend="case(allcaps)">IMITATION.</hi> <lb/>We know that Imitation gives us art - but that is as a result of the main fact which is that our species is programmed to imitate. We are the world's best imitators and that is how we evolved into humans. <hi rend="italic bold">We understand the world because we imitate it.</hi><lb/><name ref="#a">Alice</name> will begin to explain.</p>
+              <p>A hedgehog must understand the world from a hedgehog point of view, and we must understand it from a human point of view. <lb/>We do have a fixed fact to stand on: <hi>IMITATION.</hi> <lb/>We know that Imitation gives us art - but that is as a result of the main fact which is that our species is programmed to imitate. We are the world's best imitators and that is how we evolved into humans. <hi rend="italic bold">We understand the world because we imitate it.</hi><lb/><name ref="#a">Alice</name> will begin to explain.</p>
             </sp>
             <sp  who="#a">
               <speaker><name ref="#a">Alice</name>.</speaker>
@@ -437,11 +437,11 @@
             </sp>
             <sp who="#p">
               <speaker><name ref="#p">Pinocchio</name>.</speaker>
-              <p>We're cross-wired! <stage>(dances and sings)</stage></p>
+              <p>We're cross-wired!<stage>(dances and sings)</stage></p>
             </sp>
             <sp>
               <speaker>AR.</speaker>
-              <p>Dance is not necessarily art but, for example, ballet is - because it aims at perfection. We spend our lives looking for perfection - because we are looking for standards to imitate. <lb/>Every time we compare one thing with another we are imitating; we are trying to find a match between the data we hold in our mind and the new example - trying to find an ideal. <stage>(AR puts one hand on top of the other, palms facing)</stage> This is Imitation - matching one thing with another. We discriminate between good and bad, better and best. Discrimination is the mechanism of intelligence.</p>
+              <p>Dance is not necessarily art but, for example, ballet is - because it aims at perfection. We spend our lives looking for perfection - because we are looking for standards to imitate. <lb/>Every time we compare one thing with another we are imitating; we are trying to find a match between the data we hold in our mind and the new example - trying to find an ideal.<stage>(AR puts one hand on top of the other, palms facing)</stage>This is Imitation - matching one thing with another. We discriminate between good and bad, better and best. Discrimination is the mechanism of intelligence.</p>
             </sp>
             <sp who="#tp">
               <speaker>True Poet.</speaker>
@@ -462,7 +462,7 @@
                 The universal in the particular is familiar to all of us - that flash of insight, that detail which suddenly reveals the whole thing, and we see things complete and as they are - and as we never saw them before. This is direct knowledge.<lb/>
                 Insight happens because we suddenly exteriorize ourselves - it's like 'I am there' and yes, if our object is
                 a fellow human being we can imagine what it feels like to be them. We can put ourselves in their place.<lb/>
-                Insight is often just a thrilling conviction that certain things are connected; we hold them in our mind waiting for the day of perception. <scene>(Turning to the True Poet)</scene> You are a poet and an alchemist. How does the artist create
+                Insight is often just a thrilling conviction that certain things are connected; we hold them in our mind waiting for the day of perception. <stage>(Turning to the True Poet)</stage> You are a poet and an alchemist. How does the artist create
                 - arrive at perception?
               </p>
             </sp>
@@ -470,7 +470,7 @@
             <sp who="#tp">
               <speaker>True Poet.</speaker>
               <p>
-                True Poet. The originality of art lies in bringing ordinary feelings to our attention.<lb/>
+                The originality of art lies in bringing ordinary feelings to our attention.<lb/>
                 Not everything that enters our orbit makes an impression; only the things we notice. Our senses do not register things unless we attach a feeling to them, so feelings are our prime contact with reality, more primitive than language or reason. Indeed the poet struggles to express feelings which are beyond words.<lb/>
                 The artist's mind is in fact a receptacle for storing up numberless feelings, phrases, images which remain there until a new idea 'comes' in. All the particles which can unite to form a new compound are then present to-gether. This is alchemy.<lb/>
                 Fusion into the whole takes place under an intense creative pressure from parts which are felt together.Emotion has its life in the work and is separate from the real-life passions of the man who creates. He must rid himself of habit.
@@ -488,7 +488,7 @@
             <sp>
               <speaker>AR.</speaker>
               <p>And we can imitate through empathy, using our imagination to get outside ourselves.
-                <scene>(And turning to the True Poet)</scene>
+                <stage>(And turning to the True Poet)</stage>
                 But you, the artist, are a professional imitator. These human feelings are the very stuff of art. You are the one who manages to re-present them, brings them to light - by modifying and distorting everything in relation to everything else.
               </p>
             </sp>
@@ -511,7 +511,7 @@
             </sp>
             <sp>
               <speaker><name ref="#wr">White Rabbit</name>.</speaker>
-              <p>Negative.<scene>(rushing off)</scene></p>
+              <p>Negative.<stage>(rushing off)</stage></p>
             </sp>
             <sp>
               <speaker>Artists Agent.</speaker>
@@ -519,7 +519,7 @@
             </sp>
             <sp>
               <speaker><name ref="#mh">Mad Hatter</name>.</speaker>
-              <p>What do you mean a hole in the air? We've all got a hole in the head and we can fill it with<pb/>whatever 'Whole' we want <scene>(changes price-tag on hat from 10/6d to £10m)</scene></p>
+              <p>What do you mean a hole in the air? We've all got a hole in the head and we can fill it with<pb/>whatever 'Whole' we want <stage>(changes price-tag on hat from 10/6d to £10m)</stage></p>
             </sp>
             <sp>
               <speaker>Art Agent.</speaker>
@@ -553,7 +553,7 @@
             </spGrp>
             <sp>
               <speaker>Art Agent.</speaker>
-              <p>Yes, authentication from the agent. Holes will be very popular. All those journeys into private fantasy. Like Lourdes without the crowds. Wait a minute, the art-hole concept is endlessly capable of manipulation; we could hire a stadium, the punter could pay for a massive event. The art-hole is the last word.<lb/><scene rend="italic">(a moment of doubt)</scene> But not the end of 'something different'. Anybody can be an artist, my door is always open.</p>
+              <p>Yes, authentication from the agent. Holes will be very popular. All those journeys into private fantasy. Like Lourdes without the crowds. Wait a minute, the art-hole concept is endlessly capable of manipulation; we could hire a stadium, the punter could pay for a massive event. The art-hole is the last word.<lb/><stage rend="italic">(a moment of doubt)</stage> But not the end of 'something different'. Anybody can be an artist, my door is always open.</p>
             </sp>
             <sp who="#p">
               <speaker><name ref="#p">Pinocchio</name>.</speaker>
@@ -566,7 +566,7 @@
             </sp>
             <sp who="#p">
               <speaker><name ref="#p">Pinocchio</name>.</speaker>
-              <p>Dear little Cricket, I still get around, have a laugh! But, yeah, this inner voice is always having a go, <q aloud="False">"<name ref="#p">Pinocchio</name>, don't be an arsehole! Sorry - art-hole! I am your human self. Listen to me!"</q><lb/><scene>(turns to <name ref="#a">Alice</name>)</scene> C'mon <name ref="#a">Alice</name>, you're the chief. How do I trust myself to know what is genuine? Help me out.</p>
+              <p>Dear little Cricket, I still get around, have a laugh! But, yeah, this inner voice is always having a go, <q aloud="False">"<name ref="#p">Pinocchio</name>, don't be an arsehole! Sorry - art-hole! I am your human self. Listen to me!"</q><lb/><stage>(turns to <name ref="#a">Alice</name>)</stage> C'mon <name ref="#a">Alice</name>, you're the chief. How do I trust myself to know what is genuine? Help me out.</p>
             </sp>
             <sp  who="#a">
               <speaker><name ref="#a">Alice</name>.</speaker>
@@ -579,7 +579,7 @@
             <spGrp>
               <sp  who="#a #p">
                 <speaker><name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name>.</speaker>
-                <p><scene>(pointing fingers, rapping)</scene>What about fakes?</p>
+                <p><stage>(pointing fingers, rapping)</stage>What about fakes?</p>
               </sp>
               <sp who="#p">
                 <speaker><name ref="#p">Pinocchio</name>.</speaker>
@@ -592,7 +592,7 @@
             </spGrp>
             <sp who="#tp">
               <speaker>True Poet.</speaker>
-              <p><scene>(to <name ref="#p">Pinocchio</name>)</scene>Truth comes from doing the work. Art is always original. If you didn't exist, that way of seeing wouldn't exist.</p>
+              <p><stage>(to <name ref="#p">Pinocchio</name>)</stage>Truth comes from doing the work. Art is always original. If you didn't exist, that way of seeing wouldn't exist.</p>
             </sp>
             <sp who="#p">
               <speaker><name ref="#p">Pinocchio</name>.</speaker>
@@ -632,7 +632,7 @@
             </sp>
             <sp who="#al">
               <speaker>Art Lover.</speaker>
-              <p>Very good - as an art lover, my passion keeps art alive. Therefore art exists! Through our<lb/>engagement in art we gain culture. Culture makes us more human; elevates.</p>
+              <p>Very good - as an art lover, my passion keeps art alive. Therefore art exists! Through our<pb/>engagement in art we gain culture. Culture makes us more human; elevates.</p>
             </sp>
             <sp>
               <speaker>AR.</speaker>
@@ -700,9 +700,9 @@
               <speaker>Art Lover.</speaker>
               <p>But time is running out for the art lovers. I'm talking about the planet. It's all very well to say that we can become more human through art - human enough to save the planet!? Meanwhile, all we can do is believe in <name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name>. At least they will have the advantage of a sane outlook on life.</p>
             </sp>
-            <scene>
+            <stage>
               Giant projection of <persName ref="#AH">Hitler</persName>'s face - in relation to which <persName ref="AH">Hitler</persName>, standing on the podium in front, seems to be about the size of a garden gnome.
-            </scene>
+            </stage>
             <sp>
               <speaker><persName>Hitler</persName>.</speaker>
               <p>All effective propaganda has to limit itself only to a very few points and to use them like slogans.</p>
@@ -713,11 +713,11 @@
             </sp>
             <sp>
               <speaker>Opening Speaker.</speaker>
-              <p><scene>(French professor of anthropology)</scene> And Man came out of <placeName type="continent">Africa</placeName> <date when="-177989">180 thousand years ago</date> ...</p>
+              <p><stage>(French professor of anthropology)</stage> And Man came out of <placeName type="continent">Africa</placeName> <date when="-177989">180 thousand years ago</date> ...</p>
             </sp>
             <sp>
               <speaker>AR.</speaker>
-              <p>The talk lasts ¾ hour. He's scared of seeming Eurocentric ...and the good thing is he ended up in <placeName type="city">Paris</placeName>. <scene>(laughs)</scene> Quite right, too. <placeName type="state">France</placeName> was the greatest flowering of western culture for the <date notBefore="1614" notAfter="1914">three centuries</date> up until the <date when="1914-07-28" notAfter="1918-11-11">First World War</date> - interrupted by the <date when="1789" notAfter="1799">Revolution</date>, of course.</p>
+              <p>The talk lasts ¾ hour. He's scared of seeming Eurocentric ...and the good thing is he ended up in <placeName type="city">Paris</placeName>. <stage>(laughs)</stage> Quite right, too. <placeName type="state">France</placeName> was the greatest flowering of western culture for the <date notBefore="1614" notAfter="1914">three centuries</date> up until the <date when="1914-07-28" notAfter="1918-11-11">First World War</date> - interrupted by the <date when="1789" notAfter="1799">Revolution</date>, of course.</p>
             </sp>
             <sp>
               <speaker>Philosopher.</speaker>
@@ -777,7 +777,7 @@
             </sp>
             <sp>
               <speaker><persName ref="#LP">Leonard Peltier</persName>.</speaker>
-              <p><scene>(It is the spirit of <persName ref="#LP">Leonard</persName> which now speaks)</scene>Art is an imaginative illusion which captures the imagination. State your vows.</p>
+              <p><stage>(It is the spirit of <persName ref="#LP">Leonard</persName> which now speaks)</stage>Art is an imaginative illusion which captures the imagination. State your vows.</p>
             </sp>
             <sp  who="#a">
               <speaker><name ref="#a">Alice</name>.</speaker>
@@ -787,21 +787,21 @@
               <speaker><name ref="#p">Pinocchio</name>.</speaker>
               <p>The freedom fighters' motto is: You get out what you put in.</p>
             </sp>
-            <scene><persName ref="#LP">Leonard</persName> pins on their AR badges.</scene>
+            <stage><persName ref="#LP">Leonard</persName> pins on their AR badges.</stage>
             <sp>
-              <speaker><persName ref="#LP"><forename>Leonard</forename> <surname>Peltie</surname></persName>.</speaker>
+              <speaker><persName ref="#LP"><forename>Leonard</forename> <surname>Peltier</surname></persName>.</speaker>
               <p><name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name>, you are now in the presence of a great secret. Your journey has revealed to you that human beings have a choice. We can cultivate the human genius and build a great civilization on earth. Through art we see the future. It holds up a mirror of our human potential. Or, as victims of our mere cleverness we will remain the destructive animal. Our innovations can contribute to progress, but our humanity is a scientific fact, and must be taken into account for advance to happen, otherwise we have partial science which will kill us.<lb/>Indians have not made this mistake, they see the world in its entirety. Our first duty is to love our mother, Earth. Indians know the importance of living in harmony with creation. Men - not gods. The Greeks called human arrogance <foreign xml:lang="greek" rend="italics">hubris.</foreign></p>
             </sp>
             <sp>
               <speaker>Voice of <name ref="#i">Icarus</name>.</speaker>
               <p>Remember the myth of <name ref="#i">Icarus</name>. Do not fly too near the sun. Your wings are made of wax.</p>
             </sp>
-            <scene>Light radiates through the patterns in a mandala composed of concentric circles alternating with diminishing squares. The squares represent the organization and knowledge of man and the circles represent the truth and chaos of nature.</scene>
+            <stage>Light radiates through the patterns in a mandala composed of concentric circles alternating with diminishing squares. The squares represent the organization and knowledge of man and the circles represent the truth and chaos of nature.</stage>
             <sp>
               <speaker><persName ref="#LP">Leonard Peltier</persName>.</speaker>
-              <p>Progress lies in the centre of the mandala. Step forward. <scene>(In his hand he holds a small convex mirror from which the light is coming.)</scene> This is the mirror of true progress.</p>
+              <p>Progress lies in the centre of the mandala. Step forward. <stage>(In his hand he holds a small convex mirror from which the light is coming.)</stage> This is the mirror of true progress.</p>
             </sp>
-            <scene><name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name> look at themselves in the mirror.</scene>
+            <stage><name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name> look at themselves in the mirror.</stage>
             <sp>
               <speaker>Dryad of the Rainforest.</speaker>
               <p>I must stay with my trees.</p>
@@ -842,15 +842,15 @@
               <lb/>
               <date when="--09-28">September 28</date>
             </head>
-            <p><quote>Stand up and be counted. March and be active. It's your right, don't lose it!</quote></p>
+            <p><quote>Stand up and be counted. March and be act<lb/>ive. It's your right, don't lose it!</quote></p>
             <p type="photographer">March
               <lb/>
               <persName><forename>Lucia</forename><surname> Fisher</surname></persName>
               <lb/>
               <placeName><settlement>Sidney</settlement>, <country>Australia</country></placeName>
             </p>
+            <pb/>
           </div3>
-          <pb/>
           <div3 type="photo">
             <figure>
               <graphic url="images/photo1.jpeg"/><!--first photo-->
@@ -858,7 +858,7 @@
             </figure>
           </div3>
         </div2>
-        <!--tbpossiblyd: div2 for all the pictures!-->
+        <!--to be possibly done: div2 for all the pictures!-->
       </div1>
     </body>
     <pb/>

@@ -116,6 +116,11 @@
         margin: 1rem;
         margin-bottom: 3rem;
         }
+
+        .preface-head-of {
+          font-family: 'Arial', sans-serif;
+          font-weight: normal;
+        }
         <!--for the photograph page-->
 
         .photo-head {
@@ -308,9 +313,9 @@
   </xsl:template>
 
   <xsl:template match="tei:div1[@type='preface']/tei:head/tei:hi[normalize-space(.)='OF']">
-    <u>
-      <xsl:apply-templates/>
-    </u>
+    <div class="preface-head-of">
+    <u> <xsl:apply-templates/></u>
+    </div>
   </xsl:template>
 
   <xsl:template match="tei:scene">
