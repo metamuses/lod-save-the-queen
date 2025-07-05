@@ -9,8 +9,8 @@ from rdflib import Graph, Namespace, URIRef, Literal
 # Resolve base and CSV/TTL directories
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parent
-CSV_DIR = ROOT_DIR.parent / "csv"
-TTL_DIR = BASE_DIR.parent / "ttl"
+CSV_DIR = ROOT_DIR / "csv"
+TTL_DIR = ROOT_DIR / "ttl" / "csv2ttl"
 
 # Define the base URI for the RDF graph
 BASE_URI = "https://github.com/metamuses/lod-save-the-queen/"

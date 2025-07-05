@@ -9,7 +9,7 @@ from lxml import etree
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parent
 XML_DIR = ROOT_DIR / "xml"
-TTL_DIR = BASE_DIR / "ttl"
+TTL_DIR = ROOT_DIR / "ttl" / "xml2ttl"
 
 # Load TEI file
 tree = etree.parse(XML_DIR / "vivienne.xml")
