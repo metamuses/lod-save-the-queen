@@ -866,11 +866,12 @@
     <back>
       <div1 type="photographers list">
         <div2 type="photographers name">
-          <p> 1 <persName><forename>Lucia </forename><surname>Fisher </surname></persName><pb/>
+          <p> 1 <persName><forename>Lucia </forename><surname>Fisher </surname></persName>
           </p>
         </div2>
+        <pb/>
         <div2 type="link">
-          <p><ref target="www.activeresistance.co.uk/getalife">www.activeresistance.co.uk/getalife</ref></p>
+          <p><ref target="https://climaterevolution.co.uk/wp/">www.activeresistance.co.uk/getalife</ref></p>
         </div2>
       </div1>
       <pb/>

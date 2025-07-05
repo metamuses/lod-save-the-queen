@@ -81,10 +81,11 @@
           color: #555;
           font-size: 0.9em;
         }
-        <!--preface page-->
+
+        /*preface page*/
+
         .preface-head {
         text-align: center;
-        /* Optional styling */
         font-family: 'Anton', sans-serif;
         font-size: 2.5rem;
         margin: 1rem;
@@ -98,7 +99,7 @@
           display: inline;
         }
 
-        <!--signature vivienne-->
+        /*signature vivienne*/
         .epilogue-img {
           max-width: 40%;
           height: auto;
@@ -106,7 +107,7 @@
           margin: 1rem auto;
         }
 
-<!--style motto page  img and text-->
+        /*style motto page  img and text*/
         div[type="motto"] hi {
           display: block;
           margin: 0;
@@ -160,7 +161,7 @@
           padding: 4rem;
         }
 
-        <!--for the photograph page-->
+        /*for the photograph page*/
 
         .photo-head {
           text-align: left;
@@ -206,7 +207,7 @@
           vertical-align: middle;
           border: 2px solid black;
         }
-<!--speaker group style handler-->
+        /*speaker group style handler*/
         .dialogue-tight {
           line-height: 1.1;
         }
@@ -216,7 +217,7 @@
           margin: 0.2rem 0;
           line-height: 1.1;
         }
-<!--prologue styling-->
+        /*prologue styling*/
 
         .prologue-head {
           font-family: 'Anton', sans-serif;
@@ -237,7 +238,7 @@
           margin-top: 1rem;
           line-height: 1.1;
         }
-        <!--dropcap styling-->
+        /*dropcap styling*/
         .dropcap-speaker {
           float: left;
           font-family: 'Anton', sans-serif;
@@ -250,6 +251,26 @@
           height: 8vh;
           display: block;
         }
+        /*photographers list page*/
+        .photographer-inline {
+          font-family: 'Anton', sans-serif;
+          margin-bottom: 1rem;
+          text-align: left;
+          white-space: nowrap;
+        }
+
+        .photographer-inline .day {
+          color: #856A00;
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-right: 0.5rem;
+        }
+
+        .photographer-inline .persname {
+          font-size: 1.5rem;
+          color: black;
+        }
+
 
         </style>
       </head>
@@ -503,5 +524,25 @@
       <xsl:apply-templates mode="split"/>
     </p>
   </xsl:template>
+  <!--photographer list page-->
+  <xsl:template match="tei:back/tei:div1[@type='photographers list']/tei:div2[@type='photographers name']/tei:p" mode="split">
+    <p class="photographer-inline">
+      <span class="day">
+        <xsl:value-of select="normalize-space(text()[1])"/>
+      </span>
+            &#160;
+      <span class="persname">
+        <xsl:apply-templates select="tei:persName" mode="split"/>
+      </span>
+    </p>
+  </xsl:template>
+
+  <!-- Match persName inside the photographer entry -->
+  <xsl:template match="tei:persName" mode="split">
+    <xsl:apply-templates mode="split"/>
+  </xsl:template>
+
+  <!--link page-->
+
 
 </xsl:stylesheet>
