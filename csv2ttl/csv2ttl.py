@@ -8,7 +8,8 @@ from rdflib import Graph, Namespace, URIRef, Literal
 
 # Resolve base and CSV/TTL directories
 BASE_DIR = Path(__file__).resolve().parent
-CSV_DIR = BASE_DIR.parent / "csv"
+ROOT_DIR = BASE_DIR.parent
+CSV_DIR = ROOT_DIR.parent / "csv"
 TTL_DIR = BASE_DIR.parent / "ttl"
 
 # Define the base URI for the RDF graph
@@ -89,5 +90,6 @@ for filepath in CSV_DIR.glob("*.csv"):
             g.add((subj, pred, obj))
 
     # Serialize the graph to Turtle format
+    TTL_DIR.mkdir(exist_ok=True)
     ttl_path = TTL_DIR / f"{name}.ttl"
     g.serialize(destination=ttl_path, format="turtle", base=BASE_URI)
