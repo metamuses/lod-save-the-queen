@@ -271,6 +271,12 @@
           color: black;
         }
 
+        .link-style {
+          font-family: 'Anton', sans-serif;
+          color: red;
+          text-decoration: none;
+        }
+
 
         </style>
       </head>
@@ -543,6 +549,15 @@
   </xsl:template>
 
   <!--link page-->
-
+  <xsl:template match="tei:ref" mode="split">
+    <p class="bottom-link">
+      <a class="link-style">
+        <xsl:attribute name="href">
+          <xsl:value-of select="@target"/>
+        </xsl:attribute>
+        <xsl:apply-templates mode="split"/>
+      </a>
+    </p>
+  </xsl:template>
 
 </xsl:stylesheet>
