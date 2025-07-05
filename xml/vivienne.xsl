@@ -5,6 +5,7 @@
                 exclude-result-prefixes="tei">
 
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
+
   <xsl:template match="/tei:TEI">
     <html>
       <head>
@@ -14,29 +15,98 @@
         </title>
 
         <link href="https://fonts.googleapis.com/css2?family=Anton&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&amp;display=swap" rel="stylesheet"/>
 
         <style>
-        .section-square {
-          height: 95vh;
-          width: 95vh;
-          justify-content: center;
-          align-items: center;
-          max-height: 90vw;
-          max-width: 90vw;
-          border: 2px solid black;
-          background-color: #FFFFFF;
-          margin: 2rem auto; /* Adds vertical spacing (top + bottom) */
-          box-sizing: border-box;
-          overflow: auto;
-          padding: 1rem;
+          .section-square {
+            height: 95vh;
+            width: 95vh;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            max-height: 90vw;
+            max-width: 90vw;
+            border: 2px solid black;
+            background-color: #FFFFFF;
+            margin: 1.5rem auto;
+            box-sizing: border-box;
+            overflow: auto;
+            padding: 1rem;
+          }
+
+          .right-gold-title {
+          color: #856A00;
+          text-align: right;
+          margin: 0;
+          font-size: 2.5vw;
+          font-family: 'Anton', sans-serif;
+          line-height: 1.2;
+          font-weight: bold;
         }
 
-        br {
-          margin: 0;
-          padding: 0;
-          line-height: 0;
+        .section-square:nth-of-type(3){
+          padding: 3rem;
         }
-        <!--style motto page  img and text-->
+        .section-square:nth-of-type(4),
+        .section-square:nth-of-type(5),
+        .section-square:nth-of-type(6),
+        .section-square:nth-of-type(7),
+        .section-square:nth-of-type(8),
+        .section-square:nth-of-type(9),
+        .section-square:nth-of-type(10),
+        .section-square:nth-of-type(11),
+        .section-square:nth-of-type(12),
+        .section-square:nth-of-type(13),
+        .section-square:nth-of-type(14),
+        .section-square:nth-of-type(15),
+        .section-square:nth-of-type(16),
+        .section-square:nth-of-type(17) {
+
+          padding: 3rem;
+          text-align: justify;
+          font-family: 'Didot', serif;
+          font-size: 0.75rem;
+        }
+
+        .section-square:nth-of-type(2),
+        .section-square:nth-of-type(3){
+          padding: 3rem;
+          font-family: 'Didot', serif;
+          font-size: 1rem;
+
+        }
+
+        .stage-direction {
+          font-style: italic;
+          color: #555;
+          font-size: 0.9em;
+        }
+        <!--preface page-->
+        .preface-head {
+        text-align: center;
+        /* Optional styling */
+        font-family: 'Anton', sans-serif;
+        font-size: 2.5rem;
+        margin: 1rem;
+        margin-bottom: 3rem;
+        }
+
+        .preface-head-of {
+          font-family: 'Roboto Condensed', sans-serif;
+          font-weight: normal;
+          font-size: 3rem;
+          display: inline;
+        }
+
+        <!--signature vivienne-->
+        .epilogue-img {
+          max-width: 40%;
+          height: auto;
+          display: block;
+          margin: 1rem auto;
+        }
+
+<!--style motto page  img and text-->
         div[type="motto"] hi {
           display: block;
           margin: 0;
@@ -86,41 +156,10 @@
           text-align: center;
 
         }
-        <!--for the motto page-->
         .section-motto {
           padding: 4rem;
         }
 
-        <!--for the preface page-->
-        .front .section-square:nth-of-type(2) {
-          padding: 3rem;
-          text-align: justify;
-          font-family: 'Didot', serif;
-        }
-
-        .right-gold-title {
-          color: #856A00;
-          text-align: right;
-          margin: 0;
-          font-size: 2.5vw;
-          font-family: 'Anton', sans-serif;
-          line-height: 1.2;
-          font-weight: bold;
-        }
-
-        .preface-head {
-        text-align: center;
-        /* Optional styling */
-        font-family: 'Anton', sans-serif;
-        font-size: 2.5rem;
-        margin: 1rem;
-        margin-bottom: 3rem;
-        }
-
-        .preface-head-of {
-          font-family: 'Arial', sans-serif;
-          font-weight: normal;
-        }
         <!--for the photograph page-->
 
         .photo-head {
@@ -144,8 +183,9 @@
         .photo-quote {
           font-family: "Courier New", Courier, monospace;
           text-align: center;
-          margin: 2rem 0;
-          font-size: 1rem;
+          margin: 2rem 0 4rem 0;
+          font-size: 0.75rem;
+          padding-top: 15rem;
         }
 
         .photo-photographer {
@@ -155,194 +195,185 @@
           margin-top: 1rem;
           font-family: 'Anton', sans-serif;
           font-weight: bold;
+          padding-top: 8rem;
+        }
+
+        .photo-img {
+          max-width: 100%;
+          height: auto;
+          margin: 0 rem;
+          display: inline;
+          vertical-align: middle;
+          border: 2px solid black;
+        }
+<!--speaker group style handler-->
+        .dialogue-tight {
+          line-height: 1.1;
+        }
+
+        .dialogue-tight p,
+        .dialogue-tight .sp-line {
+          margin: 0.2rem 0;
+          line-height: 1.1;
+        }
+<!--prologue styling-->
+
+        .prologue-head {
+          font-family: 'Anton', sans-serif;
+          text-align: center;
+          line-height: 1;
+          margin-bottom: 2rem;
+        }
+
+        .prologue-abbrev {
+          font-size: 25vh;
+          letter-spacing: -2rem; /* negative kerning to make A and R touch */
+          display: inline-block;
+        }
+
+        .prologue-subhead {
+          font-size: 7vh;
+          display: inline-block;
+          margin-top: 1rem;
+          line-height: 1.1;
+        }
+        <!--dropcap styling-->
+        .dropcap-speaker {
+          float: left;
+          font-family: 'Anton', sans-serif;
+          font-size: 8vh;
+          letter-spacing: -0.5rem;
+          line-height: 1;
+          margin-right: 0.1rem;
+          margin-top: 0.1em;
+          width: 1em;
+          height: 8vh;
+          display: block;
         }
 
         </style>
       </head>
       <body>
-        <div class="front">
-          <xsl:call-template name="process-sections">
-            <xsl:with-param name="nodes" select="tei:text/tei:front/node()"/>
-          </xsl:call-template>
-        </div>
-
-        <div class="body">
-          <xsl:call-template name="process-sections">
-            <xsl:with-param name="nodes" select="tei:text/tei:body/node()"/>
-          </xsl:call-template>
-        </div>
-
-        <div class="back">
-          <xsl:call-template name="process-sections">
-            <xsl:with-param name="nodes" select="tei:text/tei:back/node()"/>
-          </xsl:call-template>
-        </div>
+        <xsl:call-template name="render-section">
+          <xsl:with-param name="content" select="tei:text"/>
+        </xsl:call-template>
       </body>
     </html>
   </xsl:template>
 
-  <xsl:template name="process-sections">
-    <xsl:param name="nodes"/>
-    <xsl:choose>
-      <xsl:when test="not($nodes)"/>
-      <xsl:otherwise>
-        <xsl:variable name="pos">
-          <xsl:call-template name="find-pb-position">
-            <xsl:with-param name="nodes" select="$nodes"/>
-            <xsl:with-param name="pos" select="1"/>
-          </xsl:call-template>
-        </xsl:variable>
-
-        <xsl:choose>
-          <!-- No pb: output everything in one section-square -->
-          <xsl:when test="$pos = 0">
-            <xsl:variable name="nonEmpty" select="$nodes[not(self::text()[normalize-space(.) = '']) and not(self::comment())]" />
-            <xsl:if test="$nonEmpty">
-              <div class="section-square">
-                <xsl:apply-templates select="$nonEmpty"/>
-              </div>
-            </xsl:if>
-          </xsl:when>
-
-        <!-- Found a pb: split and insert square, then recurse -->
-          <xsl:otherwise>
-            <xsl:variable name="beforePb" select="$nodes[position() &lt; $pos]" />
-            <xsl:variable name="pbNode" select="$nodes[position() = $pos][self::tei:pb]" />
-            <xsl:variable name="afterPb" select="$nodes[position() &gt; $pos]" />
-
-            <!-- Content before pb -->
-            <xsl:variable name="nonEmptyBeforePb" select="$beforePb[not(self::text()[normalize-space(.) = '']) and not(self::comment())]" />
-            <xsl:if test="$nonEmptyBeforePb">
-              <div class="section-square">
-                <xsl:apply-templates select="$nonEmptyBeforePb"/>
-              </div>
-            </xsl:if>
-
-            <!-- pb triggers a new empty section-square -->
-            <xsl:if test="$pbNode">
-            </xsl:if>
-
-            <!-- Recurse with remaining nodes -->
-            <xsl:call-template name="process-sections">
-            <xsl:with-param name="nodes" select="$afterPb"/>
-            </xsl:call-template>
-          </xsl:otherwise>
-        </xsl:choose>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-
-
-
-  <xsl:template name="find-pb-position">
-    <xsl:param name="nodes"/>
-    <xsl:param name="pos"/>
-    <xsl:choose>
-      <xsl:when test="not($nodes)">
-        <xsl:value-of select="0"/>
-      </xsl:when>
-      <xsl:when test="$nodes[1][self::tei:pb]">
-        <xsl:value-of select="$pos"/>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:call-template name="find-pb-position">
-          <xsl:with-param name="nodes" select="$nodes[position() &gt; 1]"/>
-          <xsl:with-param name="pos" select="$pos + 1"/>
-        </xsl:call-template>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-
-<!--basic matching strategy-->
-  <xsl:template match="tei:p">
-    <p><xsl:apply-templates/></p>
-  </xsl:template>
-
-  <xsl:template match="tei:sp/tei:p">
-    <xsl:apply-templates/>
-  </xsl:template>
-
-  <xsl:template match="tei:lb">
-    <br/>
-  </xsl:template>
-
-  <xsl:template match="tei:sp">
-    <p>
-      <xsl:apply-templates select="tei:speaker"/>
-      <xsl:text> </xsl:text>
-      <xsl:apply-templates select="tei:p"/>
-    </p>
-  </xsl:template>
-
-  <xsl:template match="tei:speaker">
-    <strong><xsl:apply-templates/></strong>
-  </xsl:template>
-
-  <xsl:template match="tei:hi[@rend='italic']">
-    <i><xsl:apply-templates/></i>
-  </xsl:template>
-
-  <xsl:template match="tei:hi[@rend='bold']">
-    <b><xsl:apply-templates/></b>
-  </xsl:template>
-
-  <xsl:template match="tei:hi[@rend='underlined']">
-    <u><xsl:apply-templates/></u>
-  </xsl:template>
-
-  <xsl:template match="tei:head">
-    <h3><xsl:apply-templates/></h3>
-  </xsl:template>
-
-  <xsl:template match="tei:head[@rend='gold-right']">
-    <h3 class="right-gold-title">
-      <xsl:apply-templates/>
-    </h3>
-  </xsl:template>
-
-  <xsl:template match="tei:div1[@type='preface']/tei:head">
-    <div class="preface-head">
-      <xsl:apply-templates/>
+<!--transform <pb/> tag into sectioned div-->
+  <xsl:template name="render-section">
+    <xsl:param name="content"/>
+    <div class="section-square">
+      <xsl:apply-templates select="$content" mode="split"/>
     </div>
   </xsl:template>
 
-  <xsl:template match="tei:div1[@type='preface']/tei:head/tei:hi[normalize-space(.)='100']">
-    <span style="color: red;">
-      <xsl:apply-templates/>
-    </span>
+  <xsl:template match="tei:pb" mode="split">
+    <xsl:text disable-output-escaping="yes"><![CDATA[</div><div class="section-square">]]></xsl:text>
   </xsl:template>
 
-  <xsl:template match="tei:div1[@type='preface']/tei:head/tei:hi[normalize-space(.)='OF']">
-    <div class="preface-head-of">
-    <u> <xsl:apply-templates/></u>
-    </div>
+  <xsl:template match="*" mode="split">
+    <xsl:element name="{local-name()}">
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="node()" mode="split"/>
+    </xsl:element>
   </xsl:template>
 
-  <xsl:template match="tei:scene">
-    <em><xsl:apply-templates/></em>
-  </xsl:template>
-
-  <xsl:template match="tei:stage">
-    <div class="stage-direction"><em><xsl:apply-templates/></em></div>
-  </xsl:template>
-
-  <xsl:template match="tei:quote">
-    <xsl:apply-templates/>
-  </xsl:template>
-
-  <xsl:template match="tei:q">
-    <i><xsl:apply-templates/></i>
-  </xsl:template>
-
-  <xsl:template match="text()">
+  <xsl:template match="text()" mode="split">
     <xsl:value-of select="."/>
   </xsl:template>
 
-<!--matching xml/html pagina motto-->
-  <xsl:template match="tei:figure">
+  <xsl:template match="@*">
+    <xsl:copy/>
+  </xsl:template>
+
+  <xsl:template match="tei:lb" mode="split">
+    <br/>
+  </xsl:template>
+<!--speakers sections-->
+  <xsl:template match="tei:sp" mode="split">
+    <p>
+      <xsl:apply-templates select="tei:speaker" mode="split"/>
+      <xsl:text> </xsl:text>
+      <xsl:apply-templates select="tei:p" mode="split"/>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="tei:div2[@type='body of perfomance text']/tei:div3/tei:sp[1]/tei:speaker[text()='AR']" mode="split">
+    <span class="dropcap-speaker">AR</span>
+  </xsl:template>
+
+  <xsl:template match="tei:speaker" mode="split">
+    <strong><xsl:apply-templates mode="split"/></strong>
+  </xsl:template>
+
+  <xsl:template match="tei:sp/tei:p" mode="split">
+    <xsl:apply-templates mode="split"/>
+  </xsl:template>
+
+  <xsl:template match="tei:hi" mode="split">
+    <xsl:choose>
+      <xsl:when test="contains(@rend, 'italic') and contains(@rend, 'bold')">
+        <b><i><xsl:apply-templates mode="split"/></i></b>
+      </xsl:when>
+      <xsl:when test="contains(@rend, 'italic')">
+        <i><xsl:apply-templates mode="split"/></i>
+      </xsl:when>
+      <xsl:when test="contains(@rend, 'bold')">
+        <b><xsl:apply-templates mode="split"/></b>
+      </xsl:when>
+      <xsl:when test="contains(@rend, 'underlined')">
+        <u><xsl:apply-templates mode="split"/></u>
+      </xsl:when>
+      <xsl:otherwise>
+        <span><xsl:apply-templates mode="split"/></span>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+<!--stage inside sp line-->
+  <xsl:template match="tei:stage[ancestor::tei:sp]" mode="split">
+    <span class="stage-direction">
+      <em><xsl:apply-templates mode="split"/></em>
+    </span>
+  </xsl:template>
+
+<!-- Stage outside <sp>: block -->
+  <xsl:template match="tei:stage[not(ancestor::tei:sp)]" mode="split">
+    <div class="stage-direction">
+      <em><xsl:apply-templates mode="split"/></em>
+    </div>
+  </xsl:template>
+
+
+  <xsl:template match="tei:quote" mode="split">
+    <xsl:apply-templates mode="split"/>
+  </xsl:template>
+
+  <xsl:template match="tei:q" mode="split">
+    <i><xsl:apply-templates mode="split"/></i>
+  </xsl:template>
+<!--speakers group handler-->
+  <xsl:template match="tei:spGrp" mode="split">
+    <div class="dialogue-tight">
+      <xsl:apply-templates mode="split"/>
+    </div>
+  </xsl:template>
+
+<!--first page-->
+  <xsl:template match="tei:head[@rend='gold-right']" mode="split">
+    <h3 class="right-gold-title">
+      <xsl:apply-templates mode="split"/>
+    </h3>
+  </xsl:template>
+<!--motto page-->
+  <xsl:template match="tei:figure" mode="split">
     <xsl:variable name="url" select="tei:graphic/@url"/>
     <xsl:variable name="alt" select="normalize-space(tei:figDesc)"/>
     <xsl:variable name="inMotto" select="ancestor::tei:div1[@type='motto']"/>
+    <xsl:variable name="inEpilogue" select="ancestor::tei:div3[@type='epilogue']"/>
+    <xsl:variable name="inPhoto" select="ancestor::tei:div3[@type='photo']"/>
     <xsl:choose>
       <xsl:when test="$inMotto">
         <img>
@@ -355,6 +386,15 @@
           <xsl:attribute name="class">motto-img</xsl:attribute>
         </img>
       </xsl:when>
+
+      <xsl:when test="$inEpilogue">
+        <img src="{$url}" alt="{$alt}" class="epilogue-img"/>
+      </xsl:when>
+
+      <xsl:when test="$inPhoto">
+        <img src="{$url}" alt="{$alt}" class="photo-img"/>
+      </xsl:when>
+
       <xsl:otherwise>
         <figure>
           <img>
@@ -371,33 +411,67 @@
   </xsl:template>
 
 
-  <xsl:template match="tei:div1[@type='motto']/tei:hi[2]">
+  <xsl:template match="tei:div1[@type='motto']/tei:hi[2]" mode="split">
     <p class="motto-life">
-      <xsl:apply-templates/>
+      <xsl:apply-templates mode="split"/>
     </p>
   </xsl:template>
 
-  <xsl:template match="tei:div1[@type='motto']/tei:hi[1]">
+  <xsl:template match="tei:div1[@type='motto']/tei:hi[1]" mode="split">
     <p class="motto-lead">
-      <xsl:apply-templates/>
+      <xsl:apply-templates mode="split"/>
     </p>
   </xsl:template>
 
-  <xsl:template match="tei:div1[@type='motto']/tei:hi[3]">
+  <xsl:template match="tei:div1[@type='motto']/tei:hi[3]" mode="split">
     <p class="motto-artloversunite">
-      <xsl:apply-templates/>
+      <xsl:apply-templates mode="split"/>
     </p>
   </xsl:template>
 
-  <xsl:template match="tei:div1[@type='motto']">
+  <xsl:template match="tei:div1[@type='motto']" mode="split">
     <div class="section-motto">
-      <xsl:apply-templates/>
+      <xsl:apply-templates mode="split"/>
     </div>
+  </xsl:template>
+
+<!--preface page-->
+  <xsl:template match="tei:div1[@type='preface']/tei:head" mode="split">
+    <div class="preface-head">
+      <xsl:apply-templates mode="split"/>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="tei:div1[@type='preface']/tei:head/tei:hi[normalize-space(.)='100']" mode="split">
+    <span style="color: red;">
+      <xsl:apply-templates mode="split"/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:div1[@type='preface']/tei:head/tei:hi[normalize-space(.)='OF']" mode="split">
+    <span class="preface-head-of">
+      <u><xsl:apply-templates mode="split"/></u>
+    </span>
+  </xsl:template>
+  <!--prologue div handling-->
+  <xsl:template match="tei:div2[@type='prologue']/tei:head" mode="split">
+    <div class="prologue-head">
+      <span class="prologue-abbrev">
+        <xsl:apply-templates select="tei:hi" mode="split"/>
+      </span>
+      <br/>
+      <span class="prologue-subhead">
+        <xsl:apply-templates select="text()[normalize-space() != '']" mode="split"/>
+      </span>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:div2[@type='prologue']/tei:head/tei:hi" mode="split">
+    <xsl:value-of select="."/>
   </xsl:template>
 
 <!--matching xml/html pagina photo1-->
   <!-- Match the head inside div3 in div1[@type='photographs'] -->
-  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:head">
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:head" mode="split">
     <div class="photo-head">
       <!-- The Day 1 text is inside the text node before <lb/> -->
       <span class="day">
@@ -406,27 +480,27 @@
       <br/>
       <!-- Then apply the date styling -->
       <span class="date">
-        <xsl:apply-templates select="tei:date"/>
+        <xsl:apply-templates select="tei:date" mode="split"/>
       </span>
     </div>
   </xsl:template>
 
   <!-- Match the date element inside that head -->
-  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:head/tei:date">
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:head/tei:date" mode="split">
     <xsl:value-of select="."/>
   </xsl:template>
 
   <!-- Match the quote inside the p -->
-  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:p/tei:quote">
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:p/tei:quote" mode="split">
     <p class="photo-quote">
-      <xsl:apply-templates/>
+      <xsl:apply-templates mode="split"/>
     </p>
   </xsl:template>
 
   <!-- Match the last p (photographer info) inside that div3 -->
-  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:p[@type='photographer']">
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:p[@type='photographer']" mode="split">
     <p class="photo-photographer">
-      <xsl:apply-templates/>
+      <xsl:apply-templates mode="split"/>
     </p>
   </xsl:template>
 
