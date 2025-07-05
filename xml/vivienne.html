@@ -63,6 +63,7 @@
           font-size: 1rem;
 
         }
+
         .stage-direction {
           font-style: italic;
           color: #555;
@@ -194,6 +195,49 @@
           border: 2px solid black;
         }
 
+        .dialogue-tight {
+          line-height: 1.1;
+        }
+
+        .dialogue-tight p,
+        .dialogue-tight .sp-line {
+          margin: 0.2rem 0;
+          line-height: 1.1;
+        }
+
+
+        .prologue-head {
+          font-family: 'Anton', sans-serif;
+          text-align: center;
+          line-height: 1;
+          margin-bottom: 2rem;
+        }
+
+        .prologue-abbrev {
+          font-size: 25vh;
+          letter-spacing: -2rem; /* negative kerning to make A and R touch */
+          display: inline-block;
+        }
+
+        .prologue-subhead {
+          font-size: 7vh;
+          display: inline-block;
+          margin-top: 1rem;
+          line-height: 1.1;
+        }
+        
+        .dropcap-speaker {
+          float: left;
+          font-family: 'Anton', sans-serif;
+          font-size: 8vh;
+          letter-spacing: -0.5rem;
+          line-height: 1;
+          margin-right: 0.1rem;
+          margin-top: 0.1em;
+          width: 1em;
+          height: 8vh;
+          display: block;
+        }
 
         </style>
 </head>
@@ -235,9 +279,10 @@
     <body>
       <div1 type="performance text">
         <div2 type="prologue">
-          <head>AR
-            <br>ACTIVE RESISTANCE TO PROPAGANDA
-          </head>
+          <div class="prologue-head">
+<span class="prologue-abbrev">AR</span><br><span class="prologue-subhead">ACTIVE RESISTANCE TO PROPAGANDA
+          </span>
+</div>
           <p>
             I make the great claim for my manifesto, that it penetrates to the root of the human predicament and offers the underlying solution. We have the choice to become more cultivated and therefore more human
             - or by muddling along as usual we shall remain the destructive and self-destroying animal, the victim of our own cleverness (To be or not to be).
@@ -256,7 +301,7 @@
         </div><div class="section-square">
         <div2 type="body of perfomance text">
           <div3>
-            <p><strong>AR</strong> 
+            <p><span class="dropcap-speaker">AR</span> 
                 Dear Friends, We all love art and some of you claim to be artists. Without judges there is no art. She only exists when we know her. Does she exist?
                 The answer to this question is of vital importance because if art is alive the world will change. No art, no true progress.
                 We must find out; go in search of her. - But wait! Who is this with fire-cracking smouldering pigtails,
@@ -309,7 +354,7 @@
             <p><strong><name ref="#a">Alice</name>.</strong> That's how I feel about <persName ref="#DV">Velasquez</persName>. His work is so minimal and reduced. The paint is so thin and the people in the paintings are so real that I sometimes think they weren't there, especially in the split second before you turn to look again. I just wanted to melt into a pool on the floor.</p>
             <p><strong>AR.</strong> One can begin to grasp something of the obsession people have had with the idea of the circle as a perfect form. A work of art then, is <i>an Imitation reduced to its essentials, thereby forming a whole</i> - as in a microcosm. Real life cannot give the complete picture. It is - a jumble of particulars in which events are engulfed in the flux of chaos. How can the artist see things as they really are when he, himself is part of the change? He needs a fixed fact to stand on.</p>
             <p><strong><name ref="#a">Alice</name>.</strong> Tell me all about it! If there is nothing fixed in the world then you find yourself in Wonderland where everything changes - <i>including yourself.</i> - And you try to play a game of croquet with a flamingo for a mallet and the ball is a hedgehog who runs away.</p>
-            <p><strong>AR.</strong> A hedgehog must understand the world from a hedgehog point of view, and we must understand it from a human point of view. <br>We do have a fixed fact to stand on: <hi>IMITATION.</hi> <br>We know that Imitation gives us art - but that is as a result of the main fact which is that our species is programmed to imitate. We are the world's best imitators and that is how we evolved into humans. <hi rend="italic bold">We understand the world because we imitate it.</hi><br><name ref="#a">Alice</name> will begin to explain.</p>
+            <p><strong>AR.</strong> A hedgehog must understand the world from a hedgehog point of view, and we must understand it from a human point of view. <br>We do have a fixed fact to stand on: <span>IMITATION.</span> <br>We know that Imitation gives us art - but that is as a result of the main fact which is that our species is programmed to imitate. We are the world's best imitators and that is how we evolved into humans. <b><i>We understand the world because we imitate it.</i></b><br><name ref="#a">Alice</name> will begin to explain.</p>
             <p><strong><name ref="#a">Alice</name>.</strong> It's what happens when a baby smiles back at you. He sees you do it and the muscles in his face know how to make the same pattern, but it's not just the muscles but his whole system which is at work. Our body is a coding system which can blueprint the eye's impression of a smile and convert it into an actual smile. Scientists would tell us what chemicals etc. are involved. <br>Without this key -- our human coding system, we could not hold anything in our memory or repeat our actions. Animals can do this to a limited degree. I'm thinking of a puppy I once met. I took a stick and it immediately understood my intention and was ready to run. And it brought the stick back. But animals do not have that continuous relationship with the world which gives us a great deal of control over our behaviour and our lives - even though we are free to act unwisely.</p>
             <p><strong><persName ref="#APR">Adam Parker-Rhodes</persName>.</strong> Apes can't dance!</p>
             <p><strong>AR.</strong> The philosopher <persName ref="#APR">Adam Parker-Rhodes</persName> is racing against time as he pins down the theory of Imitation. He knows that an understanding of who we are bears upon what we shall do in the face of looming disaster from Climate Change.</p>
@@ -353,11 +398,11 @@
             <p><strong><name ref="#a">Alice</name>.</strong> How will you sell it?</p>
             <p><strong>Art Agent.</strong> Fantasy.</p>
             <p><strong>AR.</strong> Non-stop distraction makes people gullible.</p>
-            <spGrp>
+            <div class="dialogue-tight">
               <p><strong><name ref="#a">Alice</name>.</strong> What about fakes?</p>
               <p><strong>Art Agent.</strong> No problem. All genuine artists have an agent.</p>
               <p><strong><name ref="#a">Alice</name>.</strong> You'll have to give them some sort of certificate.</p>
-            </spGrp>
+            </div>
             <p><strong>Art Agent.</strong> Yes, authentication from the agent. Holes will be very popular. All those journeys into private fantasy. Like Lourdes without the crowds. Wait a minute, the art-hole concept is endlessly capable of manipulation; we could hire a stadium, the punter could pay for a massive event. The art-hole is the last word.<br><span class="stage-direction"><em>(a moment of doubt)</em></span> But not the end of 'something different'. Anybody can be an artist, my door is always open.</p>
             <p><strong><name ref="#p">Pinocchio</name>.</strong>  You people really believe in yourselves. Get a life!<br>
                 I just met <name ref="td">Tweedledum</name> and <name ref="td2">Tweedledee</name>. They are now performance artists. When I told them I want to be a painter, <name ref="td">Dum</name> called me <i>"Bourgois!"</i> for believing I needed skill. I said, <i>"I don't think anyone uses that word anymore"</i>. <name ref="td2">Dee</name> said, <i>"Contrariwise you are an elitist."</i> I'm ok being an elitist - when I get the skill sorted. Hard work, though.</p>
@@ -368,11 +413,11 @@
                 And being true to yourself, <name ref="#p">Pinocchio</name>, is when you're not there, when your stupid little <name ref="#p">Pinocchio</name> doesn't get in the way. Trust your feelings. Don't get in your own light! That's the style!
               </p>
             </div><div class="section-square">
-            <spGrp>
+            <div class="dialogue-tight">
               <p><strong><name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name>.</strong> <span class="stage-direction"><em>(pointing fingers, rapping)</em></span>What about fakes?</p>
               <p><strong><name ref="#p">Pinocchio</name>.</strong> Feelings: prime contact with reality.</p>
               <p><strong><name ref="#a">Alice</name> and <name ref="#p">Pinocchio</name>.</strong> Trust it! Imitation!</p>
-            </spGrp>
+            </div>
             <p><strong>True Poet.</strong> <span class="stage-direction"><em>(to <name ref="#p">Pinocchio</name>)</em></span>Truth comes from doing the work. Art is always original. If you didn't exist, that way of seeing wouldn't exist.</p>
             <p><strong><name ref="#p">Pinocchio</name>.</strong> I feel like <persName ref="#KA">King Arthur</persName>. Only he could pull the sword from the stone. Here comes the hero! Gotcha, <name ref="#a">Alice</name>! Good Imitation true, Bad Imitation false.</p>
             <p><strong>AR.</strong>  I know a great couturier. He said to me, <i>"I have prepared a dress shaped like a heart which I plan to make in black taffeta, it will hold the shape well. Now I ask myself, how would it be in black poplin? More poor, more nothing - less. In which one would a woman appear more beautiful? Until I know the answer, this will destroy me. And yes, I feel silly in front of the terrible problems others face in this world."</i><br> What does this tell us if we rely on our feelings, our feelings about things, not our personal ones? Put yourself in his place. Is he genuine or too extreme? Does he represent human nature?</p>

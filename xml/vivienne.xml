@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<!--TBD: change ref="VV" in sourceDesc to ref="#VV" and all the ref="Collodi" and ref="Carroll" in list cited fictional character to "#"-->
   <teiHeader xml:lang="en">
     <fileDesc>
       <titleStmt>
@@ -31,7 +30,7 @@
       <sourceDesc>
         <bibl sameAs="https://github.com/metamuses/lod-save-the-queen/item/book">
           <title>100 days of active resistance</title>
-          <author ref="VV">Vivienne Westwood</author>
+          <author ref="#VV">Vivienne Westwood</author>
           <publisher ref="#DP">Damiani</publisher>
           <date when="2011">2011</date>
           <pubPlace>Bologna</pubPlace>
@@ -88,84 +87,86 @@
             <orgName role="publisher">Damiani</orgName>
           </item>
         </list>
-        <listPerson type="cited-person"><!--capital letter-->
-          <person xml:id="A" sameAs="https://www.wikidata.org/wiki/Q868">
-            <persName xml:lang="en" role="philosopher">Aristotle</persName>
-          </person>
-          <person xml:id="D" sameAs="https://www.wikidata.org/wiki/Q59180">
-            <persName xml:lang="en" role="philosopher">Diogenes of Sinope</persName>
-          </person>
-          <person xml:id="AG" sameAs="https://www.wikidata.org/wiki/Q8409">
-            <persName xml:lang="en" type="historical" role="king">Alexander the Great</persName>
-          </person>
-          <person xml:id="APR" ref="https://philpeople.org/profiles/adam-parker-rhodes">
-            <persName xml:lang="en" role="philosopher"><forename>Adam</forename> <surname>Parker-Rhodes</surname></persName>
-          </person>
-          <person xml:id="DV" sameAs="https://www.wikidata.org/wiki/Q297">
-            <persName xml:lang="en" role="painter"><forename>Diego</forename> <surname>Velázquez</surname></persName>
-          </person>
-          <person xml:id="GC" sameAs="https://www.wikidata.org/wiki/Q5683">
-            <persName xml:lang="en" type="writer"><forename>Geoffrey</forename> <surname>Chaucer</surname></persName>
-          </person>
-          <person xml:id="KA" sameAs="https://www.wikidata.org/wiki/Q45792">
-            <persName xml:lang="en" type="historical" role="king"> King Arthur</persName>
-          </person>
-          <person xml:id="JW" sameAs="https://www.wikidata.org/wiki/Q203643">
-            <persName xml:lang="en"  role="painter"><forename>James</forename> <surname>McNeill Whistler</surname></persName>
-          </person>
-          <person xml:id="wS" sameAs="https://www.wikidata.org/wiki/Q692">
-            <persName xml:lang="en" role="writer"><forename>William</forename> <surname>Shakespeare</surname></persName>
-          </person>
-          <person xml:id="EM" sameAs="https://www.wikidata.org/wiki/Q40599">
-            <persName xml:lang="en" role="painter"><forename>Édouard</forename> <surname>Manet</surname></persName>
-          </person>
-          <person xml:id="KH" sameAs="https://www.wikidata.org/wiki/Q5586">
-            <persName xml:lang="en" role="painter"><forename>Katsushika</forename> <surname>Hokusai</surname></persName>
-          </person>
-          <person xml:id="PP" sameAs="https://www.wikidata.org/wiki/Q5593">
-            <persName xml:lang="en" role="painter"><forename>Pablo</forename> <surname>Picasso</surname></persName>
-          </person>
-          <person xml:id="AH" sameAs="https://www.wikidata.org/wiki/Q352">
-            <persName xml:lang="en" role="dictator"><forename>Adolf</forename> <surname>Hitler</surname></persName>
-          </person>
-          <person xml:id="LP" sameAs="https://www.wikidata.org/wiki/Q439054">
-            <persName xml:lang="en" role="activist"><forename>Leonard</forename> <surname>Peltier</surname></persName>
-          </person>
-        </listPerson>
-        <list type="cited-fictional-character"><!--small letter-->
-          <item xml:id="a" ref="Carroll" sameAs="https://www.wikidata.org/wiki/Q1269082">
-            <name xml:lang="en" type="fictional">Alice</name>
-          </item>
-          <item xml:id="p" ref="Collodi" sameAs="https://www.wikidata.org/wiki/Q6502703">
-            <name xml:lang="en" type="fictional">Pinocchio</name>
-          </item>
-          <item xml:id="cc" ref="Carroll" sameAs="https://www.wikidata.org/wiki/Q934013">
-            <name xml:lang="en" type="fictional">Cheshire Cat</name>
-          </item>
-          <item xml:id="wr" ref="Carroll" sameAs="https://www.wikidata.org/wiki/Q178776">
-            <name xml:lang="en" type="fictional">White Rabbit</name>
-          </item>
-          <item xml:id="mh" ref="Carroll" sameAs="https://www.wikidata.org/wiki/Q864751">
-            <name xml:lang="en" type="fictional">The Hatter</name>
-          </item>
-          <item xml:id="td" ref="Carroll" sameAs="https://www.wikidata.org/wiki/Q27477399">
-            <name xml:lang="en" type="fictional">Tweedledum</name>
-          </item>
-          <item xml:id="td2" ref="Carroll" sameAs="https://www.wikidata.org/wiki/Q27477415">
-            <name xml:lang="en" type="fictional">Tweedledee</name>
-          </item>
-          <item xml:id="tc" ref="Collodi" sameAs="https://www.wikidata.org/wiki/Q7679809">
-            <name xml:lang="en" type="fictional">Talking Cricket</name>
-          </item>
-        </list>
-        <list type="cited-mythological-figure">
-          <item xml:id="g" sameAs="https://www.wikidata.org/wiki/Q93172">
-            <name xml:lang="en" type="mythological">Gaia</name>
-          </item>
-          <item xml:id="i" sameAs="https://www.wikidata.org/wiki/Q34041">
-            <name xml:lang="en" type="mythological" >Icarus</name>
-          </item>
-        </list>
+        <particDesc>
+          <listPerson type="cited-person"><!--capital letter-->
+            <person xml:id="A" sameAs="https://www.wikidata.org/wiki/Q868">
+              <persName xml:lang="en" role="philosopher">Aristotle</persName>
+            </person>
+            <person xml:id="D" sameAs="https://www.wikidata.org/wiki/Q59180">
+              <persName xml:lang="en" role="philosopher">Diogenes of Sinope</persName>
+            </person>
+            <person xml:id="AG" sameAs="https://www.wikidata.org/wiki/Q8409">
+              <persName xml:lang="en" type="historical" role="king">Alexander the Great</persName>
+            </person>
+            <person xml:id="APR" ref="https://philpeople.org/profiles/adam-parker-rhodes">
+              <persName xml:lang="en" role="philosopher"><forename>Adam</forename> <surname>Parker-Rhodes</surname></persName>
+            </person>
+            <person xml:id="DV" sameAs="https://www.wikidata.org/wiki/Q297">
+              <persName xml:lang="en" role="painter"><forename>Diego</forename> <surname>Velázquez</surname></persName>
+            </person>
+            <person xml:id="GC" sameAs="https://www.wikidata.org/wiki/Q5683">
+              <persName xml:lang="en" type="writer"><forename>Geoffrey</forename> <surname>Chaucer</surname></persName>
+            </person>
+            <person xml:id="KA" sameAs="https://www.wikidata.org/wiki/Q45792">
+              <persName xml:lang="en" type="historical" role="king"> King Arthur</persName>
+            </person>
+            <person xml:id="JW" sameAs="https://www.wikidata.org/wiki/Q203643">
+              <persName xml:lang="en"  role="painter"><forename>James</forename> <surname>McNeill Whistler</surname></persName>
+            </person>
+            <person xml:id="wS" sameAs="https://www.wikidata.org/wiki/Q692">
+              <persName xml:lang="en" role="writer"><forename>William</forename> <surname>Shakespeare</surname></persName>
+            </person>
+            <person xml:id="EM" sameAs="https://www.wikidata.org/wiki/Q40599">
+              <persName xml:lang="en" role="painter"><forename>Édouard</forename> <surname>Manet</surname></persName>
+            </person>
+            <person xml:id="KH" sameAs="https://www.wikidata.org/wiki/Q5586">
+              <persName xml:lang="en" role="painter"><forename>Katsushika</forename> <surname>Hokusai</surname></persName>
+            </person>
+            <person xml:id="PP" sameAs="https://www.wikidata.org/wiki/Q5593">
+              <persName xml:lang="en" role="painter"><forename>Pablo</forename> <surname>Picasso</surname></persName>
+            </person>
+            <person xml:id="AH" sameAs="https://www.wikidata.org/wiki/Q352">
+              <persName xml:lang="en" role="dictator"><forename>Adolf</forename> <surname>Hitler</surname></persName>
+            </person>
+            <person xml:id="LP" sameAs="https://www.wikidata.org/wiki/Q439054">
+              <persName xml:lang="en" role="activist"><forename>Leonard</forename> <surname>Peltier</surname></persName>
+            </person>
+          </listPerson>
+          <list type="cited-fictional-character"><!--small letter-->
+            <item xml:id="a" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q1269082">
+              <name xml:lang="en" type="fictional">Alice</name>
+            </item>
+            <item xml:id="p" ref="#Collodi" sameAs="https://www.wikidata.org/wiki/Q6502703">
+              <name xml:lang="en" type="fictional">Pinocchio</name>
+            </item>
+            <item xml:id="cc" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q934013">
+              <name xml:lang="en" type="fictional">Cheshire Cat</name>
+            </item>
+            <item xml:id="wr" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q178776">
+              <name xml:lang="en" type="fictional">White Rabbit</name>
+            </item>
+            <item xml:id="mh" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q864751">
+              <name xml:lang="en" type="fictional">The Hatter</name>
+            </item>
+            <item xml:id="td" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q27477399">
+              <name xml:lang="en" type="fictional">Tweedledum</name>
+            </item>
+            <item xml:id="td2" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q27477415">
+              <name xml:lang="en" type="fictional">Tweedledee</name>
+            </item>
+            <item xml:id="tc" ref="#Collodi" sameAs="https://www.wikidata.org/wiki/Q7679809">
+              <name xml:lang="en" type="fictional">Talking Cricket</name>
+            </item>
+          </list>
+          <list type="cited-mythological-figure">
+            <item xml:id="g" sameAs="https://www.wikidata.org/wiki/Q93172">
+              <name xml:lang="en" type="mythological">Gaia</name>
+            </item>
+            <item xml:id="i" sameAs="https://www.wikidata.org/wiki/Q34041">
+              <name xml:lang="en" type="mythological" >Icarus</name>
+            </item>
+          </list>
+        </particDesc>
       </profileDesc>
     </fileDesc>
   </teiHeader>
@@ -207,7 +208,7 @@
     <body>
       <div1 type="performance text">
         <div2 type="prologue">
-          <head>AR
+          <head><hi>AR</hi>
             <lb/>ACTIVE RESISTANCE TO PROPAGANDA
           </head>
           <p>

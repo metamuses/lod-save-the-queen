@@ -75,6 +75,7 @@
           font-size: 1rem;
 
         }
+
         .stage-direction {
           font-style: italic;
           color: #555;
@@ -205,7 +206,50 @@
           vertical-align: middle;
           border: 2px solid black;
         }
+<!--speaker group style handler-->
+        .dialogue-tight {
+          line-height: 1.1;
+        }
 
+        .dialogue-tight p,
+        .dialogue-tight .sp-line {
+          margin: 0.2rem 0;
+          line-height: 1.1;
+        }
+<!--prologue styling-->
+
+        .prologue-head {
+          font-family: 'Anton', sans-serif;
+          text-align: center;
+          line-height: 1;
+          margin-bottom: 2rem;
+        }
+
+        .prologue-abbrev {
+          font-size: 25vh;
+          letter-spacing: -2rem; /* negative kerning to make A and R touch */
+          display: inline-block;
+        }
+
+        .prologue-subhead {
+          font-size: 7vh;
+          display: inline-block;
+          margin-top: 1rem;
+          line-height: 1.1;
+        }
+        <!--dropcap styling-->
+        .dropcap-speaker {
+          float: left;
+          font-family: 'Anton', sans-serif;
+          font-size: 8vh;
+          letter-spacing: -0.5rem;
+          line-height: 1;
+          margin-right: 0.1rem;
+          margin-top: 0.1em;
+          width: 1em;
+          height: 8vh;
+          display: block;
+        }
 
         </style>
       </head>
@@ -256,6 +300,10 @@
     </p>
   </xsl:template>
 
+  <xsl:template match="tei:div2[@type='body of perfomance text']/tei:div3/tei:sp[1]/tei:speaker[text()='AR']" mode="split">
+    <span class="dropcap-speaker">AR</span>
+  </xsl:template>
+
   <xsl:template match="tei:speaker" mode="split">
     <strong><xsl:apply-templates mode="split"/></strong>
   </xsl:template>
@@ -264,17 +312,26 @@
     <xsl:apply-templates mode="split"/>
   </xsl:template>
 
-  <xsl:template match="tei:hi[@rend='italic']" mode="split">
-    <i><xsl:apply-templates mode="split"/></i>
+  <xsl:template match="tei:hi" mode="split">
+    <xsl:choose>
+      <xsl:when test="contains(@rend, 'italic') and contains(@rend, 'bold')">
+        <b><i><xsl:apply-templates mode="split"/></i></b>
+      </xsl:when>
+      <xsl:when test="contains(@rend, 'italic')">
+        <i><xsl:apply-templates mode="split"/></i>
+      </xsl:when>
+      <xsl:when test="contains(@rend, 'bold')">
+        <b><xsl:apply-templates mode="split"/></b>
+      </xsl:when>
+      <xsl:when test="contains(@rend, 'underlined')">
+        <u><xsl:apply-templates mode="split"/></u>
+      </xsl:when>
+      <xsl:otherwise>
+        <span><xsl:apply-templates mode="split"/></span>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
-  <xsl:template match="tei:hi[@rend='bold']" mode="split">
-    <b><xsl:apply-templates mode="split"/></b>
-  </xsl:template>
-
-  <xsl:template match="tei:hi[@rend='underlined']" mode="split">
-    <u><xsl:apply-templates mode="split"/></u>
-  </xsl:template>
 <!--stage inside sp line-->
   <xsl:template match="tei:stage[ancestor::tei:sp]" mode="split">
     <span class="stage-direction">
@@ -296,6 +353,12 @@
 
   <xsl:template match="tei:q" mode="split">
     <i><xsl:apply-templates mode="split"/></i>
+  </xsl:template>
+<!--speakers group handler-->
+  <xsl:template match="tei:spGrp" mode="split">
+    <div class="dialogue-tight">
+      <xsl:apply-templates mode="split"/>
+    </div>
   </xsl:template>
 
 <!--first page-->
@@ -389,6 +452,21 @@
     <span class="preface-head-of">
       <u><xsl:apply-templates mode="split"/></u>
     </span>
+  </xsl:template>
+  <!--prologue div handling-->
+  <xsl:template match="tei:div2[@type='prologue']/tei:head" mode="split">
+    <div class="prologue-head">
+      <span class="prologue-abbrev">
+        <xsl:apply-templates select="tei:hi" mode="split"/>
+      </span>
+      <br/>
+      <span class="prologue-subhead">
+        <xsl:apply-templates select="text()[normalize-space() != '']" mode="split"/>
+      </span>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:div2[@type='prologue']/tei:head/tei:hi" mode="split">
+    <xsl:value-of select="."/>
   </xsl:template>
 
 <!--matching xml/html pagina photo1-->
