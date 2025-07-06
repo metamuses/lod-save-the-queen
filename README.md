@@ -39,18 +39,12 @@ The `ttl` directory contains
 
 ### xml
 The `xml` directory contains the XML/TEI encoding of our source book "100 Days 
-of Active Resistance".
+of Active Resistance" and the XSL stylesheet used to convert it into HTML format.
 
-### xml2html
-The `xml2html` directory contains the XSL stylesheet used to convert the XML/TEI
-encoding of our source book into HTML format and resulting HTML file along with
-the images referenced in the XML encoding.
-
-To convert the XML/TEI encoding into HTML format using the XSLT stylesheet, use
-the following command:
+To run the conversion use the following command:
 
 ```bash
-xsltproc xml2html/vivienne.xsl xml/vivienne.xml > xml2html/vivienne.html
+xsltproc xml/vivienne.xsl xml/vivienne.xml > xml2html/vivienne.html
 ```
 
 ### xml2ttl

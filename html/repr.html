@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Anton&family=GFS+Didot&family=Oooh+Baby&family=Ranga:wght@400;700&display=swap" rel="stylesheet">
+    <title>LODSaveTheQueen</title>
+</head>
+<body>
+<!-- header con nav -->
+    <header>
+        <nav class="navbar navbar-expand-lg container-fluid">
+            <div class="header-container container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" title="Logo" alt="Logo" class="img-header">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" style="font-size: 1.5vw;">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">the idea</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="org.html">knowledge organization</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="repr.html">knowledge representation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#team-id">team</a>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+     <!-- main -->
+     <main>
+        <section>
+            <!-- title and introduction for the whole page-->
+            <h1 class="big-title">KNOWLEDGE REPRESENTATION</h1>
+            <p class="general-p">Starting from <a href="https://github.com/metamuses/lod-save-the-queen/tree/main/csv">CSV files</a> that describe our ontology items in natural language listing the triples defined in the theoretical model, we mapped predicates and entities to known <b>RDF namespaces</b> and saved these mappings in <a href="https://github.com/metamuses/lod-save-the-queen/tree/main/csv2ttl">JSON files</a>. <br>All entities have been linked to their corresponding <b>Wikidata URIs</b> to take advantage of Wikidata as an authority hub that connects to multiple external authority files (e.g. <a href="https://viaf.org/en">Viaf</a>, <a href="https://www.geonames.org">Geonames</a>).</p>
+            <p class="general-p">Using <a href="https://github.com/metamuses/lod-save-the-queen/blob/main/csv2ttl/csv2ttl.py">Python</a>, we then processed each CSV file, converting rows into <b>RDF triples</b> based on the mappings. Each resulting RDF graph was serialized into a Turtle <a href="https://github.com/metamuses/lod-save-the-queen/tree/main/ttl/csv2ttl">(.ttl) file</a>, preserving a one-to-one correspondence between input CSVs and output RDF files. Moreover, we produced a comprehensive Turtle file for the <a href="https://github.com/metamuses/lod-save-the-queen/blob/main/ttl/ontology.ttl">entire ontology</a>, including both the individual files for each item and our <b>custom-defined entities</b>, organized into the following sections: <i>person, type, format</i> and <i>organization</i>.</p>
+        </section>
+
+        <section class="sect-container">
+            <!-- csv tables-->
+             <h1 class="title">From CSV...</h1>
+             <div class="tabs-container">
+                <!-- tabs -->
+                <div class="tab-buttons">
+                  <button class="tab-btn active" onclick="showTable('obj1')">anime</button>
+                  <button class="tab-btn" onclick="showTable('obj2')">book</button>
+                  <button class="tab-btn" onclick="showTable('obj3')">corset</button>
+                  <button class="tab-btn" onclick="showTable('obj4')">magazine</button>
+                  <button class="tab-btn" onclick="showTable('obj5')">manga</button>
+                  <button class="tab-btn" onclick="showTable('obj6')">painting</button>
+                  <button class="tab-btn" onclick="showTable('obj7')">photo</button>
+                  <button class="tab-btn" onclick="showTable('obj8')">single</button>
+                  <button class="tab-btn" onclick="showTable('obj9')">tartan</button>
+                  <button class="tab-btn" onclick="showTable('obj10')">top</button>
+                </div>
+
+                <!-- tables -->
+                <div class="tab-content" id="obj1">
+                  <table class="obj-table">
+                    <thead>
+                      <tr><th>subject</th><th>predicate</th><th>object</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Nana (anime)</td><td>has title</td><td>Nana</td></tr>
+                      <tr><td>Nana (anime)</td><td>has type</td><td>anime</td></tr>
+                      <tr><td>Nana (anime)</td><td>is adaptation of</td><td>Nana (manga)</td></tr>
+                      <tr><td>Nana (anime)</td><td>has date of publication</td><td>2007</td></tr>
+                      <tr><td>Nana (anime)</td><td>has publisher</td><td>Terminal Video</td></tr>
+                      <tr><td>Nana (anime)</td><td>has audio language</td><td>Italian</td></tr>
+                      <tr><td>Nana (anime)</td><td>has audio language</td><td>Japanese</td></tr>
+                      <tr><td>Nana (anime)</td><td>has subtitle language</td><td>Italian</td></tr>
+                      <tr><td>Nana (anime)</td><td>has subtitle language</td><td>Japanese</td></tr>
+                      <tr><td>Nana (anime)</td><td>has director</td><td>Morio Asaka</td></tr>
+                      <tr><td>Nana (anime)</td><td>is held by</td><td>Biblioteca Sala Borsa</td></tr>
+                      <tr><td>Nana (anime)</td><td>has format</td><td>slipcase</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-content" id="obj2" style="display:none">
+                  <table class="obj-table">
+                    <thead>
+                        <tr><th>subject</th><th>predicate</th><th>object</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Activism book</td><td>has type</td><td>book</td></tr>
+                        <tr><td>Activism book</td><td>has title</td><td>100 Days of Active Resistance</td></tr>
+                        <tr><td>Activism book</td><td>has date of publication</td><td>2011</td></tr>
+                        <tr><td>Activism book</td><td>has language</td><td>english</td></tr>
+                        <tr><td>Activism book</td><td>has publisher</td><td>Damiani</td></tr>
+                        <tr><td>Activism book</td><td>has subject</td><td>activism</td></tr>
+                        <tr><td>Activism book</td><td>has subject</td><td>photography</td></tr>
+                        <tr><td>Activism book</td><td>has height</td><td>23 cm</td></tr>
+                        <tr><td>Activism book</td><td>has width</td><td>23 cm</td></tr>
+                        <tr><td>Activism book</td><td>is held by</td><td>Biblioteca Sala Borsa</td></tr>
+                        <tr><td>Activism book</td><td>has place of publication</td><td>Bologna</td></tr>
+                        <tr><td>Activism book</td><td>has author</td><td>Vivienne Westwood</td></tr>
+                      </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-content" id="obj3" style="display:none">
+                  <table class="obj-table">
+                    <thead>
+                        <tr><th>subject</th><th>predicate</th><th>object</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Corset</td><td>is held by</td><td>Victoria and Albert Museum</td></tr>
+                        <tr><td>Corset</td><td>has museum category</td><td>Gender & Sexuality</td></tr>
+                        <tr><td>Corset</td><td>has museum category</td><td>The Micheal and Gerlinde Costiff Costume Collection</td></tr>
+                        <tr><td>Corset</td><td>has title</td><td>Corset</td></tr>
+                        <tr><td>Corset</td><td>has place of production</td><td>UK</td></tr>
+                        <tr><td>Corset</td><td>has date of production</td><td>1990</td></tr>
+                        <tr><td>Corset</td><td>has type</td><td>corset</td></tr>
+                        <tr><td>Corset</td><td>has material</td><td>polyester</td></tr>
+                        <tr><td>Corset</td><td>has material</td><td>polyamide</td></tr>
+                        <tr><td>Corset</td><td>has material</td><td>lycra</td></tr>
+                        <tr><td>Corset</td><td>has technique</td><td>printing</td></tr>
+                        <tr><td>Corset</td><td>has bust circumference</td><td>82 cm</td></tr>
+                        <tr><td>Corset</td><td>has waist circumference</td><td>616 mm</td></tr>
+                        <tr><td>Corset</td><td>has length</td><td>44 cm</td></tr>
+                        <tr><td>Corset</td><td>has weight</td><td>0.28 kg</td></tr>
+                        <tr><td>Corset</td><td>is designed by</td><td>Vivienne Westwood</td></tr>
+                        <tr><td>Corset</td><td>has subject</td><td>Daphnis and Chloe painting</td></tr>
+                      </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-content" id="obj4" style="display:none">
+                    <table class="obj-table">
+                      <thead>
+                          <tr><th>subject</th><th>predicate</th><th>object</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>i-D magazine #318</td><td>has title</td><td>I-D #318</td></tr>
+                          <tr><td>i-D magazine #318</td><td>has date of publication</td><td>April 2012</td></tr>
+                          <tr><td>i-D magazine #318</td><td>is part of</td><td>i-D Magazine</td></tr>
+                          <tr><td>i-D magazine #318</td><td>has place of publication</td><td>London</td></tr>
+                          <tr><td>i-D magazine #318</td><td>is held by</td><td>Biblioteca Iuav</td></tr>
+                          <tr><td>i-D magazine #318</td><td>has publisher</td><td>Levelprint Ltd</td></tr>
+                          <tr><td>i-D magazine #318</td><td>has type</td><td>magazine</td></tr>
+                          <tr><td>i-D magazine #318</td><td>has height</td><td>30 cm</td></tr>
+                          <tr><td>i-D magazine #318</td><td>has subject</td><td>Vivienne Westwood</td></tr>
+                        </tbody>
+                    </table>
+                  </div>
+
+                  <div class="tab-content" id="obj5" style="display:none">
+                    <table class="obj-table">
+                      <thead>
+                          <tr><th>subject</th><th>predicate</th><th>object</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>Nana (manga)</td><td>has title</td><td>Nana</td></tr>
+                          <tr><td>Nana (manga)</td><td>has type</td><td>manga</td></tr>
+                          <tr><td>Nana (manga)</td><td>has subject</td><td>God Save the Queen top</td></tr>
+                          <tr><td>Nana (manga)</td><td>has publisher</td><td>Planet Manga</td></tr>
+                          <tr><td>Nana (manga)</td><td>has language</td><td>Italian</td></tr>
+                          <tr><td>Nana (manga)</td><td>has translator</td><td>Claudia Baglini</td></tr>
+                          <tr><td>Nana (manga)</td><td>has creator</td><td>Ai Yazawa</td></tr>
+                          <tr><td>Nana (manga)</td><td>has date of publication</td><td>2019-2020</td></tr>
+                          <tr><td>Nana (manga)</td><td>has place of publication</td><td>Modena</td></tr>
+                          <tr><td>Nana (manga)</td><td>is held by</td><td>Biblioteca Sala Borsa</td></tr>
+                          <tr><td>Nana (manga)</td><td>has format</td><td>slipcase</td></tr>
+                        </tbody>
+                    </table>
+                  </div>
+
+                  <div class="tab-content" id="obj6" style="display:none">
+                    <table class="obj-table">
+                      <thead>
+                          <tr><th>subject</th><th>predicate</th><th>object</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>Daphnis and Chloe painting</td><td>has title</td><td>Victoria and Albert Museum</td></tr>
+                          <tr><td>Daphnis and Chloe painting</td><td>has creator</td><td>Francois Boucher</td></tr>
+                          <tr><td>Daphnis and Chloe painting</td><td>has type</td><td>painting</td></tr>
+                          <tr><td>Daphnis and Chloe painting</td><td>is held by</td><td>Wallace Collection</td></tr>
+                          <tr><td>Daphnis and Chloe painting</td><td>has format</td><td>oil on canvas</td></tr>
+                          <tr><td>Daphnis and Chloe painting</td><td>has height</td><td>109.50 cm</td></tr>
+                          <tr><td>Daphnis and Chloe painting</td><td>has width</td><td>154.8 cm</td></tr>
+                          <tr><td>Daphnis and Chloe painting</td><td>has place of production</td><td>France</td></tr>
+                          <tr><td>Daphnis and Chloe painting</td><td>has date of production</td><td>1743</td></tr>
+                          <tr><td>Daphnis and Chloe painting</td><td>is subject of</td><td>Corset</td></tr>
+                        </tbody>
+                    </table>
+                  </div>
+
+                  <div class="tab-content" id="obj7" style="display:none">
+                    <table class="obj-table">
+                      <thead>
+                          <tr><th>subject</th><th>predicate</th><th>object</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>Vivienne Westwood photo</td><td>has type</td><td>photograph</td></tr>
+                          <tr><td>Vivienne Westwood photo</td><td>has subject</td><td>Vivienne Westwood</td></tr>
+                          <tr><td>Vivienne Westwood photo</td><td>has creator</td><td>Martin Parr</td></tr>
+                          <tr><td>Vivienne Westwood photo</td><td>has date of production</td><td>2012</td></tr>
+                          <tr><td>Vivienne Westwood photo</td><td>has format</td><td>pigment print</td></tr>
+                          <tr><td>Vivienne Westwood photo</td><td>has height</td><td>1528 mm</td></tr>
+                          <tr><td>Vivienne Westwood photo</td><td>has width</td><td>1052 mm</td></tr>
+                          <tr><td>Vivienne Westwood photo</td><td>is held by</td><td>National Portrait Gallery</td></tr>
+                          <tr><td>Vivienne Westwood photo</td><td>has inscription</td><td>climate revolution</td></tr>
+                          <tr><td>Vivienne Westwood photo</td><td>has subject</td><td>activism</td></tr>
+                        </tbody>
+                    </table>
+                  </div>
+
+                  <div class="tab-content" id="obj8" style="display:none">
+                    <table class="obj-table">
+                      <thead>
+                          <tr><th>subject</th><th>predicate</th><th>object</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>Sex Pistols single</td><td>has type</td><td>music single</td></tr>
+                          <tr><td>Sex Pistols single</td><td>has format</td><td>vinyl record</td></tr>
+                          <tr><td>Sex Pistols single</td><td>is part of</td><td>Never Mind the Bollocks Here's the Sex Pistols</td></tr>
+                          <tr><td>Sex Pistols single</td><td>has language</td><td>english</td></tr>
+                          <tr><td>Sex Pistols single</td><td>has date of production</td><td>1977</td></tr>
+                          <tr><td>Sex Pistols single</td><td>has label</td><td>Virgin Records</td></tr>
+                          <tr><td>Sex Pistols single</td><td>has title</td><td>God Save the Queen</td></tr>
+                          <tr><td>Sex Pistols single</td><td>has creator</td><td>Sex Pistols</td></tr>
+                          <tr><td>Sex Pistols single</td><td>has place of production</td><td>UK</td></tr>
+                          <tr><td>Sex Pistols single</td><td>has duration</td><td>3 min 20 sec</td></tr>
+                          <tr><td>Sex Pistols single</td><td>has genre</td><td>punk rock</td></tr>
+                          <tr><td>Sex Pistols single</td><td>is held by</td><td>Biblioteca Nazionale Centrale di Roma</td></tr>
+                        </tbody>
+                    </table>
+                  </div>
+
+                  <div class="tab-content" id="obj9" style="display:none">
+                    <table class="obj-table">
+                      <thead>
+                          <tr><th>subject</th><th>predicate</th><th>object</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>Tartan</td><td>has type</td><td>wallpaper</td></tr>
+                          <tr><td>Tartan</td><td>has title</td><td>Tartan</td></tr>
+                          <tr><td>Tartan</td><td>has creator</td><td>Cole and Son</td></tr>
+                          <tr><td>Tartan</td><td>has material</td><td>paper</td></tr>
+                          <tr><td>Tartan</td><td>has width</td><td>103 mm</td></tr>
+                          <tr><td>Tartan</td><td>has height</td><td>95 mm</td></tr>
+                          <tr><td>Tartan</td><td>is designed by</td><td>Vivienne Westwood</td></tr>
+                          <tr><td>Tartan</td><td>has date of production</td><td>2009</td></tr>
+                          <tr><td>Tartan</td><td>has place of production</td><td>UK</td></tr>
+                          <tr><td>Tartan</td><td>has museum category</td><td>wall coverings</td></tr>
+                          <tr><td>Tartan</td><td>is held by</td><td>Victoria and Albert Museum</td></tr>
+
+                        </tbody>
+                    </table>
+                  </div>
+
+                  <div class="tab-content" id="obj10" style="display:none">
+                    <table class="obj-table">
+                      <thead>
+                          <tr><th>subject</th><th>predicate</th><th>object</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>God Save the Queen top</td><td>has type</td><td>top</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has title</td><td>God Save the Queen top</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has creator</td><td>Malcolm McLaren</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has material</td><td>muslin</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has material</td><td>metal</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has place of production</td><td>UK</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has length</td><td>54 cm</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has circumference</td><td>80 cm</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has subject</td><td>Elizabeth II Queen of Great Britain</td></tr>
+                          <tr><td>God Save the Queen top</td><td>carries</td><td>inscription</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has subject</td><td>Sex Pistols</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has date of production</td><td>1976</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has technique</td><td>printing</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has museum category</td><td>Gender and Sexuality</td></tr>
+                          <tr><td>God Save the Queen top</td><td>has museum category</td><td>The Michael and Gertrude Costiff Costume Collection</td></tr>
+                          <tr><td>God Save the Queen top</td><td>is held by</td><td>Victoria and Albert Museum</td></tr>
+                          <tr><td>God Save the Queen top</td><td>is designed by</td><td>Vivienne Westwood</td></tr>
+                        </tbody>
+                    </table>
+                  </div>
+              </div>
+        </section>
+
+        <section class="sect-container">
+            <!-- rdf ttl-->
+            <h1 class="title">... to RDF</h1>
+            <div class="tabs-container">
+                <!-- tab buttons -->
+                <div class="tab-buttons">
+                  <button class="tab-btn active" onclick="showCode('code1', event)">anime</button>
+                  <button class="tab-btn" onclick="showCode('code2', event)">book</button>
+                  <button class="tab-btn" onclick="showCode('code3', event)">corset</button>
+                  <button class="tab-btn" onclick="showCode('code4', event)">magazine</button>
+                  <button class="tab-btn" onclick="showCode('code5', event)">manga</button>
+                  <button class="tab-btn" onclick="showCode('code6', event)">painting</button>
+                  <button class="tab-btn" onclick="showCode('code7', event)">photo</button>
+                  <button class="tab-btn" onclick="showCode('code8', event)">single</button>
+                  <button class="tab-btn" onclick="showCode('code9', event)">tartan</button>
+                  <button class="tab-btn" onclick="showCode('code10', event)">top</button>
+                  <button class="tab-btn" onclick="showCode('code11', event)">ontology</button>
+                </div>
+
+                <!-- code blocks -->
+                <div class="code-blocks">
+                    <pre id="code1" class="code-content"><code>
+                        @base &lt;https://github.com/metamuses/lod-save-the-queen/&gt; .
+                        @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+                        @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+                        @prefix schema: &lt;https://schema.org/&gt; .
+                        @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+
+                        &lt;item/anime&gt; a wd:Q1107 ;
+                            dc:language wd:Q5287,
+                                wd:Q652 ;
+                            dc:title "Nana" ;
+                            dct:format &lt;format/slipcase&gt; ;
+                            dct:publisher wd:Q132093230 ;
+                            schema:datePublished "2007" ;
+                            schema:director wd:Q516966 ;
+                            schema:isBasedOn &lt;item/manga&gt; ;
+                            schema:itemLocation wd:Q3639614 ;
+                            schema:musicBy wd:Q2568944 .
+                    </code></pre>
+
+
+                    <pre id="code2" class="code-content" style="display:none"><code>
+                        @base &lt;https://github.com/metamuses/lod-save-the-queen/&gt; .
+                        @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+                        @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+                        @prefix schema: &lt;https://schema.org/&gt; .
+                        @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+
+                        &lt;item/book&gt; a wd:Q571 ;
+                            dc:creator &lt;person/vivienne_westwood&gt; ;
+                            dc:language wd:Q1860 ;
+                            dc:title "100 Days of Active Resistance" ;
+                            dct:publisher &lt;org/Damiani&gt; ;
+                            schema:about wd:Q11633,
+                                wd:Q203764 ;
+                            schema:datePublished "2011" ;
+                            schema:height "23 cm" ;
+                            schema:itemLocation wd:Q3639614 ;
+                            schema:locationCreated wd:Q1891 ;
+                            schema:width "23 cm" .
+                    </code></pre>
+
+
+                    <pre id="code3" class="code-content" style="display:none"><code>
+                        @base &lt;https://github.com/metamuses/lod-save-the-queen/&gt; .
+                        @prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+                        @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+                        @prefix lt: &lt;http://terminology.lido-schema.org/&gt; .
+                        @prefix schema: &lt;https://schema.org/&gt; .
+                        @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+
+                        &lt;item/corset&gt; a &lt;type/corset&gt; ;
+                            dc:creator &lt;person/vivienne_westwood&gt; ;
+                            dc:title "Corset" ;
+                            lt:lido01114 wd:Q3514338 ;
+                            crm:P45_consists_of wd:Q145863,
+                                wd:Q330262,
+                                wd:Q7071155 ;
+                            schema:about &lt;item/painting&gt; ;
+                            schema:category "Gender &amp; Sexuality",
+                                "The Micheal and Gerlinde Costiff Costume Collection" ;
+                            schema:dateCreated "1990" ;
+                            schema:hasMeasurement "44 cm",
+                                "616 mm",
+                                "82 cm" ;
+                            schema:itemLocation wd:Q213322 ;
+                            schema:locationCreated wd:Q145 ;
+                            schema:weight "0.28 kg" .
+                    </code></pre>
+
+
+                    <pre id="code4" class="code-content" style="display:none"><code>
+                        @base &lt;https://github.com/metamuses/lod-save-the-queen/&gt; .
+                        @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+                        @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+                        @prefix schema: &lt;https://schema.org/&gt; .
+                        @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+
+                        &lt;item/magazine&gt; a wd:Q41298 ;
+                            dc:title "I-D #318" ;
+                            dct:publisher &lt;org/Levelprint&gt; ;
+                            schema:about &lt;person/vivienne_westwood&gt; ;
+                            schema:datePublished "April 2012" ;
+                            schema:height "30 cm" ;
+                            schema:isPartOf wd:Q286430 ;
+                            schema:itemLocation wd:Q113298998 ;
+                            schema:locationCreated wd:Q84 .
+                    </code></pre>
+
+
+                    <pre id="code5" class="code-content" style="display:none"><code>
+                        @base &lt;https://github.com/metamuses/lod-save-the-queen/&gt; .
+                        @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+                        @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+                        @prefix schema: &lt;https://schema.org/&gt; .
+                        @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+
+                        &lt;item/manga&gt; a wd:Q8274 ;
+                            dc:creator wd:Q234425 ;
+                            dc:language wd:Q652 ;
+                            dc:title "Nana" ;
+                            dct:format &lt;format/slipcase&gt; ;
+                            dct:publisher wd:Q703322 ;
+                            schema:about &lt;item/top&gt; ;
+                            schema:datePublished "2019-2020" ;
+                            schema:itemLocation wd:Q3639614 ;
+                            schema:locationCreated wd:Q279 ;
+                            schema:translator &lt;person/claudia_baglini&gt; .
+                    </code></pre>
+
+
+                    <pre id="code6" class="code-content" style="display:none"><code>
+                        @base &lt;https://github.com/metamuses/lod-save-the-queen/&gt; .
+                        @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+                        @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+                        @prefix schema: &lt;https://schema.org/&gt; .
+                        @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+
+                        &lt;item/painting&gt; a wd:Q3305213 ;
+                            dc:creator wd:Q180932 ;
+                            dc:title "Daphne and Chloe" ;
+                            dct:format wd:Q115654970 ;
+                            schema:dateCreated "1743" ;
+                            schema:height "109.50 cm" ;
+                            schema:itemLocation wd:Q1327919 ;
+                            schema:locationCreated wd:Q142 ;
+                            schema:subjectOf &lt;item/corset&gt; ;
+                            schema:width "154.8 cm" .
+                    </code></pre>
+
+
+                    <pre id="code7" class="code-content" style="display:none"><code>
+                        @base &lt;https://github.com/metamuses/lod-save-the-queen/&gt; .
+                        @prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+                        @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+                        @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+                        @prefix schema: &lt;https://schema.org/&gt; .
+                        @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+
+                        &lt;item/photo&gt; a wd:Q125191 ;
+                            dc:creator wd:Q962442 ;
+                            dct:format wd:Q117384106 ;
+                            crm:P128_carries "climate revolution" ;
+                            schema:about &lt;person/vivienne_westwood&gt;,
+                                wd:Q203764 ;
+                            schema:dateCreated "2012" ;
+                            schema:height "1528 mm" ;
+                            schema:itemLocation wd:Q238587 ;
+                            schema:width "1052 mm" .
+                    </code></pre>
+
+
+                    <pre id="code8" class="code-content" style="display:none"><code>
+                        @base &lt;https://github.com/metamuses/lod-save-the-queen/&gt; .
+                        @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+                        @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+                        @prefix schema: &lt;https://schema.org/&gt; .
+                        @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+
+                        &lt;item/single&gt; a wd:Q134556 ;
+                            dc:creator wd:Q82545 ;
+                            dc:language wd:Q1860 ;
+                            dc:title "God save the Queen" ;
+                            dct:extent "3 min 20 sec" ;
+                            dct:format wd:Q178588 ;
+                            schema:dateCreated "1977" ;
+                            schema:genre wd:Q3071 ;
+                            schema:isPartOf wd:Q457275 ;
+                            schema:itemLocation wd:Q6382871 ;
+                            schema:locationCreated wd:Q145 ;
+                            schema:publisher wd:Q203059 .
+                    </code></pre>
+
+
+                    <pre id="code9" class="code-content" style="display:none"><code>
+                        @base &lt;https://github.com/metamuses/lod-save-the-queen/&gt; .
+                        @prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+                        @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+                        @prefix schema: &lt;https://schema.org/&gt; .
+                        @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+
+                        &lt;item/tartan&gt; a &lt;type/wallpaper&gt; ;
+                            dc:creator &lt;person/vivienne_westwood&gt;,
+                                wd:Q110085657 ;
+                            dc:title "Tartan" ;
+                            crm:P45_consists_of wd:Q11472 ;
+                            schema:category "wall coverings" ;
+                            schema:dateCreated "2009" ;
+                            schema:height "95 mm" ;
+                            schema:itemLocation wd:Q213322 ;
+                            schema:locationCreated wd:Q145 ;
+                            schema:width "103 mm" .
+                    </code></pre>
+
+
+                    <pre id="code10" class="code-content" style="display:none"><code>
+                        @base &lt;https://github.com/metamuses/lod-save-the-queen/&gt; .
+                        @prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+                        @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+                        @prefix lt: &lt;http://terminology.lido-schema.org/&gt; .
+                        @prefix schema: &lt;https://schema.org/&gt; .
+                        @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+
+                        &lt;item/top&gt; a &lt;type/top&gt; ;
+                            dc:creator &lt;person/vivienne_westwood&gt;,
+                                wd:Q325377 ;
+                            dc:title "God Save The Queen top" ;
+                            lt:lido01114 wd:Q3514338 ;
+                            crm:P128_carries wd:Q1640824 ;
+                            crm:P45_consists_of wd:Q11426,
+                                wd:Q725457 ;
+                            schema:about wd:Q82545,
+                                wd:Q9682 ;
+                            schema:category "Gender and Sexuality",
+                                "The Michael and Gertrude Costiff Costume Collection" ;
+                            schema:dateCreated "1976" ;
+                            schema:hasMeasurement "54 cm",
+                                "80 cm" ;
+                            schema:itemLocation wd:Q213322 ;
+                            schema:locationCreated wd:Q145 .
+                    </code></pre>
+
+
+                    <pre id="code11" class="code-content" style="display:none"><code>
+                        @base &lt;https://github.com/metamuses/lod-save-the-queen/&gt; .
+                        @prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+                        @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+                        @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+                        @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+                        @prefix frbroo: &lt;http://iflastandards.info/ns/fr/frbr/frbroo/&gt; .
+                        @prefix lt: &lt;http://terminology.lido-schema.org/&gt; .
+                        @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+                        @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+                        @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+                        @prefix schema: &lt;https://schema.org/&gt; .
+                        @prefix wd: &lt;https://www.wikidata.org/entity/&gt; .
+
+                        &lt;person/vivienne_westwood&gt; a foaf:Person ;
+                            foaf:name "Vivienne Westwood"@en ;
+                            schema:hasOccupation wd:Q3501317 ;
+                            owl:sameAs wd:Q158067 , &lt;http://viaf.org/viaf/85586601&gt; ;
+                            rdfs:comment "British fashion designer."@en .
+
+                        &lt;person/claudia_baglini&gt; a foaf:Person ;
+                            foaf:name "Claudia Baglini"@it ;
+                            schema:hasOccupation wd:Q333634 ;
+                            rdfs:comment "Manga translator."@en .
+
+                        &lt;format/slipcase&gt; a dct:MediaType ;
+                            rdfs:label "Slipcase"@en ;
+                            rdfs:comment "Slipcase format in which books and DVDs are included."@en ;
+                            owl:sameAs wd:Q1647282 .
+
+                        &lt;org/Damiani&gt; a schema:Organization ;
+                            rdfs:label "Damiani"@it ;
+                            schema:location wd:Q1891 ;
+                            rdfs:comment "Publishing house located in Bologna."@en ;
+                            schema:url &lt;https://www.damianibooks.com/&gt; .
+
+                        &lt;org/Levelprint&gt; a schema:Organization ;
+                            rdfs:label "Levelprint Ltd"@en ;
+                            schema:location wd:Q145 ;
+                            rdfs:comment "English publishing company."@en .
+
+                        &lt;type/corset&gt; a crm:E55_Type ;
+                            rdfs:label "Corset"@en ;
+                            rdfs:comment "Garment that supports the bust."@en ;
+                            owl:sameAs wd:Q180225 .
+
+                        &lt;type/wallpaper&gt; a crm:E55_Type ;
+                            rdfs:label "Wallpaper"@en ;
+                            rdfs:comment "Material used to cover and decorate interior walls."@en ;
+                            owl:sameAs wd:Q191529 .
+
+                        &lt;type/top&gt; a crm:E55_Type ;
+                            rdfs:label "Top"@en ;
+                            rdfs:comment "Clothing worn on the upper body."@en ;
+                            owl:sameAs wd:Q1435365 .
+
+                        &lt;item/anime&gt; a frbroo:F5_Item ;
+                            a wd:Q1107 ;
+                            dc:language wd:Q5287,
+                                wd:Q652 ;
+                            dc:title "Nana" ;
+                            dct:format &lt;format/slipcase&gt; ;
+                            dct:publisher wd:Q132093230 ;
+                            schema:datePublished "2007" ;
+                            schema:director wd:Q516966 ;
+                            schema:isBasedOn &lt;item/manga&gt; ;
+                            schema:itemLocation wd:Q3639614 ;
+                            schema:musicBy wd:Q2568944 .
+
+                        &lt;item/book&gt; a frbroo:F5_Item ;
+                            a wd:Q571 ;
+                            dc:creator &lt;person/vivienne_westwood&gt; ;
+                            dc:language wd:Q1860 ;
+                            dc:title "100 Days of Active Resistance" ;
+                            dct:publisher &lt;org/Damiani&gt; ;
+                            schema:about wd:Q11633,
+                                wd:Q203764 ;
+                            schema:datePublished "2011" ;
+                            schema:height "23 cm" ;
+                            schema:itemLocation wd:Q3639614 ;
+                            schema:locationCreated wd:Q1891 ;
+                            schema:width "23 cm" .
+
+                        &lt;item/corset&gt; a frbroo:F5_Item ;
+                            a crm:E24_Physical_Human-Made_Thing ;
+                            a &lt;type/corset&gt; ;
+                            dc:creator &lt;person/vivienne_westwood&gt; ;
+                            dc:title "Corset" ;
+                            lt:lido01114 wd:Q3514338 ;
+                            crm:P45_consists_of wd:Q145863,
+                                wd:Q330262,
+                                wd:Q7071155 ;
+                            schema:about &lt;item/painting&gt; ;
+                            schema:category "Gender &amp; Sexuality",
+                                "The Micheal and Gerlinde Costiff Costume Collection" ;
+                            schema:dateCreated "1990" ;
+                            schema:hasMeasurement "44 cm",
+                                "616 mm",
+                                "82 cm" ;
+                            schema:itemLocation wd:Q213322 ;
+                            schema:locationCreated wd:Q145 ;
+                            schema:weight "0.28 kg" .
+
+                        &lt;item/magazine&gt; a frbroo:F5_Item ;
+                            a wd:Q41298 ;
+                            dc:title "I-D #318" ;
+                            dct:publisher &lt;org/Levelprint&gt; ;
+                            schema:about &lt;person/vivienne_westwood&gt; ;
+                            schema:datePublished "April 2012" ;
+                            schema:height "30 cm" ;
+                            schema:isPartOf wd:Q286430 ;
+                            schema:itemLocation wd:Q113298998 ;
+                            schema:locationCreated wd:Q84 .
+
+                        &lt;item/manga&gt; a frbroo:F5_Item ;
+                            a wd:Q8274 ;
+                            dc:creator wd:Q234425 ;
+                            dc:language wd:Q652 ;
+                            dc:title "Nana" ;
+                            dct:format &lt;format/slipcase&gt; ;
+                            dct:publisher wd:Q703322 ;
+                            schema:about &lt;item/top&gt; ;
+                            schema:datePublished "2019-2020" ;
+                            schema:itemLocation wd:Q3639614 ;
+                            schema:locationCreated wd:Q279 ;
+                            schema:translator &lt;person/claudia_baglini&gt; .
+
+                        &lt;item/painting&gt; a frbroo:F5_Item ;
+                            a wd:Q3305213 ;
+                            dc:creator wd:Q180932 ;
+                            dc:title "Daphne and Chloe" ;
+                            dct:format wd:Q115654970 ;
+                            schema:dateCreated "1743" ;
+                            schema:height "109.50 cm" ;
+                            schema:itemLocation wd:Q1327919 ;
+                            schema:locationCreated wd:Q142 ;
+                            schema:subjectOf &lt;item/corset&gt; ;
+                            schema:width "154.8 cm" .
+
+                        &lt;item/photo&gt; a frbroo:F5_Item ;
+                            a wd:Q125191 ;
+                            dc:creator wd:Q962442 ;
+                            dct:format wd:Q117384106 ;
+                            crm:P128_carries "climate revolution" ;
+                            schema:about &lt;person/vivienne_westwood&gt;,
+                                wd:Q203764 ;
+                            schema:dateCreated "2012" ;
+                            schema:height "1528 mm" ;
+                            schema:itemLocation wd:Q238587 ;
+                            schema:width "1052 mm" .
+
+                        &lt;item/single&gt; a frbroo:F5_Item ;
+                            a wd:Q134556 ;
+                            dc:creator wd:Q82545 ;
+                            dc:language wd:Q1860 ;
+                            dc:title "God save the Queen" ;
+                            dct:extent "3 min 20 sec" ;
+                            dct:format wd:Q178588 ;
+                            schema:dateCreated "1977" ;
+                            schema:genre wd:Q3071 ;
+                            schema:isPartOf wd:Q457275 ;
+                            schema:itemLocation wd:Q6382871 ;
+                            schema:locationCreated wd:Q145 ;
+                            schema:publisher wd:Q203059 .
+
+                        &lt;item/tartan&gt; a frbroo:F5_Item ;
+                            a crm:E24_Physical_Human-Made_Thing ;
+                            a &lt;type/wallpaper&gt; ;
+                            dc:creator &lt;person/vivienne_westwood&gt;,
+                                wd:Q110085657 ;
+                            dc:title "Tartan" ;
+                            crm:P45_consists_of wd:Q11472 ;
+                            schema:category "wall coverings" ;
+                            schema:dateCreated "2009" ;
+                            schema:height "95 mm" ;
+                            schema:itemLocation wd:Q213322 ;
+                            schema:locationCreated wd:Q145 ;
+                            schema:width "103 mm" .
+
+                        &lt;item/top&gt; a frbroo:F5_Item ;
+                            a crm:E24_Physical_Human-Made_Thing ;
+                            a &lt;type/top&gt; ;
+                            dc:creator &lt;person/vivienne_westwood&gt;,
+                                wd:Q325377 ;
+                            dc:title "God Save The Queen top" ;
+                            lt:lido01114 wd:Q3514338 ;
+                            crm:P128_carries wd:Q1640824 ;
+                            crm:P45_consists_of wd:Q11426,
+                                wd:Q725457 ;
+                            schema:about wd:Q82545,
+                                wd:Q9682 ;
+                            schema:category "Gender and Sexuality",
+                                "The Michael and Gertrude Costiff Costume Collection" ;
+                            schema:dateCreated "1976" ;
+                            schema:hasMeasurement "54 cm",
+                                "80 cm" ;
+                            schema:itemLocation wd:Q213322 ;
+                            schema:locationCreated wd:Q145 .
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="sect-container">
+            <!-- tei encoding -->
+             <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <h1 class="title">ENCODING</h1>
+                        <h3 class="subtitle-tei"><i>100 Days of Active Resistance</i> :<br> A Digital Edition</h3>
+                        <div class="p-tei">
+                            <p>The <a href="https://github.com/metamuses/lod-save-the-queen/tree/main/xml">XML file</a> provides the encoding of the book <i>100 Days of Active Resistance</i> following the TEI guidelines.The book contains what is known as <b>The Active Resistance to Propaganda</b> manifesto, that precedes the photos collected from September 2010 by Vivienne Westwood in collaboration with Lee Jeans for <b>100 days</b>. </p>
+                            <p>This manifesto is a dramatic text written by Vivienne Westwood, so it has been encoded following the TEI guidelines for performance texts (<b>drama module</b>). For further information please refer to the <i>teiHeader</i>.</p>
+                            <p>In order to make the XML document browsable it has been transformed into a <a href="https://github.com/metamuses/lod-save-the-queen/tree/main/xml">HMTL document</a> via <b>XSLT language</b>. The aim was to provide a visualization tool as similar as possibile to the original book presentational aspects.</p>
+                            <p>To facilitate data exchange and semantic interoperability a Python script has been provided for transforming <b>XML into RDF</b>. Starting from the XML/TEI encoding of our source book, we used <a href="https://github.com/metamuses/lod-save-the-queen/tree/main/xml2ttl">Python</a> to <b>parse</b> the XML tree and construct an RDF graph. <br>We first described the encoding itself, then the original bibliographic source (linked to our ontology via <i>owl:sameAs</i>), followed by the inferred bibliographic entities mentioned throughout the text. Finally, we identified and described each character who speaks, adding key metadata and linking them to relevant bibliographic references when applicable. <br>The resulting RDF graph was serialized as a Turtle <a href="https://github.com/metamuses/lod-save-the-queen/tree/main/ttl/xml2ttl">(.ttl) file</a>.</p>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="book-container">
+                            <div class="book-wrapper">
+                                <img src="img/bookcover.png" alt="Book Cover">
+                                <button class="read-more-btn" onclick="openModal()">read the book</button>
+                            </div>
+                        </div>
+                          <!-- modal -->
+                          <div id="modal" class="modal-book">
+                            <div class="modal-book-content">
+                              <span class="close-book" onclick="closeModal()">&times;</span>
+                              <iframe src="vivienne.html"></iframe>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+     </main>
+
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="footer-cont">
+            <p>This Website was created by Nicol D'amelio, Tommaso Barbato and Martina Uccheddu for the course Information Science and Cultural Heritage, <br> A.Y. 2024/2025 within the master course in Digital Humanities and Digital Knowledge at the Alma Mater Studiorum in Bologna.<br> Copyright © LODSaveTheQueen <a href="https://github.com/metamuses/lod-save-the-queen"><img src="img/github.png" alt="Github icon" class="github-icon"></a></p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+
+    <script>
+        function showTable(id) {
+        // Nascondi tutte le tabelle
+        document.querySelectorAll('.tab-content').forEach(el => {
+            el.style.display = 'none';
+        });
+
+        // Rimuovi classe active da tutti i bottoni
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        // Mostra quella selezionata
+        document.getElementById(id).style.display = 'block';
+        event.target.classList.add('active');
+        }
+    </script>
+
+    <script>
+        function showCode(id, event) {
+        // Nasconde tutti i blocchi di codice
+        document.querySelectorAll('.code-content').forEach(el => {
+            el.style.display = 'none';
+        });
+
+        // Rimuove active da tutti i bottoni
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        // Mostra solo quello cliccato
+        document.getElementById(id).style.display = 'block';
+        event.target.classList.add('active');
+        }
+    </script>
+
+    <script>
+        function openModal() {
+            document.getElementById("modal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
