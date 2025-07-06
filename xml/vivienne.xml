@@ -809,7 +809,7 @@
           <div3 type="epilogue">
             <p>The most important thing about the manifesto is that it is a practice. If you follow it your life will change. In the pursuit of culture you will start to think If you change your life, you change the world.</p>
             <figure>
-              <graphic url="images/signature.png"/>
+              <graphic url="img/signature.png"/>
               <figDesc>Vivienne Westwood Signature</figDesc>
             </figure>
           </div3>
@@ -819,7 +819,7 @@
       <div1 type="motto">
         <hi>Get a
           <figure>
-            <graphic url="images/ladybugs.png"/>
+            <graphic url="img/ladybugs.png"/>
             <figDesc>Drawing of three ladybug</figDesc>
           </figure>
         </hi>
@@ -828,7 +828,7 @@
         <lb/>
         <hi>Art Lovers Unite!
           <figure>
-            <graphic url="images/heart.png"/>
+            <graphic url="img/heart.png"/>
             <figDesc>Drawing of a stylized heart</figDesc>
           </figure>
         </hi>
@@ -852,7 +852,7 @@
           </div3>
           <div3 type="photo">
             <figure>
-              <graphic url="images/photo1.jpeg"/><!--first photo-->
+              <graphic url="img/march.jpg"/><!--first photo-->
               <figDesc>Photograph of a March in <placeName><settlement>Sidney</settlement>, <country>Australia</country></placeName></figDesc>
             </figure>
           </div3>
