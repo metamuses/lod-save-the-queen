@@ -41,10 +41,10 @@ The `ttl` directory contains
 The `xml` directory contains the XML/TEI encoding of our source book "100 Days 
 of Active Resistance" and the XSL stylesheet used to convert it into HTML format.
 
-To run the conversion use the following command:
+To run the conversion, use the following command:
 
 ```bash
-xsltproc xml/vivienne.xsl xml/vivienne.xml > xml2html/vivienne.html
+xsltproc xml/vivienne.xsl xml/vivienne.xml > html/vivienne.html
 ```
 
 ### xml2ttl
