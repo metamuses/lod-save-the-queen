@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI  xmlns="http://www.tei-c.org/ns/1.0"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
   <teiHeader xml:lang="en">
     <fileDesc>
       <titleStmt>
@@ -74,9 +75,6 @@
             <tagUsage gi="foreign"></tagUsage>
           </namespace>
         </tagsDecl>
-        <dramaSpec>
-          <!--TBD?-->
-        </dramaSpec>
       </encodingDesc>
       <profileDesc>
         <list type="source-responsible">
@@ -811,7 +809,7 @@
           <div3 type="epilogue">
             <p>The most important thing about the manifesto is that it is a practice. If you follow it your life will change. In the pursuit of culture you will start to think If you change your life, you change the world.</p>
             <figure>
-              <graphic url="images/signature.png"/><!--signature-->
+              <graphic url="images/signature.png"/>
               <figDesc>Vivienne Westwood Signature</figDesc>
             </figure>
           </div3>
@@ -821,7 +819,7 @@
       <div1 type="motto">
         <hi>Get a
           <figure>
-            <graphic url="images/ladybugs.png"/><!--ladybugs-->
+            <graphic url="images/ladybugs.png"/>
             <figDesc>Drawing of three ladybug</figDesc>
           </figure>
         </hi>
@@ -830,7 +828,7 @@
         <lb/>
         <hi>Art Lovers Unite!
           <figure>
-            <graphic url="images/heart.png"/><!--heart-->
+            <graphic url="images/heart.png"/>
             <figDesc>Drawing of a stylized heart</figDesc>
           </figure>
         </hi>
@@ -859,7 +857,7 @@
             </figure>
           </div3>
         </div2>
-        <!--to be possibly done: div2 for all the pictures!-->
+        <!--to be done: div2 for all the pictures!-->
       </div1>
     </body>
     <pb/>
@@ -871,12 +869,13 @@
         </div2>
         <pb/>
         <div2 type="link">
-          <p><ref target="https://climaterevolution.co.uk/wp/">www.activeresistance.co.uk/getalife</ref></p>
+          <!--The link in the book is no longer active. The new website created by the Vivienne Foundation has been linked.-->
+          <p xlink:type="simple" xlink:href="https://climaterevolution.co.uk/wp/" xlink:show="new"><ref target="https://climaterevolution.co.uk/wp/">www.activeresistance.co.uk/getalife</ref></p>
         </div2>
       </div1>
       <pb/>
       <div1 type="credits page">
-        <p>Credits page</p>
+        <p>© Damiani 2011<lb/>© The Authors for the Texts<lb/> © The Photographers for the Photographs</p>
       </div1>
     </back>
   </text>

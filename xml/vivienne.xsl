@@ -16,6 +16,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Anton&amp;display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&amp;display=swap" rel="stylesheet"/>
 
         <style>
         .section-square {
@@ -32,6 +33,13 @@
           box-sizing: border-box;
           overflow: auto;
           padding: 1rem;
+          position: relative;
+        }
+        /*to solve didot font not having bold and italic*/
+        .bold-italic {
+          font-style: italic;
+          font-weight: bold;
+          font-family: 'Playfair Display', serif;
         }
 
         .right-gold-title {
@@ -199,14 +207,26 @@
           padding-top: 8rem;
         }
 
+        .photo-section {
+          padding: 0 !important;
+          position: relative;
+          width: 90vmin;
+          height: 90vmin;
+          overflow: hidden;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
         .photo-img {
-          max-width: 100%;
-          height: auto;
-          margin: 0 rem;
-          display: inline;
-          vertical-align: middle;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
           border: 2px solid black;
         }
+
         /*speaker group style handler*/
         .dialogue-tight {
           line-height: 1.1;
@@ -270,14 +290,28 @@
           font-size: 1.5rem;
           color: black;
         }
+        /* website link page*/
+        .link-style-container {
+          position: absolute;
+          bottom: 1rem;
+          right: 1rem;
+        }
 
         .link-style {
           font-family: 'Anton', sans-serif;
           color: red;
           text-decoration: none;
         }
-
-
+        /*credits page*/
+        .credits-page {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-family: 'Didot', serif;
+          font-size: 0.5rem;
+          height: 100%;
+        }
         </style>
       </head>
       <body>
@@ -342,7 +376,7 @@
   <xsl:template match="tei:hi" mode="split">
     <xsl:choose>
       <xsl:when test="contains(@rend, 'italic') and contains(@rend, 'bold')">
-        <b><i><xsl:apply-templates mode="split"/></i></b>
+        <span class="bold-italic"><xsl:apply-templates mode="split"/></span>
       </xsl:when>
       <xsl:when test="contains(@rend, 'italic')">
         <i><xsl:apply-templates mode="split"/></i>
@@ -480,7 +514,7 @@
       <u><xsl:apply-templates mode="split"/></u>
     </span>
   </xsl:template>
-  <!--prologue div handling-->
+<!--prologue div handling-->
   <xsl:template match="tei:div2[@type='prologue']/tei:head" mode="split">
     <div class="prologue-head">
       <span class="prologue-abbrev">
@@ -530,6 +564,13 @@
       <xsl:apply-templates mode="split"/>
     </p>
   </xsl:template>
+
+  <xsl:template match="tei:div3[@type='photo']" mode="split">
+    <div class="section-square photo-section">
+      <xsl:apply-templates mode="split"/>
+    </div>
+  </xsl:template>
+
   <!--photographer list page-->
   <xsl:template match="tei:back/tei:div1[@type='photographers list']/tei:div2[@type='photographers name']/tei:p" mode="split">
     <p class="photographer-inline">
@@ -549,15 +590,24 @@
   </xsl:template>
 
   <!--link page-->
+  <xsl:template match="tei:div2[@type='link']/tei:p" mode="split">
+    <div class="link-style-container">
+      <xsl:apply-templates mode="split"/>
+    </div>
+  </xsl:template>
+
   <xsl:template match="tei:ref" mode="split">
-    <p class="bottom-link">
-      <a class="link-style">
-        <xsl:attribute name="href">
-          <xsl:value-of select="@target"/>
-        </xsl:attribute>
-        <xsl:apply-templates mode="split"/>
-      </a>
-    </p>
+    <xsl:variable name="url" select="@target"/>
+    <a href="{$url}" class="link-style" target="_blank" rel="noopener">
+      <xsl:apply-templates mode="split"/>
+    </a>
+  </xsl:template>
+
+<!--credits page-->
+  <xsl:template match="tei:div1[@type='credits page']" mode="split">
+    <div class="credits-page">
+      <xsl:apply-templates mode="split"/>
+    </div>
   </xsl:template>
 
 </xsl:stylesheet>

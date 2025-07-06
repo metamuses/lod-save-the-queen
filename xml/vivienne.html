@@ -5,6 +5,7 @@
 <title>100 days of active resistance: digital edition</title>
 <link href="https://fonts.googleapis.com/css2?family=Anton&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&amp;display=swap" rel="stylesheet">
 <style>
         .section-square {
           height: 95vh;
@@ -20,6 +21,13 @@
           box-sizing: border-box;
           overflow: auto;
           padding: 1rem;
+          position: relative;
+        }
+        /*to solve didot font not having bold and italic*/
+        .bold-italic {
+          font-style: italic;
+          font-weight: bold;
+          font-family: 'Playfair Display', serif;
         }
 
         .right-gold-title {
@@ -187,14 +195,26 @@
           padding-top: 8rem;
         }
 
+        .photo-section {
+          padding: 0 !important;
+          position: relative;
+          width: 90vmin;
+          height: 90vmin;
+          overflow: hidden;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
         .photo-img {
-          max-width: 100%;
-          height: auto;
-          margin: 0 rem;
-          display: inline;
-          vertical-align: middle;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
           border: 2px solid black;
         }
+
         /*speaker group style handler*/
         .dialogue-tight {
           line-height: 1.1;
@@ -258,14 +278,28 @@
           font-size: 1.5rem;
           color: black;
         }
+        /* website link page*/
+        .link-style-container {
+          position: absolute;
+          bottom: 1rem;
+          right: 1rem;
+        }
 
         .link-style {
           font-family: 'Anton', sans-serif;
           color: red;
           text-decoration: none;
         }
-
-
+        /*credits page*/
+        .credits-page {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-family: 'Didot', serif;
+          font-size: 0.5rem;
+          height: 100%;
+        }
         </style>
 </head>
 <body><div class="section-square"><text xml:lang="en">
@@ -381,7 +415,7 @@
             <p><strong><name ref="#a">Alice</name>.</strong> That's how I feel about Velasquez. His work is so minimal and reduced. The paint is so thin and the people in the paintings are so real that I sometimes think they weren't there, especially in the split second before you turn to look again. I just wanted to melt into a pool on the floor.</p>
             <p><strong>AR.</strong> One can begin to grasp something of the obsession people have had with the idea of the circle as a perfect form. A work of art then, is <i>an Imitation reduced to its essentials, thereby forming a whole</i> - as in a microcosm. Real life cannot give the complete picture. It is - a jumble of particulars in which events are engulfed in the flux of chaos. How can the artist see things as they really are when he, himself is part of the change? He needs a fixed fact to stand on.</p>
             <p><strong><name ref="#a">Alice</name>.</strong> Tell me all about it! If there is nothing fixed in the world then you find yourself in Wonderland where everything changes - <i>including yourself.</i> - And you try to play a game of croquet with a flamingo for a mallet and the ball is a hedgehog who runs away.</p>
-            <p><strong>AR.</strong> A hedgehog must understand the world from a hedgehog point of view, and we must understand it from a human point of view. <br>We do have a fixed fact to stand on: <span>IMITATION.</span> <br>We know that Imitation gives us art - but that is as a result of the main fact which is that our species is programmed to imitate. We are the world's best imitators and that is how we evolved into humans. <b><i>We understand the world because we imitate it.</i></b><br><name ref="#a">Alice</name> will begin to explain.</p>
+            <p><strong>AR.</strong> A hedgehog must understand the world from a hedgehog point of view, and we must understand it from a human point of view. <br>We do have a fixed fact to stand on: <span>IMITATION.</span> <br>We know that Imitation gives us art - but that is as a result of the main fact which is that our species is programmed to imitate. We are the world's best imitators and that is how we evolved into humans. <span class="bold-italic">We understand the world because we imitate it.</span><br><name ref="#a">Alice</name> will begin to explain.</p>
             <p><strong><name ref="#a">Alice</name>.</strong> It's what happens when a baby smiles back at you. He sees you do it and the muscles in his face know how to make the same pattern, but it's not just the muscles but his whole system which is at work. Our body is a coding system which can blueprint the eye's impression of a smile and convert it into an actual smile. Scientists would tell us what chemicals etc. are involved. <br>Without this key -- our human coding system, we could not hold anything in our memory or repeat our actions. Animals can do this to a limited degree. I'm thinking of a puppy I once met. I took a stick and it immediately understood my intention and was ready to run. And it brought the stick back. But animals do not have that continuous relationship with the world which gives us a great deal of control over our behaviour and our lives - even though we are free to act unwisely.</p>
             <p><strong>Adam Parker-Rhodes.</strong> Apes can't dance!</p>
             <p><strong>AR.</strong> The philosopher Adam Parker-Rhodes is racing against time as he pins down the theory of Imitation. He knows that an understanding of who we are bears upon what we shall do in the face of looming disaster from Climate Change.</p>
@@ -552,9 +586,9 @@
             </p>
             </div><div class="section-square">
           </div3>
-          <div3 type="photo">
+          <div class="section-square photo-section">
             <img src="images/photo1.jpeg" alt="Photograph of a March in Sidney, Australia" class="photo-img">
-          </div3>
+          </div>
         </div2>
         
       </div1>
@@ -569,13 +603,14 @@
         </div2>
         </div><div class="section-square">
         <div2 type="link">
-          <p><p class="bottom-link"><a class="link-style" href="https://climaterevolution.co.uk/wp/">www.activeresistance.co.uk/getalife</a></p></p>
+          
+          <div class="link-style-container"><a href="https://climaterevolution.co.uk/wp/" class="link-style" target="_blank" rel="noopener">www.activeresistance.co.uk/getalife</a></div>
         </div2>
       </div1>
       </div><div class="section-square">
-      <div1 type="credits page">
-        <p>Credits page</p>
-      </div1>
+      <div class="credits-page">
+        <p>© Damiani 2011<br>© The Authors for the Texts<br> © The Photographers for the Photographs</p>
+      </div>
     </back>
   </text></div></body>
 </html>
