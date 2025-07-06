@@ -412,6 +412,11 @@
     <xsl:apply-templates mode="split"/>
   </xsl:template>
 
+  <!-- Don't italicize <q> in body of performance text -->
+  <xsl:template match="tei:q[ancestor::tei:div2[@type='body of perfomance text']]" mode="split">
+    <xsl:apply-templates mode="split"/>
+  </xsl:template>
+
   <xsl:template match="tei:q" mode="split">
     <i><xsl:apply-templates mode="split"/></i>
   </xsl:template>
