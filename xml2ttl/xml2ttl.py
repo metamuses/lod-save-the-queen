@@ -125,13 +125,13 @@ chars_mapping = [
     ),
     (
         "cited-fictional-character",
-        ".//tei:list[@type='cited-fictional-character']/tei:item",
+        ".//tei:listPerson[@type='cited-fictional-character']/tei:person",
         False,
         ".//tei:name"
     ),
     (
         "cited-mythological-figure",
-        ".//tei:list[@type='cited-mythological-figure']/tei:item",
+        ".//tei:listPerson[@type='cited-mythological-figure']/tei:person",
         False,
         ".//tei:name"
     )
@@ -143,7 +143,7 @@ for label, path, is_person, name_path in chars_mapping:
         xml_id = el.attrib.get("{http://www.w3.org/XML/1998/namespace}id")
         name_el = el.find(name_path, namespaces=ns)
         same_as = el.attrib.get("sameAs")
-        ref = el.attrib.get("ref")
+        ref = name_el.attrib.get("ref")
 
         # Extract name and role
         name = " ".join(" ".join(name_el.itertext()).split())

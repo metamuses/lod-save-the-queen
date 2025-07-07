@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI  xmlns="http://www.tei-c.org/ns/1.0"
-      xmlns:xlink="http://www.w3.org/1999/xlink">
+<TEI  xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader xml:lang="en">
     <fileDesc>
       <titleStmt>
@@ -20,7 +19,7 @@
       </editionStmt>
       <publicationStmt>
         <authority>MetaMuses</authority>
-        <idno type="URL" target="https://github.com/metamuses/lod-save-the-queen">https://github.com/metamuses/lod-save-the-queen</idno>
+        <idno type="URI">https://github.com/metamuses/lod-save-the-queen</idno>
         <date when="2025">2025</date>
         <availability status="restricted">
           <p>The original source is copyrighted by Damiani 2011, the authors for the texts, the photographers for the photographs.
@@ -48,129 +47,131 @@
           </bibl>
         </listBibl>
       </sourceDesc>
-      <encodingDesc>
-        <projectDesc>
-          <p>Text encoded for the project "Lod Save the Queen", developed for the course "Information Science and Cultural Heritage" of the Digital Humanities and Digital Knowledge master degree at University of Bologna.</p>
-        </projectDesc>
-        <samplingDecl>
-          <p>For the sake of the exam only the manifesto by Vivienne Westwood has been fully encoded and annotated and day 1 entrance with related paragraph and image. The structure of the whole book has been encoded to facilitate further work.</p>
-        </samplingDecl>
-        <editorialDecl>
-          <interpretation>The cited persons, fictional characters and mythological creatures have been annotated to provide Vivienne Westwood cultural references. Lists of this annotated name and persName have been provided in the profileDesc section.
-            Throught the text date and places have been annotated but not disambiguated with a local authority file in the teiHeader because deemed irrelevant for the study of the source due to the scarcity of occurrences.
-          </interpretation>
-          <quotation>
-            The tag q has been prefered throught the text rather then distinct beetween said, quote or cit. Quote has been use exclusively in the photograph section where the quote where the agency is certain.
-          </quotation>
-        </editorialDecl>
-        <tagsDecl>
-          <rendition scheme="css" selector="speaker">
-            font-style: italic;
-          </rendition>
-          <rendition scheme="css" selector="scene">
-            font-style: italic;
-          </rendition>
-          <namespace name="http://www.tei-c.org/ns/1.0">
-            <tagUsage gi="hi">Used to encode all the variation in the font style and color throught the text not related to scene, speaker or q tag</tagUsage> <!--TBD: hi tag usage-->
-            <tagUsage gi="foreign"></tagUsage>
-          </namespace>
-        </tagsDecl>
-      </encodingDesc>
-      <profileDesc>
-        <list type="source-responsible">
-          <item xml:id="VV" sameAs="https://github.com/metamuses/lod-save-the-queen/person/vivienne_westwood">
-            <persName role="designer"><forename>Vivienne</forename><surname>Westwood</surname></persName>
-          </item>
-          <item xml:id="DP" ref="https://www.damianibooks.com" sameAs="https://github.com/metamuses/lod-save-the-queen/org/Damiani">
-            <orgName role="publisher">Damiani</orgName>
-          </item>
-        </list>
-        <particDesc>
-          <listPerson type="cited-person"><!--capital letter-->
-            <person xml:id="A" sameAs="https://www.wikidata.org/wiki/Q868">
-              <persName xml:lang="en" role="philosopher">Aristotle</persName>
-            </person>
-            <person xml:id="D" sameAs="https://www.wikidata.org/wiki/Q59180">
-              <persName xml:lang="en" role="philosopher">Diogenes of Sinope</persName>
-            </person>
-            <person xml:id="AG" sameAs="https://www.wikidata.org/wiki/Q8409">
-              <persName xml:lang="en" type="historical" role="king">Alexander the Great</persName>
-            </person>
-            <person xml:id="APR" ref="https://philpeople.org/profiles/adam-parker-rhodes">
-              <persName xml:lang="en" role="philosopher"><forename>Adam</forename> <surname>Parker-Rhodes</surname></persName>
-            </person>
-            <person xml:id="DV" sameAs="https://www.wikidata.org/wiki/Q297">
-              <persName xml:lang="en" role="painter"><forename>Diego</forename> <surname>Velázquez</surname></persName>
-            </person>
-            <person xml:id="GC" sameAs="https://www.wikidata.org/wiki/Q5683">
-              <persName xml:lang="en" type="writer"><forename>Geoffrey</forename> <surname>Chaucer</surname></persName>
-            </person>
-            <person xml:id="KA" sameAs="https://www.wikidata.org/wiki/Q45792">
-              <persName xml:lang="en" type="historical" role="king"> King Arthur</persName>
-            </person>
-            <person xml:id="JW" sameAs="https://www.wikidata.org/wiki/Q203643">
-              <persName xml:lang="en"  role="painter"><forename>James</forename> <surname>McNeill Whistler</surname></persName>
-            </person>
-            <person xml:id="wS" sameAs="https://www.wikidata.org/wiki/Q692">
-              <persName xml:lang="en" role="writer"><forename>William</forename> <surname>Shakespeare</surname></persName>
-            </person>
-            <person xml:id="EM" sameAs="https://www.wikidata.org/wiki/Q40599">
-              <persName xml:lang="en" role="painter"><forename>Édouard</forename> <surname>Manet</surname></persName>
-            </person>
-            <person xml:id="KH" sameAs="https://www.wikidata.org/wiki/Q5586">
-              <persName xml:lang="en" role="painter"><forename>Katsushika</forename> <surname>Hokusai</surname></persName>
-            </person>
-            <person xml:id="PP" sameAs="https://www.wikidata.org/wiki/Q5593">
-              <persName xml:lang="en" role="painter"><forename>Pablo</forename> <surname>Picasso</surname></persName>
-            </person>
-            <person xml:id="AH" sameAs="https://www.wikidata.org/wiki/Q352">
-              <persName xml:lang="en" role="dictator"><forename>Adolf</forename> <surname>Hitler</surname></persName>
-            </person>
-            <person xml:id="LP" sameAs="https://www.wikidata.org/wiki/Q439054">
-              <persName xml:lang="en" role="activist"><forename>Leonard</forename> <surname>Peltier</surname></persName>
-            </person>
-          </listPerson>
-          <list type="cited-fictional-character"><!--small letter-->
-            <item xml:id="a" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q1269082">
-              <name xml:lang="en" type="fictional">Alice</name>
-            </item>
-            <item xml:id="p" ref="#Collodi" sameAs="https://www.wikidata.org/wiki/Q6502703">
-              <name xml:lang="en" type="fictional">Pinocchio</name>
-            </item>
-            <item xml:id="cc" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q934013">
-              <name xml:lang="en" type="fictional">Cheshire Cat</name>
-            </item>
-            <item xml:id="wr" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q178776">
-              <name xml:lang="en" type="fictional">White Rabbit</name>
-            </item>
-            <item xml:id="mh" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q864751">
-              <name xml:lang="en" type="fictional">The Hatter</name>
-            </item>
-            <item xml:id="td" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q27477399">
-              <name xml:lang="en" type="fictional">Tweedledum</name>
-            </item>
-            <item xml:id="td2" ref="#Carroll" sameAs="https://www.wikidata.org/wiki/Q27477415">
-              <name xml:lang="en" type="fictional">Tweedledee</name>
-            </item>
-            <item xml:id="tc" ref="#Collodi" sameAs="https://www.wikidata.org/wiki/Q7679809">
-              <name xml:lang="en" type="fictional">Talking Cricket</name>
-            </item>
-          </list>
-          <list type="cited-mythological-figure">
-            <item xml:id="g" sameAs="https://www.wikidata.org/wiki/Q93172">
-              <name xml:lang="en" type="mythological">Gaia</name>
-            </item>
-            <item xml:id="i" sameAs="https://www.wikidata.org/wiki/Q34041">
-              <name xml:lang="en" type="mythological" >Icarus</name>
-            </item>
-          </list>
-        </particDesc>
-      </profileDesc>
     </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text encoded for the project "Lod Save the Queen", developed for the course "Information Science and Cultural Heritage" of the Digital Humanities and Digital Knowledge master degree at University of Bologna.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>For the sake of the exam only the manifesto by Vivienne Westwood has been fully encoded and annotated and day 1 entrance with related paragraph and image. The structure of the whole book has been encoded to facilitate further work.</p>
+      </samplingDecl>
+      <editorialDecl>
+        <interpretation><p>The cited persons, fictional characters and mythological creatures have been annotated to provide Vivienne Westwood cultural references. Lists of this annotated name and persName have been provided in the profileDesc section.
+          Throught the text date and places have been annotated but not disambiguated with a local authority file in the teiHeader because deemed irrelevant for the study of the source due to the scarcity of occurrences.</p>
+        </interpretation>
+        <quotation>
+          <p>The tag q has been prefered throught the text rather then distinct beetween said, quote or cit. Quote has been use exclusively in the photograph section where the quote where the agency is certain.</p>
+        </quotation>
+      </editorialDecl>
+      <tagsDecl>
+        <rendition scheme="css" selector="speaker">
+          font-style: italic;
+        </rendition>
+        <rendition scheme="css" selector="scene">
+          font-style: italic;
+        </rendition>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="hi">Used to encode all the variation in the font style and color throught the text not related to scene, speaker or q tag</tagUsage> <!--TBD: hi tag usage-->
+          <tagUsage gi="foreign"></tagUsage>
+        </namespace>
+      </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson type="source-responsible">
+          <person xml:id="VV" sameAs="https://github.com/metamuses/lod-save-the-queen/person/vivienne_westwood">
+            <persName role="designer"><forename>Vivienne</forename><surname>Westwood</surname></persName>
+          </person>
+        </listPerson>
+        <listOrg type="source-responsible">
+          <org xml:id="DP" sameAs="https://github.com/metamuses/lod-save-the-queen/org/Damiani">
+            <orgName role="publisher" ref="https://www.damianibooks.com">Damiani</orgName>
+          </org>
+        </listOrg>
+        <listPerson type="cited-person"><!--capital letter-->
+          <person xml:id="A" sameAs="https://www.wikidata.org/wiki/Q868">
+            <persName xml:lang="en" role="philosopher">Aristotle</persName>
+          </person>
+          <person xml:id="D" sameAs="https://www.wikidata.org/wiki/Q59180">
+            <persName xml:lang="en" role="philosopher">Diogenes of Sinope</persName>
+          </person>
+          <person xml:id="AG" sameAs="https://www.wikidata.org/wiki/Q8409">
+            <persName xml:lang="en" type="historical" role="king">Alexander the Great</persName>
+          </person>
+          <person xml:id="APR">
+            <persName xml:lang="en" role="philosopher" ref="https://philpeople.org/profiles/adam-parker-rhodes"><forename>Adam</forename> <surname>Parker-Rhodes</surname></persName>
+          </person>
+          <person xml:id="DV" sameAs="https://www.wikidata.org/wiki/Q297">
+            <persName xml:lang="en" role="painter"><forename>Diego</forename> <surname>Velázquez</surname></persName>
+          </person>
+          <person xml:id="GC" sameAs="https://www.wikidata.org/wiki/Q5683">
+            <persName xml:lang="en" type="writer"><forename>Geoffrey</forename> <surname>Chaucer</surname></persName>
+          </person>
+          <person xml:id="KA" sameAs="https://www.wikidata.org/wiki/Q45792">
+            <persName xml:lang="en" type="historical" role="king"> King Arthur</persName>
+          </person>
+          <person xml:id="JW" sameAs="https://www.wikidata.org/wiki/Q203643">
+            <persName xml:lang="en"  role="painter"><forename>James</forename> <surname>McNeill Whistler</surname></persName>
+          </person>
+          <person xml:id="wS" sameAs="https://www.wikidata.org/wiki/Q692">
+            <persName xml:lang="en" role="writer"><forename>William</forename> <surname>Shakespeare</surname></persName>
+          </person>
+          <person xml:id="EM" sameAs="https://www.wikidata.org/wiki/Q40599">
+            <persName xml:lang="en" role="painter"><forename>Édouard</forename> <surname>Manet</surname></persName>
+          </person>
+          <person xml:id="KH" sameAs="https://www.wikidata.org/wiki/Q5586">
+            <persName xml:lang="en" role="painter"><forename>Katsushika</forename> <surname>Hokusai</surname></persName>
+          </person>
+          <person xml:id="PP" sameAs="https://www.wikidata.org/wiki/Q5593">
+            <persName xml:lang="en" role="painter"><forename>Pablo</forename> <surname>Picasso</surname></persName>
+          </person>
+          <person xml:id="AH" sameAs="https://www.wikidata.org/wiki/Q352">
+            <persName xml:lang="en" role="dictator"><forename>Adolf</forename> <surname>Hitler</surname></persName>
+          </person>
+          <person xml:id="LP" sameAs="https://www.wikidata.org/wiki/Q439054">
+            <persName xml:lang="en" role="activist"><forename>Leonard</forename> <surname>Peltier</surname></persName>
+          </person>
+        </listPerson>
+        <listPerson type="cited-fictional-character"><!--small letter-->
+          <person xml:id="a" sameAs="https://www.wikidata.org/wiki/Q1269082">
+            <name xml:lang="en" type="fictional" ref="#Carroll">Alice</name>
+          </person>
+          <person xml:id="p" sameAs="https://www.wikidata.org/wiki/Q6502703">
+            <name xml:lang="en" type="fictional" ref="#Collodi">Pinocchio</name>
+          </person>
+          <person xml:id="cc" sameAs="https://www.wikidata.org/wiki/Q934013">
+            <name xml:lang="en" type="fictional" ref="#Carroll">Cheshire Cat</name>
+          </person>
+          <person xml:id="wr" sameAs="https://www.wikidata.org/wiki/Q178776">
+            <name xml:lang="en" type="fictional" ref="#Carroll">White Rabbit</name>
+          </person>
+          <person xml:id="mh" sameAs="https://www.wikidata.org/wiki/Q864751">
+            <name xml:lang="en" type="fictional" ref="#Carroll">The Hatter</name>
+          </person>
+          <person xml:id="td" sameAs="https://www.wikidata.org/wiki/Q27477399">
+            <name xml:lang="en" type="fictional" ref="#Carroll">Tweedledum</name>
+          </person>
+          <person xml:id="td2" sameAs="https://www.wikidata.org/wiki/Q27477415">
+            <name xml:lang="en" type="fictional" ref="#Carroll">Tweedledee</name>
+          </person>
+          <person xml:id="tc" sameAs="https://www.wikidata.org/wiki/Q7679809">
+            <name xml:lang="en" type="fictional" ref="#Collodi">Talking Cricket</name>
+          </person>
+        </listPerson>
+        <listPerson type="cited-mythological-figure">
+          <person xml:id="g" sameAs="https://www.wikidata.org/wiki/Q93172">
+            <name xml:lang="en" type="mythological">Gaia</name>
+          </person>
+          <person xml:id="i" sameAs="https://www.wikidata.org/wiki/Q34041">
+            <name xml:lang="en" type="mythological" >Icarus</name>
+          </person>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
   </teiHeader>
   <text xml:lang="en">
     <front>
-      <div1 type="title page">
+      <div1 type="title-page">
         <head rend="gold-right">100 <lb/>DAYS <lb/>OF <lb/>ACTIVE <lb/>RESIST<lb/>ANCE</head>
       </div1>
       <pb/>
@@ -204,7 +205,7 @@
     </front>
     <pb/>
     <body>
-      <div1 type="performance text">
+      <div1 type="performance-text">
         <div2 type="prologue">
           <head><hi>AR</hi>
             <lb/>ACTIVE RESISTANCE TO PROPAGANDA
@@ -213,9 +214,9 @@
             I make the great claim for my manifesto, that it penetrates to the root of the human predicament and offers the underlying solution. We have the choice to become more cultivated and therefore more human
             - or by muddling along as usual we shall remain the destructive and self-destroying animal, the victim of our own cleverness (To be or not to be).<!--citation-->
           </p>
-          <p type="castGroup">
+          <p>
             Among the travellers who accompany Active Resistance are:
-            <lb/><name type="castItem" ref="#a"><role>Alice</role></name>
+            <lb/><name type="castItem" ref="#a">Alice</name>
             <lb/><name type="castItem" ref="#p">Pinocchio</name>
             <lb/><name type="castItem" xml:id="al">Art Lover (an anthropologist)</name>
             <lb/><name type="castItem" xml:id="tp">True Poet (an alchemist)</name>
@@ -225,7 +226,7 @@
           </p>
         </div2>
         <pb/>
-        <div2 type="body of perfomance text">
+        <div2 type="body-of-perfomance-text">
           <div3>
             <sp>
               <speaker>AR</speaker>
@@ -565,7 +566,7 @@
             </sp>
             <sp who="#p">
               <speaker><name ref="#p">Pinocchio</name>.</speaker>
-              <p>Dear little Cricket, I still get around, have a laugh! But, yeah, this inner voice is always having a go, <q aloud="False">"<name ref="#p">Pinocchio</name>, don't be an arsehole! Sorry - art-hole! I am your human self. Listen to me!"</q><lb/><stage>(turns to <name ref="#a">Alice</name>)</stage> C'mon <name ref="#a">Alice</name>, you're the chief. How do I trust myself to know what is genuine? Help me out.</p>
+              <p>Dear little Cricket, I still get around, have a laugh! But, yeah, this inner voice is always having a go, <q type="thought">"<name ref="#p">Pinocchio</name>, don't be an arsehole! Sorry - art-hole! I am your human self. Listen to me!"</q><lb/><stage>(turns to <name ref="#a">Alice</name>)</stage> C'mon <name ref="#a">Alice</name>, you're the chief. How do I trust myself to know what is genuine? Help me out.</p>
             </sp>
             <sp  who="#a">
               <speaker><name ref="#a">Alice</name>.</speaker>
@@ -817,34 +818,32 @@
       </div1>
       <pb/>
       <div1 type="motto">
-        <hi>Get a
-          <figure>
-            <graphic url="img/ladybugs.png"/>
-            <figDesc>Drawing of three ladybug</figDesc>
-          </figure>
-        </hi>
+        <p><hi>Get a</hi></p>
+        <figure>
+          <graphic url="img/ladybugs.png"/>
+          <figDesc>Drawing of three ladybug</figDesc>
+        </figure>
         <lb/>
-        <hi>life</hi>
+        <p><hi>life</hi></p>
         <lb/>
-        <hi>Art Lovers Unite!
+        <p><hi>Art Lovers Unite!</hi></p>
           <figure>
             <graphic url="img/heart.png"/>
             <figDesc>Drawing of a stylized heart</figDesc>
           </figure>
-        </hi>
       </div1>
       <pb/>
       <div1 type="photographs">
-        <div2 type="photo page" n="1">
-          <div3 type="photo information">
+        <div2 type="photo-page" n="1">
+          <div3 type="photo-information">
             <head>Day 1
               <lb/>
               <date when="--09-28">September 28</date>
             </head>
             <p><quote>Stand up and be counted. March and be act<lb/>ive. It's your right, don't lose it!</quote></p>
-            <p type="photographer">March
+            <p>March
               <lb/>
-              <persName><forename>Lucia</forename><surname> Fisher</surname></persName>
+              <persName role="photographer"><forename>Lucia</forename><surname> Fisher</surname></persName>
               <lb/>
               <placeName><settlement>Sidney</settlement>, <country>Australia</country></placeName>
             </p>
@@ -862,19 +861,19 @@
     </body>
     <pb/>
     <back>
-      <div1 type="photographers list">
-        <div2 type="photographers name">
+      <div1 type="photographers-list">
+        <div2 type="photographers-name">
           <p> 1 <persName><forename>Lucia </forename><surname>Fisher </surname></persName>
           </p>
         </div2>
         <pb/>
         <div2 type="link">
           <!--The link in the book is no longer active. The new website created by the Vivienne Foundation has been linked.-->
-          <p xlink:type="simple" xlink:href="https://climaterevolution.co.uk/wp/" xlink:show="new"><ref target="https://climaterevolution.co.uk/wp/">www.activeresistance.co.uk/getalife</ref></p>
+          <p><ref target="https://climaterevolution.co.uk/wp/">www.activeresistance.co.uk/getalife</ref></p>
         </div2>
       </div1>
       <pb/>
-      <div1 type="credits page">
+      <div1 type="credits-page">
         <p>© Damiani 2011<lb/>© The Authors for the Texts<lb/> © The Photographers for the Photographs</p>
       </div1>
     </back>

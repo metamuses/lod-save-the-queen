@@ -361,7 +361,7 @@
     </p>
   </xsl:template>
 
-  <xsl:template match="tei:div2[@type='body of perfomance text']/tei:div3/tei:sp[1]/tei:speaker[text()='AR']" mode="split">
+  <xsl:template match="tei:div2[@type='body-of-perfomance-text']/tei:div3/tei:sp[1]/tei:speaker[text()='AR']" mode="split">
     <span class="dropcap-speaker">AR</span>
   </xsl:template>
 
@@ -413,7 +413,7 @@
   </xsl:template>
 
   <!-- Don't italicize <q> in body of performance text -->
-  <xsl:template match="tei:q[ancestor::tei:div2[@type='body of perfomance text']]" mode="split">
+  <xsl:template match="tei:q[ancestor::tei:div2[@type='body-of-perfomance-text']]" mode="split">
     <xsl:apply-templates mode="split"/>
   </xsl:template>
 
@@ -477,19 +477,19 @@
   </xsl:template>
 
 
-  <xsl:template match="tei:div1[@type='motto']/tei:hi[2]" mode="split">
+  <xsl:template match="tei:div1[@type='motto']/tei:p[2]" mode="split">
     <p class="motto-life">
       <xsl:apply-templates mode="split"/>
     </p>
   </xsl:template>
 
-  <xsl:template match="tei:div1[@type='motto']/tei:hi[1]" mode="split">
+  <xsl:template match="tei:div1[@type='motto']/tei:p[1]" mode="split">
     <p class="motto-lead">
       <xsl:apply-templates mode="split"/>
     </p>
   </xsl:template>
 
-  <xsl:template match="tei:div1[@type='motto']/tei:hi[3]" mode="split">
+  <xsl:template match="tei:div1[@type='motto']/tei:p[3]" mode="split">
     <p class="motto-artloversunite">
       <xsl:apply-templates mode="split"/>
     </p>
@@ -537,7 +537,7 @@
 
 <!--matching xml/html pagina photo1-->
   <!-- Match the head inside div3 in div1[@type='photographs'] -->
-  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:head" mode="split">
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo-information']/tei:head" mode="split">
     <div class="photo-head">
       <!-- The Day 1 text is inside the text node before <lb/> -->
       <span class="day">
@@ -552,19 +552,19 @@
   </xsl:template>
 
   <!-- Match the date element inside that head -->
-  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:head/tei:date" mode="split">
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo-information']/tei:head/tei:date" mode="split">
     <xsl:value-of select="."/>
   </xsl:template>
 
   <!-- Match the quote inside the p -->
-  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:p/tei:quote" mode="split">
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo-information']/tei:p/tei:quote" mode="split">
     <p class="photo-quote">
       <xsl:apply-templates mode="split"/>
     </p>
   </xsl:template>
 
   <!-- Match the last p (photographer info) inside that div3 -->
-  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo information']/tei:p[@type='photographer']" mode="split">
+  <xsl:template match="tei:div1[@type='photographs']//tei:div3[@type='photo-information']/tei:p[tei:persName[@role='photographer']]" mode="split">
     <p class="photo-photographer">
       <xsl:apply-templates mode="split"/>
     </p>
@@ -577,7 +577,7 @@
   </xsl:template>
 
   <!--photographer list page-->
-  <xsl:template match="tei:back/tei:div1[@type='photographers list']/tei:div2[@type='photographers name']/tei:p" mode="split">
+  <xsl:template match="tei:back/tei:div1[@type='photographers-list']/tei:div2[@type='photographers-name']/tei:p" mode="split">
     <p class="photographer-inline">
       <span class="day">
         <xsl:value-of select="normalize-space(text()[1])"/>
@@ -609,7 +609,7 @@
   </xsl:template>
 
 <!--credits page-->
-  <xsl:template match="tei:div1[@type='credits page']" mode="split">
+  <xsl:template match="tei:div1[@type='credits-page']" mode="split">
     <div class="credits-page">
       <xsl:apply-templates mode="split"/>
     </div>
