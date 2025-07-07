@@ -4,6 +4,8 @@ Group project for the Information Science and Cultural Heritage 2024/25 course.
 
 The project maps the cultural impact of fashion designer and activist Vivienne Westwood using an ontology-based approach along with structured, linked data.
 
+The site of the project is live at [metamuses.github.io/lod-save-the-queen](https://metamuses.github.io/lod-save-the-queen).
+
 ## Repository Structure
 
 ### csv
@@ -24,7 +26,9 @@ python csv2ttl/csv2ttl.py
 The generated TTL files are saved in the [`ttl/csv2ttl`](https://github.com/metamuses/lod-save-the-queen/tree/main/ttl/csv2ttl) directory.
 
 ### html
-The `html` directory contains the HTML, CSS and image files used to generate [the site of this project](https://metamuses.github.io/lod-save-the-queen), which is hosted on GitHub Pages.
+The `html` directory contains the HTML, CSS and image files used to generate [the site of this project](https://metamuses.github.io/lod-save-the-queen), which is hosted on GitHub Pages.  
+This include the XSLT-generated HTML file from the XML/TEI encoding, which is
+rendered as an iframe in the site.
 
 ### models
 The `models` directory contains the theoretical and conceptual models of our
@@ -44,8 +48,10 @@ of Active Resistance" and the XSL stylesheet used to convert it into HTML format
 To run the conversion, use the following command:
 
 ```bash
-xsltproc xml/vivienne.xsl xml/vivienne.xml > html/vivienne.html
+xsltproc xml/encoding.xsl xml/encoding.xml > html/encoding.html
 ```
+
+The generated HTML file is saved in the [`html`](https://github.com/metamuses/lod-save-the-queen/tree/main/html) directory in order to be served by the site.
 
 ### xml2ttl
 The `xml2ttl` directory contains the Python script that converts the XML/TEI

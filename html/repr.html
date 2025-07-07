@@ -749,9 +749,9 @@
                         <h1 class="title">ENCODING</h1>
                         <h3 class="subtitle-tei"><i>100 Days of Active Resistance</i> :<br> A Digital Edition</h3>
                         <div class="p-tei">
-                            <p>The <a href="https://github.com/metamuses/lod-save-the-queen/blob/main/xml/vivienne.xml">XML file</a> provides the encoding of the book <i>100 Days of Active Resistance</i> following the TEI guidelines.The book contains what is known as <b>The Active Resistance to Propaganda</b> manifesto, that precedes the photos collected from September 2010 by Vivienne Westwood in collaboration with Lee Jeans for <b>100 days</b>. </p>
+                            <p>The <a href="https://github.com/metamuses/lod-save-the-queen/blob/main/xml/encoding.xml">XML file</a> provides the encoding of the book <i>100 Days of Active Resistance</i> following the TEI guidelines.The book contains what is known as <b>The Active Resistance to Propaganda</b> manifesto, that precedes the photos collected from September 2010 by Vivienne Westwood in collaboration with Lee Jeans for <b>100 days</b>. </p>
                             <p>This manifesto is a dramatic text written by Vivienne Westwood, so it has been encoded following the TEI guidelines for performance texts (<b>drama module</b>). For further information please refer to the <i>teiHeader</i>.</p>
-                            <p>In order to make the XML document browsable it has been transformed into a <a href="vivienne.html">HTML document</a> via <a href="https://github.com/metamuses/lod-save-the-queen/blob/main/xml/vivienne.xsl">XSLT language</a>. The aim was to provide a visualization tool as similar as possibile to the original book presentational aspects.</p>
+                            <p>In order to make the XML document browsable it has been transformed into a <a href="encoding.html">HTML document</a> via <a href="https://github.com/metamuses/lod-save-the-queen/blob/main/xml/encoding.xsl">XSLT language</a>. The aim was to provide a visualization tool as similar as possibile to the original book presentational aspects.</p>
                             <p>To facilitate data exchange and semantic interoperability a Python script has been provided for transforming <b>XML into RDF</b>. Starting from the XML/TEI encoding of our source book, we used <a href="https://github.com/metamuses/lod-save-the-queen/blob/main/xml2ttl/xml2ttl.py">Python</a> to <b>parse</b> the XML tree and construct an RDF graph. We first described the encoding itself, then the original bibliographic source (linked to our ontology via <i>owl:sameAs</i>), followed by the inferred bibliographic entities mentioned throughout the text. Finally, we identified and described each character who speaks, adding key metadata and linking them to relevant bibliographic references when applicable. The resulting RDF graph was serialized as a Turtle <a href="https://github.com/metamuses/lod-save-the-queen/blob/main/ttl/xml2ttl/xml2rdf.ttl">(.ttl) file</a>.</p>
                         </div>
                     </div>
@@ -766,7 +766,7 @@
                           <div id="modal" class="modal-book">
                             <div class="modal-book-content">
                               <span class="close-book" onclick="closeModal()">&times;</span>
-                              <iframe src="vivienne.html"></iframe>
+                              <iframe src="encoding.html"></iframe>
                             </div>
                           </div>
                     </div>

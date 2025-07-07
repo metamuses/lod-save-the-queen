@@ -12,7 +12,7 @@ XML_DIR = ROOT_DIR / "xml"
 TTL_DIR = ROOT_DIR / "ttl" / "xml2ttl"
 
 # Load TEI file
-tree = etree.parse(XML_DIR / "vivienne.xml")
+tree = etree.parse(XML_DIR / "encoding.xml")
 ns = {"tei": "http://www.tei-c.org/ns/1.0"}
 
 # Create RDF graph
