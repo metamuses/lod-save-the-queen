@@ -166,7 +166,21 @@
 
         }
         .section-motto {
-          padding: 4rem;
+          padding: 1rem;
+        }
+
+        .motto-line {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem; /* spacing between text and image */
+        }
+
+        .motto-line-left {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start; /* left-align */
+          gap: 1rem;
         }
 
         /*for the photograph page*/
@@ -497,7 +511,15 @@
 
   <xsl:template match="tei:div1[@type='motto']" mode="split">
     <div class="section-motto">
-      <xsl:apply-templates mode="split"/>
+      <div class="motto-line-left">
+        <xsl:apply-templates select="tei:p[1]" mode="split"/>
+        <xsl:apply-templates select="tei:figure[1]" mode="split"/>
+      </div>
+      <xsl:apply-templates select="tei:p[2]" mode="split"/>
+      <div class="motto-line">
+        <xsl:apply-templates select="tei:p[3]" mode="split"/>
+        <xsl:apply-templates select="tei:figure[2]" mode="split"/>
+      </div>
     </div>
   </xsl:template>
 
