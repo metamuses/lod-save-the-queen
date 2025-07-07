@@ -203,7 +203,7 @@ nav li {
 
 
 .team-cont a:hover {
-    color: #51989A;
+    color: #CA2E68;
 }
 
 
@@ -406,6 +406,7 @@ pre {
 .code-p {
     margin-bottom: -2%;
     margin-top: -2%;
+    text-align: center;
 }
 
 
