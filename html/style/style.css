@@ -203,7 +203,7 @@ nav li {
 
 
 .team-cont a:hover {
-    color: #CC246F;
+    color: #51989A;
 }
 
 
@@ -259,11 +259,11 @@ footer {
 .general-p a {
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: #ca2e68;
 }
 
 .general-p a:hover {
-    color: #CA2E68;
+    color: #51989a;
 }
 
 
@@ -498,11 +498,11 @@ pre.code-content {
 .p-tei a {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: #ca2e68;;
 }
 
 .p-tei a:hover {
-    color: #CA2E68;
+    color: #51989A;
 }
 
 
@@ -600,7 +600,3 @@ pre.code-content {
   .close-book:hover {
     color: #CA2E68;
   }
-
-
-
-
