@@ -36,7 +36,7 @@
           <pubPlace>Bologna</pubPlace>
           <idno type="ISBN">978-88-6208-188-7</idno>.
         </bibl>
-        <listBibl type="inferred-bibliographic-refences">
+        <listBibl type="inferred-bibliographic-references">
           <bibl xml:id="Carroll">
             <title xml:lang="en">Alice's Adventures in Wonderland</title>
             <author><forename>Lewis</forename><surname>Carroll</surname></author>

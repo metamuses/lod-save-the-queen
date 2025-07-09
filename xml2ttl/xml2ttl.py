@@ -95,7 +95,7 @@ g.add((book_uri, DCTERMS.identifier, Literal(book_idno.text.strip())))
 bibl_map = {}  # key: xml:id, value: URI
 
 # Find element in the TEI tree
-bibl_path = ".//tei:listBibl[@type='inferred-bibliographic-refences']/tei:bibl"
+bibl_path = ".//tei:listBibl[@type='inferred-bibliographic-references']/tei:bibl"
 
 for bibl in tree.findall(bibl_path, namespaces=ns):
     # Build bibliographic entity URI
