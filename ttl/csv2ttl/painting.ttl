@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix schema: <https://schema.org/> .
-@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix wd: <https://www.wikidata.org/entity/> .
 
 <item/painting> a wd:Q3305213 ;
     dc:creator wd:Q180932 ;

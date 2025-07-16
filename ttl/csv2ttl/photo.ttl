@@ -3,7 +3,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix schema: <https://schema.org/> .
-@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix wd: <https://www.wikidata.org/entity/> .
 
 <item/photo> a wd:Q125191 ;
     dc:creator wd:Q962442 ;

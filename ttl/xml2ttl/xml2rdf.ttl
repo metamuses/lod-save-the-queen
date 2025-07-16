@@ -56,19 +56,19 @@
         schema:Character ;
     rdfs:label "Aristotle" ;
     dcterms:subject "philosopher" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q868> .
+    owl:sameAs <https://www.wikidata.org/entity/Q868> .
 
 <tei/AG> a foaf:Person,
         schema:Character ;
     rdfs:label "Alexander the Great" ;
     dcterms:subject "king" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q8409> .
+    owl:sameAs <https://www.wikidata.org/entity/Q8409> .
 
 <tei/AH> a foaf:Person,
         schema:Character ;
     rdfs:label "Adolf Hitler" ;
     dcterms:subject "dictator" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q352> .
+    owl:sameAs <https://www.wikidata.org/entity/Q352> .
 
 <tei/APR> a foaf:Person,
         schema:Character ;
@@ -80,116 +80,116 @@
         schema:Character ;
     rdfs:label "Diogenes of Sinope" ;
     dcterms:subject "philosopher" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q59180> .
+    owl:sameAs <https://www.wikidata.org/entity/Q59180> .
 
 <tei/DV> a foaf:Person,
         schema:Character ;
     rdfs:label "Diego Velázquez" ;
     dcterms:subject "painter" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q297> .
+    owl:sameAs <https://www.wikidata.org/entity/Q297> .
 
 <tei/EM> a foaf:Person,
         schema:Character ;
     rdfs:label "Édouard Manet" ;
     dcterms:subject "painter" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q40599> .
+    owl:sameAs <https://www.wikidata.org/entity/Q40599> .
 
 <tei/GC> a foaf:Person,
         schema:Character ;
     rdfs:label "Geoffrey Chaucer" ;
     dcterms:subject "writer" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q5683> .
+    owl:sameAs <https://www.wikidata.org/entity/Q5683> .
 
 <tei/JW> a foaf:Person,
         schema:Character ;
     rdfs:label "James McNeill Whistler" ;
     dcterms:subject "painter" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q203643> .
+    owl:sameAs <https://www.wikidata.org/entity/Q203643> .
 
 <tei/KA> a foaf:Person,
         schema:Character ;
     rdfs:label "King Arthur" ;
     dcterms:subject "king" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q45792> .
+    owl:sameAs <https://www.wikidata.org/entity/Q45792> .
 
 <tei/KH> a foaf:Person,
         schema:Character ;
     rdfs:label "Katsushika Hokusai" ;
     dcterms:subject "painter" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q5586> .
+    owl:sameAs <https://www.wikidata.org/entity/Q5586> .
 
 <tei/LP> a foaf:Person,
         schema:Character ;
     rdfs:label "Leonard Peltier" ;
     dcterms:subject "activist" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q439054> .
+    owl:sameAs <https://www.wikidata.org/entity/Q439054> .
 
 <tei/PP> a foaf:Person,
         schema:Character ;
     rdfs:label "Pablo Picasso" ;
     dcterms:subject "painter" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q5593> .
+    owl:sameAs <https://www.wikidata.org/entity/Q5593> .
 
 <tei/a> a schema:Character ;
     rdfs:label "Alice" ;
     dcterms:references <tei/Carroll> ;
     dcterms:subject "fictional" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q1269082> .
+    owl:sameAs <https://www.wikidata.org/entity/Q1269082> .
 
 <tei/cc> a schema:Character ;
     rdfs:label "Cheshire Cat" ;
     dcterms:references <tei/Carroll> ;
     dcterms:subject "fictional" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q934013> .
+    owl:sameAs <https://www.wikidata.org/entity/Q934013> .
 
 <tei/g> a schema:Character ;
     rdfs:label "Gaia" ;
     dcterms:subject "mythological" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q93172> .
+    owl:sameAs <https://www.wikidata.org/entity/Q93172> .
 
 <tei/i> a schema:Character ;
     rdfs:label "Icarus" ;
     dcterms:subject "mythological" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q34041> .
+    owl:sameAs <https://www.wikidata.org/entity/Q34041> .
 
 <tei/mh> a schema:Character ;
     rdfs:label "The Hatter" ;
     dcterms:references <tei/Carroll> ;
     dcterms:subject "fictional" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q864751> .
+    owl:sameAs <https://www.wikidata.org/entity/Q864751> .
 
 <tei/p> a schema:Character ;
     rdfs:label "Pinocchio" ;
     dcterms:references <tei/Collodi> ;
     dcterms:subject "fictional" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q6502703> .
+    owl:sameAs <https://www.wikidata.org/entity/Q6502703> .
 
 <tei/tc> a schema:Character ;
     rdfs:label "Talking Cricket" ;
     dcterms:references <tei/Collodi> ;
     dcterms:subject "fictional" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q7679809> .
+    owl:sameAs <https://www.wikidata.org/entity/Q7679809> .
 
 <tei/td> a schema:Character ;
     rdfs:label "Tweedledum" ;
     dcterms:references <tei/Carroll> ;
     dcterms:subject "fictional" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q27477399> .
+    owl:sameAs <https://www.wikidata.org/entity/Q27477399> .
 
 <tei/td2> a schema:Character ;
     rdfs:label "Tweedledee" ;
     dcterms:references <tei/Carroll> ;
     dcterms:subject "fictional" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q27477415> .
+    owl:sameAs <https://www.wikidata.org/entity/Q27477415> .
 
 <tei/wS> a foaf:Person,
         schema:Character ;
     rdfs:label "William Shakespeare" ;
     dcterms:subject "writer" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q692> .
+    owl:sameAs <https://www.wikidata.org/entity/Q692> .
 
 <tei/wr> a schema:Character ;
     rdfs:label "White Rabbit" ;
     dcterms:references <tei/Carroll> ;
     dcterms:subject "fictional" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q178776> .
+    owl:sameAs <https://www.wikidata.org/entity/Q178776> .

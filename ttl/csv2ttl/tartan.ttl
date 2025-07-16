@@ -2,7 +2,7 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix schema: <https://schema.org/> .
-@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix wd: <https://www.wikidata.org/entity/> .
 
 <item/tartan> a <type/wallpaper> ;
     dc:creator <person/vivienne_westwood>,
