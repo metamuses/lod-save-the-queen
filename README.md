@@ -6,7 +6,7 @@ The project maps the cultural impact of fashion designer and activist Vivienne W
 
 The site of the project is live at [metamuses.github.io/lod-save-the-queen](https://metamuses.github.io/lod-save-the-queen).
 
-## Repository Structure
+## Repository structure
 
 ### csv
 The `csv` directory contains the CSV files of our 10 items, one for each item,
